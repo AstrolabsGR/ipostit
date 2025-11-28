@@ -1,0 +1,785 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title>Townhub - Directory Listing Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============-->	
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <link type="text/css" rel="stylesheet" href="css/custom.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--loader-->
+        <div class="loader-wrap">
+            <div class="loader-inner">
+                <div class="loader-inner-cirle"></div>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- main start  -->
+        <div id="main">
+            <!-- header -->
+            <header class="main-header">
+            <!-- logo-->
+            <a href="#" class="logo-holder"><img src="images/ipostit_logo.png" alt=""></a>
+            <!-- logo end-->
+            <!-- header opt -->
+            <a href="dashboard-add-listing.html" class="add-list color-bg-red">Καταχώρισε μια αγγελία</a>
+            <a href="dashboard-add-listing.html" class="add-list color-bg m-0">
+                <img src="/images/button-ico-header.png" alt="Icon" class="btn-icon"> Αγορά Εφημερίδας
+            </a>
+            <div class="cart-btn   show-header-modal" data-microtip-position="bottom" role="tooltip" aria-label="Your Wishlist"><i class="fal fa-heart"></i><span class="cart-counter red-bg"></span> </div>
+            <div class="show-reg-form modal-open avatar-img" data-srcav="images/avatar/3.jpg"><span class="lang-icon"><img src="/images/user-ico.png" alt="" style="margin-bottom: 2px;"></span>Sign In</div>
+            <!-- header opt end-->
+            <!-- lang-wrap-->
+            <div class="lang-wrap">
+                <div class="show-lang"><span><img src="images/lang-ico.png" alt="" style="margin-bottom: 1px;"><strong>Gr</strong></span><i class="fa fa-caret-down arrlan"></i></div>
+                <ul class="lang-tooltip lang-action no-list-style">
+                    <li><a href="#" class="current-lan" data-lantext="Gr">Greek</a></li>
+                    <li><a href="#" data-lantext="En">English</a></li>
+                </ul>
+            </div>
+            <!-- lang-wrap end-->
+            <!-- nav-button-wrap-->
+            <div class="nav-button-wrap color-bg">
+                <div class="nav-button">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <!-- nav-button-wrap end-->
+            <!--  navigation -->
+            <div class="nav-holder main-menu">
+                <nav>
+                    <ul class="no-list-style">
+                        <li>
+                            <a href="#" class="act-link">Έντυπά Μέσα <i class="fa fa-caret-down"></i></a>
+                            <!--second level -->
+                            <ul>
+                                <li><a href="index.html">Parallax Image</a></li>
+                                <li><a href="index2.html">Slider</a></li>
+                                <li><a href="index3.html">Slideshow</a></li>
+                                <li><a href="index4.html">Video</a></li>
+                                <li><a href="index5.html">Map</a></li>
+                                <li><a href="rtl/index.html" target="_blank">RTL Version</a></li>
+                            </ul>
+                            <!--second level end-->
+                        </li>
+                        <li>
+                            <a href="#">Menu 1 <i class="fa fa-caret-down"></i></a>
+                            <!--second level -->
+                            <ul>
+                                <li><a href="listing.html">Column map</a></li>
+                                <li><a href="listing2.html">Column map 2</a></li>
+                                <li><a href="listing3.html">Fullwidth Map</a></li>
+                                <li><a href="listing4.html">Fullwidth Map 2</a></li>
+                                <li><a href="listing5.html">Without Map</a></li>
+                                <li><a href="listing6.html">Without Map 2</a></li>
+                                <li>
+                                    <a href="#">Single <i class="fa fa-caret-down"></i></a>
+                                    <!--third  level  -->
+                                    <ul>
+                                        <li><a href="listing-single.html">Style 1</a></li>
+                                        <li><a href="listing-single2.html">Style 2</a></li>
+                                        <li><a href="listing-single3.html">Style 3</a></li>
+                                        <li><a href="listing-single4.html">Style 4</a></li>
+                                    </ul>
+                                    <!--third  level end-->
+                                </li>
+                            </ul>
+                            <!--second level end-->
+                        </li>
+                        <li>
+                            <a href="blog.html">Menu 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu 3 <i class="fa fa-caret-down"></i></a>
+                            <!--second level -->
+                            <ul>
+                                <li>
+                                    <a href="#">Shop<i class="fa fa-caret-down"></i></a>
+                                    <!--third  level  -->
+                                    <ul>
+                                        <li><a href="shop.html">Products</a></li>
+                                        <li><a href="product-single.html">Product single</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                    </ul>
+                                    <!--third  level end-->
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                                <li><a href="author-single.html">User single</a></li>
+                                <li><a href="help.html">How it Works</a></li>
+                                <li><a href="booking.html">Booking</a></li>
+                                <li><a href="pricing-tables.html">Pricing</a></li>
+                                <li><a href="dashboard.html">User Dasboard</a></li>
+                                <li><a href="blog-single.html">Blog Single</a></li>
+                                <li><a href="dashboard-add-listing.html">Add Listing</a></li>
+                                <li><a href="invoice.html">Invoice</a></li>
+                                <li><a href="login-sign.html">login Sign</a></li>
+                                <li><a href="404.html">404</a></li>
+                            </ul>
+                            <!--second level end-->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- navigation  end -->
+            <!-- header-search_container -->
+            <div class="header-search_container header-search vis-search">
+                <div class="container small-container">
+                    <div class="header-search-input-wrap fl-wrap">
+                        <!-- header-search-input -->
+                        <div class="header-search-input">
+                            <label><i class="fal fa-keyboard"></i></label>
+                            <input type="text" placeholder="What are you looking for ?" value="">
+                        </div>
+                        <!-- header-search-input end -->
+                        <!-- header-search-input -->
+                        <div class="header-search-input location autocomplete-container">
+                            <label><i class="fal fa-map-marker"></i></label>
+                            <input type="text" placeholder="Location..." class="autocomplete-input" id="autocompleteid2" value="">
+                            <a href="#"><i class="fal fa-dot-circle"></i></a>
+                        </div>
+                        <!-- header-search-input end -->
+                        <!-- header-search-input -->
+                        <div class="header-search-input header-search_selectinpt ">
+                            <select data-placeholder="Category" class="chosen-select no-radius">
+                                    <option>All Categories</option>
+                                    <option>All Categories</option>
+                                    <option>Shops</option>
+                                    <option>Hotels</option>
+                                    <option>Restaurants</option>
+                                    <option>Fitness</option>
+                                    <option>Events</option>
+                                </select>
+                        </div>
+                        <!-- header-search-input end -->
+                        <button class="header-search-button red-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i> Search </button>
+                    </div>
+                    <div class="header-search_close color-bg"><i class="fal fa-long-arrow-up"></i></div>
+                </div>
+            </div>
+            <!-- header-search_container  end -->
+            <!-- wishlist-wrap-->
+            <div class="header-modal novis_wishlist">
+                <!-- header-modal-container-->
+                <div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar="">
+                    <!--widget-posts-->
+                    <div class="widget-posts  fl-wrap">
+                        <ul class="no-list-style">
+                            <li>
+                                <div class="widget-posts-img">
+                                    <a href="listing-single.html"><img src="images/gallery/thumbnail/1.png" alt=""></a>
+                                </div>
+                                <div class="widget-posts-descr">
+                                    <h4><a href="listing-single.html">Iconic Cafe</a></h4>
+                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 40 Journal Square Plaza, NJ, USA</a></div>
+                                    <div class="widget-posts-descr-link"><a href="listing.html">Restaurants </a> <a href="listing.html">Cafe</a></div>
+                                    <div class="widget-posts-descr-score">4.1</div>
+                                    <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget-posts-img">
+                                    <a href="listing-single.html"><img src="images/gallery/thumbnail/2.png" alt=""></a>
+                                </div>
+                                <div class="widget-posts-descr">
+                                    <h4><a href="listing-single.html">MontePlaza Hotel</a></h4>
+                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 70 Bright St New York, USA </a></div>
+                                    <div class="widget-posts-descr-link"><a href="listing.html">Hotels </a> </div>
+                                    <div class="widget-posts-descr-score">5.0</div>
+                                    <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget-posts-img">
+                                    <a href="listing-single.html"><img src="images/gallery/thumbnail/3.png" alt=""></a>
+                                </div>
+                                <div class="widget-posts-descr">
+                                    <h4><a href="listing-single.html">Rocko Band in Marquee Club</a></h4>
+                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>75 Prince St, NY, USA</a></div>
+                                    <div class="widget-posts-descr-link"><a href="listing.html">Events</a> </div>
+                                    <div class="widget-posts-descr-score">4.2</div>
+                                    <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget-posts-img">
+                                    <a href="listing-single.html"><img src="images/gallery/thumbnail/4.png" alt=""></a>
+                                </div>
+                                <div class="widget-posts-descr">
+                                    <h4><a href="listing-single.html">Premium Fitness Gym</a></h4>
+                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> W 85th St, New York, USA</a></div>
+                                    <div class="widget-posts-descr-link"><a href="listing.html">Fitness</a> <a href="listing.html">Gym</a> </div>
+                                    <div class="widget-posts-descr-score">5.0</div>
+                                    <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- widget-posts end-->
+                </div>
+                <!-- header-modal-container end-->
+                <div class="header-modal-top fl-wrap">
+                    <h4>Your Wishlist : <span><strong></strong> Locations</span></h4>
+                    <div class="close-header-modal"><i class="far fa-times"></i></div>
+                </div>
+            </div>
+            <!--wishlist-wrap end -->
+        </header>
+            <!-- header end-->
+            <!-- wrapper-->
+            <div id="wrapper">
+                <!-- content-->
+                <div class="content">
+                    <!--  section  -->
+                    <section class="parallax-section single-par" data-scrollax-parent="true">
+                        <div class="bg par-elem "  data-bg="images/003.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                        <div class="overlay op7"></div>
+                        <div class="container">
+                            <div class="section-title center-align big-title">
+                                <h2><span>Lorem ipsum dolor sit amet </span></h2>
+                                <span class="section-separator s-s-m"></span>
+                                <div class="breadcrumbs fl-wrap"><a href="#">Home</a><a href="#">Pages</a><span>Information</span></div>
+                            </div>
+                        </div>
+                        <div class="header-sec-link custom_svg_bg">
+                            <a href="#sec1" class="custom-scroll-link"><i class="fal fa-angle-double-down"></i></a> 
+                        </div>
+                    </section>
+                    <!--  section  end-->
+                    <!--section  -->
+                    <!-- <section data-scrollax-parent="true" id="sec1">
+                        <div class="container">
+                            <div class="section-title">
+                                <h2>How it works</h2>
+                                <div class="section-subtitle">Discover &amp; Connect </div>
+                                <span class="section-separator"></span>
+                                <p>Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus.</p>
+                            </div>
+                             <div class="process-wrap fl-wrap">
+                                <ul class="no-list-style">
+                                    <li>
+                                        <div class="process-item">
+                                            <span class="process-count">01 </span>
+                                            <div class="time-line-icon"><i class="fal fa-map-marker-alt"></i></div>
+                                            <h4> Find Interesting Place</h4>
+                                            <p>Proin dapibus nisl ornare diam varius tempus. Aenean a quam luctus, finibus tellus ut, convallis eros sollicitudin turpis.</p>
+                                        </div>
+                                        <span class="pr-dec"></span>
+                                    </li>
+                                    <li>
+                                        <div class="process-item">
+                                            <span class="process-count">02</span>
+                                            <div class="time-line-icon"><i class="fal fa-mail-bulk"></i></div>
+                                            <h4> Contact a Few Owners</h4>
+                                            <p>Faucibus ante, in porttitor tellus blandit et. Phasellus tincidunt metus lectus sollicitudin feugiat pharetra consectetur.</p>
+                                        </div>
+                                        <span class="pr-dec"></span>
+                                    </li>
+                                    <li>
+                                        <div class="process-item">
+                                            <span class="process-count">03</span>
+                                            <div class="time-line-icon"><i class="fal fa-layer-plus"></i></div>
+                                            <h4> Make a Listing</h4>
+                                            <p>Maecenas pulvinar, risus in facilisis dignissim, quam nisi hendrerit nulla, id vestibulum metus nullam viverra porta.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="process-end"><i class="fal fa-check"></i></div>
+                            </div>
+                        </div>
+                    </section> -->
+                    <!--section end-->
+                    <!--section  -->
+                    <!-- <section class="gradient-bg hidden-section" data-scrollax-parent="true">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="colomn-text  pad-top-column-text fl-wrap">
+                                        <div class="colomn-text-title">
+                                            <h3>Our Video Tutorials</h3>
+                                            <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit .</p>
+                                            <a href="#" class=" down-btn color3-bg"><i class="fab fa-vimeo-v"></i> Vimeo Chanel</a>
+                                            <a href="#" class=" down-btn color3-bg"><i class="fab fa-youtube"></i>  Youtube Chanel </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="list-single-main-media fl-wrap">
+                                        <img src="images/all/2.jpg" class="respimg" alt="">
+                                        <a href="https://vimeo.com/70851162" class="promo-link   image-popup"><i class="fal fa-video"></i><span>How Townhub Works</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gradient-bg-figure" style="right:-30px;top:10px;"></div>
+                        <div class="gradient-bg-figure" style="left:-20px;bottom:30px;"></div>
+                        <div class="circle-wrap" style="left:270px;top:120px;" data-scrollax="properties: { translateY: '-200px' }">
+                            <div class="circle_bg-bal circle_bg-bal_small"></div>
+                        </div>
+                        <div class="circle-wrap" style="right:420px;bottom:-70px;" data-scrollax="properties: { translateY: '150px' }">
+                            <div class="circle_bg-bal circle_bg-bal_big"></div>
+                        </div>
+                        <div class="circle-wrap" style="left:420px;top:-70px;" data-scrollax="properties: { translateY: '100px' }">
+                            <div class="circle_bg-bal circle_bg-bal_big"></div>
+                        </div>
+                        <div class="circle-wrap" style="left:40%;bottom:-70px;"  >
+                            <div class="circle_bg-bal circle_bg-bal_middle"></div>
+                        </div>
+                        <div class="circle-wrap" style="right:40%;top:-10px;"  >
+                            <div class="circle_bg-bal circle_bg-bal_versmall" data-scrollax="properties: { translateY: '-350px' }"></div>
+                        </div>
+                        <div class="circle-wrap" style="right:55%;top:90px;"  >
+                            <div class="circle_bg-bal circle_bg-bal_versmall" data-scrollax="properties: { translateY: '-350px' }"></div>
+                        </div>
+                    </section> -->
+                    <!--section end-->  
+                    <section class="gray-bg" id="sec1">
+                        <div class="container">
+                            <div class="section-title">
+                                <h2> Πληροφορίες</h2>
+                                <div class="section-subtitle">Πληροφορίες</div>
+                                <span class="section-separator s-s-m-l"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                            <div class="post-container fl-wrap">
+                                <div class="row">
+                                    <!-- blog content-->
+                                    <div class="col-md-3">
+                                        <div class="faq-nav help-bar scroll-init">
+                                            <ul class="no-list-style">
+                                                <li>
+                                                    <a href="#fq1">
+                                                    <i class="fal fa-space-shuttle"></i>
+                                                    <span>Όροι χρήσης</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#fq2">
+                                                    <i class="fal fa-cart-arrow-down"></i>
+                                                    <span>Πολιτική απορρήτου</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                    <i class="fal fa-barcode-read"></i>
+                                                    <span>Όροι & προϋποθέσεις</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#fq4">
+                                                    <i class="fal fa-user-headset"></i>
+                                                    <span>Συχνές ερωτήσεις</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#fq5">
+                                                    <i class="fal fa-user-headset"></i>
+                                                    <span>Πολτική cookies</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                    <i class="fal fa-user-headset"></i>
+                                                    <span>Ειδοποίηση ιδιωτικότητας</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#fq7">
+                                                    <i class="fal fa-user-headset"></i>
+                                                    <span>Θέσεις εργασίας</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- blog conten end-->
+                                    <!-- blog sidebar -->
+                                    <div class="col-md-9">
+                                        <!-- faq-section -->
+                                        <div class="faq-title faq-title_first fl-wrap">Όροι χρήσης</div>
+                                        <div class="faq-section fl-wrap" id="fq1">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br><br>
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br><br>
+                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<br><br></p>
+                                        </div>
+                                        <div class="faq-title faq-title_first fl-wrap">Πολιτική απορρήτου</div>
+                                        <div class="faq-section fl-wrap" id="fq2">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br><br>
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br><br>
+                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<br><br></p>
+                                        </div>
+                                        <!-- faq-section end -->
+                                        <!-- faq-section -->
+                                        <!--<div class="faq-title fl-wrap">Όροι & προϋποθέσεις</div>
+                                        <div class="faq-section fl-wrap" id="fq3">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br><br>
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br><br>
+                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<br><br></p>
+                                        </div>-->
+                                        <!-- faq-section end -->
+                                        <!-- faq-section -->
+                                        <div class="faq-title fl-wrap">Συχνές ερωτήσεις</div>
+                                        <div class="faq-section fl-wrap" id="fq4">
+                                            <!-- accordion-->
+                                            <div class="accordion">
+                                                <a class="toggle" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore<span></span></a>
+                                                <div class="accordion-inner">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.</p>
+                                                </div>
+                                                <a class="toggle" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <span></span></a>
+                                                <div class="accordion-inner">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.</p>
+                                                </div>
+                                                <a class="toggle" href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  <span></span></a>
+                                                <div class="accordion-inner">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.</p>
+                                                </div>
+                                                <a class="toggle" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore<span></span></a>
+                                                <div class="accordion-inner">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.</p>
+                                                </div>
+                                                <a class="toggle" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <span></span></a>
+                                                <div class="accordion-inner">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.</p>
+                                                </div>
+                                                <a class="toggle" href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  <span></span></a>
+                                                <div class="accordion-inner">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat purus viverra.</p>
+                                                </div>
+                                            </div>
+                                            <!-- accordion end -->                                               
+                                        </div>
+                                        <!-- faq-section end -->
+                                        <!-- faq-section -->
+                                        <div class="faq-title fl-wrap">Πολτική cookies</div>
+                                        <div class="faq-section fl-wrap" id="fq5">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br><br>
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br><br>
+                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<br><br></p>
+                                        </div>
+                                        <div class="faq-title fl-wrap">Θέσεις εργασίας</div>
+                                        <div class="faq-section fl-wrap" id="fq7">
+                                            <p><strong>Γιατί να εργαστείς μαζί μας;</strong><br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <br><br>
+                                            <p><strong>Πάντα αναζητούμε νέα ταλέντα!</strong><br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <br><br>
+                                            <p><strong>Πώς να κάνεις αίτηση;</strong><br>
+                                            Στείλε το βιογραφικό σου <a href="mailto:info@ipostit.gr" class="email-link">info@ipostit.gr</a> μαζί με οποιαδήποτε επιπλέον πληροφορία θεωρείς ότι αναδεικνύει καλύτερα τις δεξιότητές σου.</p>
+                                            <br><br>
+                                            <p><strong>Τι συμβαίνει μετά την αίτηση;</strong><br>
+                                            Η ομάδα μας θα εξετάσει την υποψηφιότητά σου και, εφόσον ταιριάζει στις ανάγκες μας, θα επικοινωνήσουμε μαζί σου για να γνωριστούμε καλύτερα σε μια συνέντευξη.</p>
+
+                                        </div>
+                                        <!--<div class="faq-title fl-wrap">Ειδοποίηση ιδιωτικότητας</div>
+                                        <div class="faq-section fl-wrap" id="fq6">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br><br>
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br><br>
+                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<br><br></p>
+                                        </div>-->
+                                        <!-- faq-section end -->
+                                       <!--<div class="faq-links fl-wrap">
+                                            <h3 class="faq-links-title">Still Need Help ?</h3>
+                                            <span class="section-separator"></span>
+                                            <div class="post-nav-wrap fl-wrap">
+                                                <a class="post-nav post-nav-prev" href="#"><span class="post-nav-img"><img src="images/all/54.jpg" alt=""></span><span class="post-nav-text"><strong>Call us</strong> <br>+7(111)123456789</span></a> 
+                                                <a class="post-nav post-nav-next" href="#"><span class="post-nav-img"><img src="images/all/53.jpg" alt=""></span><span class="post-nav-text"><strong>Write to us</strong><br>yourmail@domain.com</span></a> 
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                    <!-- blog sidebar end -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="limit-box fl-wrap"></div>
+                    <section>
+                        <div class="container">
+                            <div class="clients-carousel-wrap fl-wrap">
+                                <div class="cc-btn   cc-prev"><i class="fal fa-angle-left"></i></div>
+                                <div class="cc-btn cc-next"><i class="fal fa-angle-right"></i></div>
+                                <div class="clients-carousel">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <!--client-item-->
+                                            <div class="swiper-slide">
+                                                <a href="#" class="client-item"><img src="images/clients/1.png" alt=""></a>
+                                            </div>
+                                            <!--client-item end-->
+                                            <!--client-item-->
+                                            <div class="swiper-slide">
+                                                <a href="#" class="client-item"><img src="images/clients/2.png" alt=""></a>
+                                            </div>
+                                            <!--client-item end-->
+                                            <!--client-item-->
+                                            <div class="swiper-slide">
+                                                <a href="#" class="client-item"><img src="images/clients/3.png" alt=""></a>
+                                            </div>
+                                            <!--client-item end-->
+                                            <!--client-item-->
+                                            <div class="swiper-slide">
+                                                <a href="#" class="client-item"><img src="images/clients/1.png" alt=""></a>
+                                            </div>
+                                            <!--client-item end-->
+                                            <!--client-item-->
+                                            <div class="swiper-slide">
+                                                <a href="#" class="client-item"><img src="images/clients/2.png" alt=""></a>
+                                            </div>
+                                            <!--client-item end-->
+                                            <!--client-item-->
+                                            <div class="swiper-slide">
+                                                <a href="#" class="client-item"><img src="images/clients/3.png" alt=""></a>
+                                            </div>
+                                            <!--client-item end-->                                                                                                                                                                                                                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--content end-->
+            </div>
+            <!-- wrapper end-->
+            <!--footer -->
+            <footer class="main-footer fl-wrap">
+            <!-- footer-header-->
+            <div class="footer-header fl-wrap grad ient-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="subscribe-header">
+                                <h3>Εγγραφείτε στο <span>Newsletter</span> μας</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="subscribe-widget">
+                                <div class="subcribe-form">
+                                    <form id="subscribe">
+                                        <input class="enteremail fl-wrap" name="email" id="subscribe-email" placeholder="your@email.com" spellcheck="false" type="text">
+                                        <button type="submit" id="subscribe-button" class="subscribe-button"><i class="far fa-envelope"></i></button>
+                                        <label for="subscribe-email" class="subscribe-message"></label>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-header end-->
+            <!--footer-inner-->
+            <div class="footer-inner   fl-wrap">
+                <div class="container">
+                    <div class="row">
+                        <!-- footer-widget-->
+                        <div class="col-md-4">
+                            <div class="footer-widget fl-wrap">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="images\ipostit_logo.png" alt=""></a>
+                                </div>
+                                <div class="footer-contacts-widget fl-wrap">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                                    <ul class="footer-contacts fl-wrap no-list-style">
+                                        <li> <span><i class="fal fa-map-marker-alt"></i> Διεύθυνση: </span><a href="https://maps.app.goo.gl/NUFiez4BxeJNAY1JA" target="_blank">Ηπείρου 58, Λάρισα, Τ.Κ. 41 222</a></li>
+                                        <li><span><i class="fal fa-phone"></i> Τηλεφωνικό Κέντρο :</span><a href="tel:2410611111">241 061 1111</a></li>
+                                        <li><span><i class="fal fa-envelope"></i> email :</span><a href="mailto:info@ipostit.gr" target="_blank">info@ipostit.gr</a></li>
+                                    </ul>
+                                    <div class="footer-social">
+                                        <span>Follow Us: </span>
+                                        <ul class="no-list-style socials">
+                                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.38" height="13" fill="currentColor" viewBox="0 0 16 16">
+                                                                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                                                </svg>
+                                                </a>
+                                            </li>
+                                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.38" height="13" fill="currentColor" viewBox="0 0 16 16">
+                                                                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                                                </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- footer-widget end-->
+                        <!-- footer-widget-->
+                        <div class="col-md-4">
+                            <div class="footer-widget fl-wrap ">
+                                <h3>Μενού πλοήγησης</h3>
+                                <ul class="footer-list fl-wrap">
+                                    <li><a href="#">Αρχική</a></li>
+                                    <li><a href="#">Σχετικά με μας</a></li>
+                                    <li><a href="#">Αγορά εφημερίδας</a></li>
+                                    <li><a href="#">Καταχώρηση αγγελιών</a></li>
+                                    <li><a href="#">Κατηγορίες αγγελιών</a></li>
+                                    <li><a href="#">Επικοινωνία</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- footer-widget end-->
+                        <!-- footer-widget  -->
+                        <div class="col-md-4">
+                            <div class="footer-widget fl-wrap ">
+                                <h3>Χρήσιμα Links</h3>
+                                <ul class="footer-list fl-wrap">
+                                    <li><a href="#">Ο λογαριασμός μου</a></li>
+                                    <li><a href="#">Η Βιβλιοθήκη μου</a></li>
+                                    <li><a href="https://ipostit.ast.gr/information.html#fq4">Συχνές ερωτήσεις</a></li>
+                                    <li><a href="https://ipostit.ast.gr/information.html#fq1">Όροι χρήσης</a></li>
+                                    <li><a href="https://ipostit.ast.gr/information.html#fq2">Πολιτική απορρήτου</a></li>
+                                    <li><a href="#">Τρόποι πληρωμής</a></li>
+                                </ul>
+                                <a href="#" class=" down-btn color3-bg fl-wrap"><i class="fab fa-apple"></i>  Apple Store </a>
+                                <a href="#" class=" down-btn color3-bg fl-wrap"><i class="fab fa-android"></i>  Google Play </a>
+                            </div>
+                        </div>
+                        <!-- footer-widget end-->
+                    </div>
+                </div>
+                <!-- footer bg-->
+                <!-- <div class="footer-bg" data-ran="4"></div> -->
+                <div class="footer-wave">
+                    <svg viewbox="0 0 100 25">
+                            <path fill="#fff" d="M0 30 V12 Q30 17 55 12 T100 11 V30z"></path>
+                        </svg>
+                </div>
+                <!-- footer bg  end-->
+            </div>
+            <!--footer-inner end -->
+            <!--sub-footer-->
+            <div class="sub-footer  fl-wrap">
+                <div class="container">
+                    <div class="copyright">Copyright &#169; 2025, <a href="">ipostit.gr</a></div>
+                    <div class="subfooter-nav">
+                        <span>Developed by</span>
+                        <a href="https://www.astrolabs.gr" target="_blank" rel="noopener noreferrer">
+                            <img src="images/Astrolabs Logo-02.png" width="200px" alt="Astrolabs Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--sub-footer end -->
+        </footer>
+            <!--footer end -->  
+            <!--map-modal -->
+            <div class="map-modal-wrap">
+                <div class="map-modal-wrap-overlay"></div>
+                <div class="map-modal-item">
+                    <div class="map-modal-container fl-wrap">
+                        <div class="map-modal fl-wrap">
+                            <div id="singleMap" data-latitude="40.7" data-longitude="-73.1"></div>
+                        </div>
+                        <h3><span>Location for : </span><a href="#">Listing Title</a></h3>
+                        <div class="map-modal-close"><i class="fal fa-times"></i></div>
+                    </div>
+                </div>
+            </div>
+            <!--map-modal end -->                
+            <!--register form -->
+            <div class="main-register-wrap modal">
+                <div class="reg-overlay"></div>
+                <div class="main-register-holder tabs-act">
+                    <div class="main-register fl-wrap  modal_main">
+                        <div class="main-register_title">Welcome to <span><strong>Town</strong>Hub<strong>.</strong></span></div>
+                        <div class="close-reg"><i class="fal fa-times"></i></div>
+                        <ul class="tabs-menu fl-wrap no-list-style">
+                            <li class="current"><a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Login</a></li>
+                            <li><a href="#tab-2"><i class="fal fa-user-plus"></i> Register</a></li>
+                        </ul>
+                        <!--tabs -->                       
+                        <div class="tabs-container">
+                            <div class="tab">
+                                <!--tab -->
+                                <div id="tab-1" class="tab-content first-tab">
+                                    <div class="custom-form-ast">
+                                        <form method="post"  name="registerform">
+                                            <label>Username or Email Address <span>*</span> </label>
+                                            <input name="email" type="text"   onClick="this.select()" value="">
+                                            <label >Password <span>*</span> </label>
+                                            <input name="password" type="password"   onClick="this.select()" value="" >
+                                            <button type="submit"  class="btn float-btn color2-bg"> Log In <i class="fas fa-caret-right"></i></button>
+                                            <div class="clearfix"></div>
+                                            <div class="filter-tags">
+                                                <input id="check-a3" type="checkbox" name="check">
+                                                <label for="check-a3">Remember me</label>
+                                            </div>
+                                        </form>
+                                        <div class="lost_password">
+                                            <a href="#">Lost Your Password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tab end -->
+                                <!--tab -->
+                                <div class="tab">
+                                    <div id="tab-2" class="tab-content">
+                                        <div class="custom-form-ast">
+                                            <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
+                                                <label >Full Name <span>*</span> </label>
+                                                <input name="name" type="text"   onClick="this.select()" value="">
+                                                <label>Email Address <span>*</span></label>
+                                                <input name="email" type="text"  onClick="this.select()" value="">
+                                                <label >Password <span>*</span></label>
+                                                <input name="password" type="password"   onClick="this.select()" value="" >
+                                                <div class="filter-tags ft-list">
+                                                    <input id="check-a2" type="checkbox" name="check">
+                                                    <label for="check-a2">I agree to the <a href="#">Privacy Policy</a></label>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="filter-tags ft-list">
+                                                    <input id="check-a" type="checkbox" name="check">
+                                                    <label for="check-a">I agree to the <a href="#">Terms and Conditions</a></label>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <button type="submit"     class="btn float-btn color2-bg"> Register  <i class="fas fa-caret-right"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tab end -->
+                            </div>
+                            <!--tabs end -->
+                            <div class="log-separator fl-wrap"><span>or</span></div>
+                            <div class="soc-log fl-wrap">
+                                <p>For faster login or register use your social account.</p>
+                                <a href="#" class="facebook-log"> Facebook</a>
+                            </div>
+                            <div class="wave-bg">
+                                <div class='wave -one'></div>
+                                <div class='wave -two'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--register form end -->
+            <a class="to-top"><i class="fas fa-caret-up"></i></a>     
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
