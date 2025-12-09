@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 slidesPerView: 1,
                 spaceBetween: 0,
                 loop: true,
-                autoHeight: true,
+                autoHeight: false,
                 grabCursor: true,
                 mousewheel: false,
                 autoplay: {
@@ -99,30 +99,175 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     }
 
-    // --------------------------------------
-    // 2. Slide Counter for Inner Sliders
-    // --------------------------------------
-    setTimeout(() => {
-        document
-            .querySelectorAll('.listing-inner-slider')
-            .forEach((sliderEl) => {
-                const counter = sliderEl.querySelector(
-                    '.custom-image-counter .counter-text'
-                );
-                const swiper = sliderEl.swiper;
-                if (!swiper || !counter) return;
+// --------------------------------------
+// 2. Slide Counter for Inner Sliders
+// --------------------------------------
+setTimeout(() => {
+    document
+        .querySelectorAll('.listing-inner-slider')
+        .forEach((sliderEl) => {
 
-                const totalSlides =
-                    swiper.slides.length - swiper.loopedSlides * 2;
+            if (sliderEl.closest('#listingModal')) return;
 
-                function updateCounter() {
-                    counter.textContent = `${swiper.realIndex + 1}/${totalSlides}`;
-                }
+            const counter = sliderEl.querySelector(
+                '.custom-image-counter .counter-text'
+            );
+            const swiper = sliderEl.swiper;
+            if (!swiper || !counter) return;
 
-                swiper.on('slideChange', updateCounter);
-                updateCounter();
-            });
-    }, 200);
+            const totalSlides =
+                swiper.slides.length - swiper.loopedSlides * 2;
+
+            function updateCounter() {
+                counter.textContent = `${swiper.realIndex + 1}/${totalSlides}`;
+            }
+
+            swiper.on('slideChange', updateCounter);
+            updateCounter();
+        });
+}, 200);
+
+    
+// --------------------------------------
+// 3. Clamp card description to 3 lines + inline "Read more" (responsive)
+// --------------------------------------
+function applyInlineReadMore(root = document) {
+    const paragraphs = root.querySelectorAll('.geodir-category-text .small-text');
+    const MAX_LINES = 3;
+
+    paragraphs.forEach((p) => {
+        // Get original full text (once) and keep it
+        const fullText = (p.dataset.fullText || p.textContent).trim();
+        p.dataset.fullText = fullText;
+
+        // Reset to full text before measuring (clear any previous clamp)
+        p.textContent = fullText;
+        p.style.maxHeight = '';
+        p.style.overflow = '';
+
+        const style = window.getComputedStyle(p);
+        const fontSize = parseFloat(style.fontSize) || 14;
+        const lineHeight = parseFloat(style.lineHeight);
+        const effectiveLineHeight = isNaN(lineHeight)
+            ? fontSize * 1.4
+            : lineHeight;
+
+        const paddingTop = parseFloat(style.paddingTop) || 0;
+        const paddingBottom = parseFloat(style.paddingBottom) || 0;
+
+        const maxHeight =
+            MAX_LINES * effectiveLineHeight +
+            paddingTop +
+            paddingBottom +
+            2; // small buffer
+
+        // If it fits in 3 lines at THIS width, no clamp / no link
+        if (p.scrollHeight <= maxHeight) {
+            return;
+        }
+
+        // Build truncated version with "… Read more"
+        const readMoreLink = document.createElement('a');
+        readMoreLink.href = '#';
+        readMoreLink.className = 'read-more-link';
+        readMoreLink.textContent = 'Read more';
+
+        const textNode = document.createTextNode('');
+
+        p.textContent = '';
+        p.appendChild(textNode);
+        p.appendChild(document.createTextNode('… '));
+        p.appendChild(readMoreLink);
+
+        function fits() {
+            return p.scrollHeight <= maxHeight + 1;
+        }
+
+        const words = fullText.split(' ');
+        let low = 0;
+        let high = words.length;
+        let best = 0;
+
+        while (low <= high) {
+            const mid = Math.floor((low + high) / 2);
+            const candidate = words.slice(0, mid).join(' ');
+
+            textNode.data = candidate;
+
+            if (fits()) {
+                best = mid;
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+
+        textNode.data = words.slice(0, best).join(' ');
+        if (!textNode.data) {
+            textNode.data = fullText.slice(0, 80);
+        }
+
+        p.style.maxHeight = maxHeight + 'px';
+        p.style.overflow = 'hidden';
+
+        // Click opens the correct modal for this card
+        readMoreLink.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const card =
+                p.closest('.geodir-category-listing') ||
+                p.closest('.listing-item');
+
+            if (typeof openListingModalFromItem === 'function' && card) {
+                openListingModalFromItem(card);
+                return;
+            }
+
+            const badge =
+                card &&
+                card.querySelector('.custom-video-badge, .open-modal-trigger');
+            if (badge) badge.click();
+        });
+    });
+}
+
+// run once on load (for backend-rendered items)
+applyInlineReadMore();
+
+// re-run on resize (responsive)
+let readMoreResizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(readMoreResizeTimer);
+    readMoreResizeTimer = setTimeout(() => {
+        applyInlineReadMore();
+    }, 150);
+});
+
+
+// Click on the little round video badge → open modal on the video slide
+document.addEventListener('click', (e) => {
+    const badge = e.target.closest('.custom-video-badge');
+    if (!badge) return;
+
+    // Don't let this also trigger the generic .listing-item click handler
+    e.preventDefault();
+    e.stopPropagation();
+
+    // Find the parent listing card
+    const item = badge.closest('.listing-item');
+    if (!item) return;
+
+    // The slide in that card that has the <video>
+    const videoSlideEl = item.querySelector('.swiper-slide-video');
+
+    // Use the helper we wrote earlier to open the modal
+    // and start on that specific slide
+    openListingModalFromItem(item, { clickedSlideEl: videoSlideEl });
+});
+
+
+
+
 });
 
 // Close desktop offcanvas when clicking anywhere outside it
@@ -146,73 +291,237 @@ document.addEventListener('click', function (e) {
 
 let modalSwiper;
 
+// --------------------------------------
+// Helper: open modal for ANY listing
+// - Slider cards: clone only slides that have img/video
+// - Single-image cards: show one image, no nav/counter
+// - No-media cards: hide slider completely
+// --------------------------------------
+function openListingModalFromItem(item, options = {}) {
+    const modal = document.getElementById('listingModal');
+    if (!modal) return;
+
+    const modalSlider  = modal.querySelector('.listing-inner-slider.swiper-container');
+    const modalWrapper = modalSlider?.querySelector('.swiper-wrapper');
+    if (!modalSlider || !modalWrapper) return;
+
+    const navNext     = modal.querySelector('.ss-slider-cont-next');
+    const navPrev     = modal.querySelector('.ss-slider-cont-prev');
+    const counterBox  = modal.querySelector('.custom-image-counter');
+    const counterText = counterBox?.querySelector('.counter-text');
+
+    // ============= 1. Collect raw slides from the CARD =============
+    const cardSlider  = item.querySelector('.listing-inner-slider.swiper-container');
+    const cardWrapper = cardSlider?.querySelector('.swiper-wrapper');
+
+    let rawSlides   = [];
+    let startIndex  = 0;
+
+if (cardSlider && cardWrapper) {
+    // CARD HAS A SWIPER: get all real slides (no duplicates)
+    rawSlides = Array.from(
+        cardWrapper.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate)')
+    );
+
+    const clickedSlideEl = options.clickedSlideEl?.closest('.swiper-slide') || null;
+
+    if (clickedSlideEl) {
+        let idx = rawSlides.indexOf(clickedSlideEl);
+
+        // If we clicked on a loop-duplicate, use the original index
+        if (idx < 0) {
+            const loopIdxAttr = clickedSlideEl.getAttribute('data-swiper-slide-index');
+            if (loopIdxAttr !== null) {
+                const loopIdx = parseInt(loopIdxAttr, 10);
+                if (!Number.isNaN(loopIdx) && loopIdx >= 0 && loopIdx < rawSlides.length) {
+                    idx = loopIdx;
+                }
+            }
+        }
+
+        if (idx >= 0) {
+            startIndex = idx;
+        }
+    }
+} else {
+    // CARD HAS NO SWIPER: maybe a single plain image
+    const clickedMediaEl =
+        options.clickedMediaEl ||
+        item.querySelector('.geodir-category-img img, .geodir-category-img-wrap img');
+
+    if (clickedMediaEl) {
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+
+        const wrap = document.createElement('div');
+        wrap.className = 'geodir-category-img-wrap fl-wrap';
+
+        const imgClone = clickedMediaEl.cloneNode(true);
+        wrap.appendChild(imgClone);
+        slide.appendChild(wrap);
+
+        rawSlides = [slide];
+        startIndex = 0;
+    } else {
+        rawSlides = [];
+    }
+}
+
+
+    // ============= 2. Keep only slides that REALLY have media =============
+    const slidesSource = rawSlides.filter(slide =>
+        slide.querySelector('img, video, iframe')
+    );
+
+    // Clear any previous modal content
+    modalWrapper.innerHTML = '';
+
+    // ============= 3. NO MEDIA CASE (no img/video anywhere) =============
+    if (!slidesSource.length) {
+        // Hide slider + nav + counter
+        modalSlider.style.display = 'none';
+        if (navNext)    navNext.style.display = 'none';
+        if (navPrev)    navPrev.style.display = 'none';
+        if (counterBox) counterBox.style.display = 'none';
+
+        // Destroy old swiper if needed
+        if (modalSwiper && typeof modalSwiper.destroy === 'function') {
+            modalSwiper.destroy(true, true);
+            modalSwiper = null;
+        }
+
+        // Just show the modal text / content
+        modal.style.display = 'block';
+        return;
+    }
+
+    // ============= 4. WE HAVE 1+ MEDIA SLIDES =============
+    // Show slider container
+    modalSlider.style.display = '';
+
+    // Clone slides into the modal
+    slidesSource.forEach(slide => {
+        const clone = slide.cloneNode(true);
+
+        // videos in modal should have controls
+        const video = clone.querySelector('video');
+        if (video) {
+            video.setAttribute('controls', 'controls');
+        }
+
+        modalWrapper.appendChild(clone);
+    });
+
+    const isMultiSlide = slidesSource.length > 1;
+
+    // Show/hide arrows + counter based on slide count
+    if (navNext)    navNext.style.display    = isMultiSlide ? '' : 'none';
+    if (navPrev)    navPrev.style.display    = isMultiSlide ? '' : 'none';
+    if (counterBox) counterBox.style.display = isMultiSlide ? '' : 'none';
+
+    // Open modal
+    modal.style.display = 'block';
+
+    setTimeout(() => {
+        if (modalSwiper && typeof modalSwiper.destroy === 'function') {
+            modalSwiper.destroy(true, true);
+        }
+
+        const nextEl = navNext || modal.querySelector('.ss-slider-cont-next');
+        const prevEl = navPrev || modal.querySelector('.ss-slider-cont-prev');
+
+        function updateCounter(swiper) {
+            if (!counterText || !isMultiSlide) return;
+
+            const totalSlides = swiper.slides.length - swiper.loopedSlides * 2;
+            const currentIndex = swiper.realIndex + 1;
+            counterText.textContent = `${currentIndex}/${totalSlides}`;
+        }
+
+        function handleVideoAutoplay(swiper) {
+            Array.from(swiper.slides).forEach(slide => {
+                slide.querySelectorAll('video').forEach(v => {
+                    try { v.pause(); } catch(e) {}
+                });
+            });
+
+            const activeSlide = swiper.slides[swiper.activeIndex];
+            if (!activeSlide) return;
+            const video = activeSlide.querySelector('video');
+            if (video) {
+                try { video.play(); } catch(e) {}
+            }
+        }
+
+        modalSwiper = new Swiper(modalSlider, {
+            slidesPerView: 1,
+            loop: isMultiSlide,
+            autoHeight: false,
+
+            allowTouchMove: false,
+            simulateTouch: false,
+            keyboard: false,
+            mousewheel: false,
+            noSwiping: true,
+            noSwipingClass: 'swiper-no-swiping',
+            touchRatio: 0,
+            followFinger: false,
+
+            navigation: isMultiSlide ? { nextEl, prevEl } : {},
+
+            initialSlide: Math.min(startIndex, slidesSource.length - 1),
+
+            on: {
+                init() {
+                    updateCounter(this);
+                    handleVideoAutoplay(this);
+                },
+                slideChange() {
+                    updateCounter(this);
+                    handleVideoAutoplay(this);
+                },
+            },
+        });
+    }, 50);
+}
+
+
+
+
+// --------------------------------------
+// Click on card image / title → open modal for ALL items
+// --------------------------------------
 document.querySelectorAll('.listing-item').forEach((item) => {
     item.addEventListener('click', (e) => {
         const target = e.target;
 
-        // Ignore UI elements that shouldn't trigger modal
+        // Ignore stuff that should NOT open the modal
         if (
             target.closest(
-                '.swiper-button, .swiper-button-next, .swiper-button-prev, .ss-slider-cont-next, .ss-slider-cont-prev, .swiper-pagination, .geodir-opt-list, .listing-avatar, .facilities-list, .geodir-category-footer, .custom-sticker, .geodir_status_date'
+                '.swiper-button, .swiper-button-next, .swiper-button-prev, .geodir-category-footer, .custom-sticker, .geodir_status_date, .custom-video-badge'
             )
         ) {
             return;
         }
 
-        const isImageClick = target.closest('.geodir-category-img-wrap');
+        const mediaClick = target.closest(
+            '.geodir-category-img-wrap, .swiper-slide-video'
+        );
         const isTitleClick = target.closest('.title-sin_map a');
-        if (!isImageClick && !isTitleClick) return;
+
+        if (!mediaClick && !isTitleClick) return;
 
         e.preventDefault();
-        const modal = document.getElementById('listingModal');
-        modal.style.display = 'block';
 
-        setTimeout(() => {
-            const containerEl = modal.querySelector(
-                '.listing-inner-slider.swiper-container'
-            );
-            const nextEl =
-                modal.querySelector('.ss-slider-cont-next');
-            const prevEl =
-                modal.querySelector('.ss-slider-cont-prev');
-            const counter = modal.querySelector('.counter-text');
+        let clickedSlideEl = null;
+        let clickedMediaEl = null;
 
-            if (window.modalSwiper?.destroy) {
-                window.modalSwiper.destroy(true, true);
-            }
+        if (mediaClick) {
+            clickedSlideEl = mediaClick.closest('.swiper-slide') || null;
+            clickedMediaEl = mediaClick.querySelector('img, video') || mediaClick;
+        }
 
-            window.modalSwiper = new Swiper(containerEl, {
-                slidesPerView: 1,
-                loop: true,
-                autoHeight: false,
-
-                allowTouchMove: false,
-                simulateTouch: false,
-                keyboard: false,
-                mousewheel: false,
-                noSwiping: true,
-                noSwipingClass: 'swiper-no-swiping',
-                touchRatio: 0,
-                followFinger: false,
-
-                navigation: { nextEl, prevEl },
-
-                on: {
-                    init() {
-                        const totalSlides =
-                            this.slides.length -
-                            this.loopedSlides * 2;
-                        counter.textContent = `${this.realIndex + 1}/${totalSlides}`;
-                    },
-                    slideChange() {
-                        const totalSlides =
-                            this.slides.length -
-                            this.loopedSlides * 2;
-                        counter.textContent = `${this.realIndex + 1}/${totalSlides}`;
-                    },
-                },
-            });
-        }, 100);
+        openListingModalFromItem(item, { clickedSlideEl, clickedMediaEl });
     });
 });
 
@@ -636,21 +945,6 @@ function fixAllMobileIds(container) {
 }
 
 // 3. Mobile-only behavior (multiselect, toggles, numbers, date)
-function initMobileBehaviors(container) {
-    // NUMBER INPUT ARROWS
-    container.querySelectorAll(".custom-number-input").forEach(wrap => {
-        const input = wrap.querySelector("input[type='number']");
-        wrap.querySelector(".arrow.up")?.addEventListener("click", () => input.stepUp());
-        wrap.querySelector(".arrow.down")?.addEventListener("click", () => input.stepDown());
-    });
-
-    // DATE PICKERS for all cloned pairs inside mobile panel
-    if (typeof window.initDatePair === "function") {
-        $(container).find(".date-range-pair").each(function () {
-            window.initDatePair($(this));
-        });
-    }
-}
 function initMobileBehaviors(container) {
     // NUMBER INPUT ARROWS
     container.querySelectorAll(".custom-number-input").forEach(wrap => {
