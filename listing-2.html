@@ -26,6 +26,7 @@
     <!--=============== favicons ===============-->
     <link rel="shortcut icon" href="images/favicon.ico" />
   </head>
+
   <body>
     <!--loader-->
     <div class="loader-wrap">
@@ -978,8 +979,9 @@
             </div>
             <!-- Filters Row End -->
           </div>
+          <div class="mt-4pc"></div>
           <!-- Map -->
-          <div class="map-container fw-map big_map hid-mob-map vh95 mt-4pc">
+          <div class="map-container fw-map big_map hid-mob-map vh95">
             <div id="map-main"></div>
             <ul class="mapnavigation no-list-style">
               <li>
@@ -1767,16 +1769,20 @@
                                     >
                                       <video
                                         class="listing-video"
-                                        controls
                                         preload="metadata"
                                         playsinline
                                         poster="images/ferrari2.jpg"
                                       >
                                         <source
-                                          src="videos/ferrari.mp4"
+                                          src="video/2.mp4"
                                           type="video/mp4"
                                         />
                                       </video>
+
+                                      <!-- big centered play icon -->
+                                      <span class="video-play-overlay">
+                                        <i class="fal fa-play"></i>
+                                      </span>
                                     </div>
                                   </div>
                                 </div>
@@ -2527,20 +2533,28 @@
                                       <img src="images/ferrari2.jpg" alt="" />
                                     </a>
                                   </div>
-                                  <div class="swiper-slide swiper-slide-video">
+                                  <div
+                                    class="swiper-slide swiper-slide-video"
+                                    data-video-slide="true"
+                                  >
                                     <div
                                       class="geodir-category-img-wrap fl-wrap"
                                     >
-                                      <div class="video-wrapper">
-                                        <iframe
-                                          src="https://www.youtube.com/embed/Eg3zhzWzlck?si=3uzehkYaKWIa9sEF"
-                                          title="YouTube video player"
-                                          frameborder="0"
-                                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                          allowfullscreen
-                                        >
-                                        </iframe>
-                                      </div>
+                                      <video
+                                        class="listing-video"
+                                        preload="metadata"
+                                        playsinline
+                                        poster="images/ferrari2.jpg"
+                                      >
+                                        <source
+                                          src="video/2.mp4"
+                                          type="video/mp4"
+                                        />
+                                      </video>
+
+                                      <span class="video-play-overlay">
+                                        <i class="fal fa-play"></i>
+                                      </span>
                                     </div>
                                   </div>
                                 </div>
@@ -4885,6 +4899,388 @@
           </div>
         </div>
       </div>
+
+      <!-- Off-Canvas More Filters Panel -->
+      <div id="moreFiltersPanel" class="offcanvas-panel">
+        <div class="offcanvas-header">
+          <h3>Φίλτρα</h3>
+          <button id="closeMoreFilters" class="close-btn">
+            <i class="fal fa-times"></i>
+          </button>
+        </div>
+
+        <div class="offcanvas-content">
+          <h3 class="filter-section-title">Ενότητα 1</h3>
+
+          <!-- Τι ψάχνετε -->
+          <div class="listsearch-input-item">
+            <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
+            <input
+              type="text"
+              name="keyword"
+              placeholder="Τι ψάχνετε;"
+              value=""
+            />
+          </div>
+
+          <!-- Μάρκα -->
+          <div class="listsearch-input-item">
+            <select
+              name="brand"
+              data-placeholder="Μάρκα"
+              class="chosen-select no-search-select"
+            >
+              <option value="" selected>Μάρκα</option>
+              <option value="alfa-romeo">Alfa Romeo</option>
+              <option value="audi">Audi</option>
+              <option value="bmw">BMW</option>
+              <option value="chevrolet">Chevrolet</option>
+              <option value="citroen">Citroën</option>
+              <option value="dacia">Dacia</option>
+              <option value="fiat">Fiat</option>
+              <option value="ford">Ford</option>
+              <option value="honda">Honda</option>
+              <option value="hyundai">Hyundai</option>
+              <option value="kia">Kia</option>
+              <option value="mercedes-benz">Mercedes-Benz</option>
+              <option value="nissan">Nissan</option>
+              <option value="opel">Opel</option>
+              <option value="peugeot">Peugeot</option>
+              <option value="renault">Renault</option>
+              <option value="seat">Seat</option>
+              <option value="skoda">Skoda</option>
+              <option value="toyota">Toyota</option>
+              <option value="volkswagen">Volkswagen</option>
+            </select>
+          </div>
+
+          <!-- Προσφορά / Ζήτηση -->
+          <div class="listsearch-input-item">
+            <select
+              name="offer_demand"
+              data-placeholder="Προσφορά / Ζήτηση"
+              class="chosen-select no-search-select"
+              required
+            >
+              <option value="" disabled selected hidden>
+                Προσφορά / Ζήτηση
+              </option>
+              <option value="offer">Προσφορά</option>
+              <option value="demand">Ζήτηση</option>
+              <option value="exchange">Ανταλλάσσεται</option>
+              <option value="antiparoxi">Δίνεται με αντιπαροχή</option>
+              <option value="service">Παροχή Υπηρεσιών</option>
+            </select>
+          </div>
+
+          <!-- Custom multiselect -->
+          <div class="listsearch-input-item custom-multiselect">
+            <div class="select-box border_gre1">
+              <span class="selected-text" data-placeholder="Πρόθεση"
+                >Πρόθεση</span
+              >
+            </div>
+            <div class="dropdown-options">
+              <label
+                ><input
+                  type="checkbox"
+                  name="extra_options[]"
+                  value="Popularity"
+                />
+                Popularity</label
+              >
+              <label
+                ><input type="checkbox" name="extra_options[]" value="Rating" />
+                Rating</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="extra_options[]"
+                  value="Price: Low to High"
+                />
+                Price: Low to High</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="extra_options[]"
+                  value="Price: High to Low"
+                />
+                Price: High to Low</label
+              >
+              <label
+                ><input type="checkbox" name="extra_options[]" value="check1" />
+                check1</label
+              >
+              <label
+                ><input type="checkbox" name="extra_options[]" value="check2" />
+                check2</label
+              >
+              <label
+                ><input type="checkbox" name="extra_options[]" value="check3" />
+                check3</label
+              >
+              <label
+                ><input type="checkbox" name="extra_options[]" value="check4" />
+                check4</label
+              >
+              <label
+                ><input type="checkbox" name="extra_options[]" value="check5" />
+                check5</label
+              >
+              <label
+                ><input type="checkbox" name="extra_options[]" value="check6" />
+                check6</label
+              >
+              <label
+                ><input type="checkbox" name="extra_options[]" value="check7" />
+                check7</label
+              >
+              <label
+                ><input type="checkbox" name="extra_options[]" value="check8" />
+                check8</label
+              >
+              <label
+                ><input type="checkbox" name="extra_options[]" value="check9" />
+                check9</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="extra_options[]"
+                  value="check10"
+                />
+                check10</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="extra_options[]"
+                  value="check11"
+                />
+                check11</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="extra_options[]"
+                  value="check12"
+                />
+                check12</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="extra_options[]"
+                  value="check13"
+                />
+                check13</label
+              >
+            </div>
+          </div>
+
+          <h3 class="filter-section-title">Ενότητα 2</h3>
+
+          <!-- Εγγύηση -->
+          <div class="listsearch-input-item">
+            <button class="toggle-filter-btn tsb_act">
+              <i class="fal fa-clock display-n"></i>
+              <span>Εγγύηση</span>
+            </button>
+            <input type="hidden" name="open_now" value="false" />
+          </div>
+
+          <!-- Τρακαρισμένο -->
+          <div class="act-widget fl-wrap">
+            <div class="act-widget-header">
+              <h4>Τρακαρισμένο</h4>
+              <div class="onoffswitch">
+                <label class="onoffswitch-label">
+                  <input
+                    type="checkbox"
+                    name="onoffswitch_canvas"
+                    class="onoffswitch-checkbox"
+                    value="1"
+                  />
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="filter-section-title">Ενότητα 3</h3>
+
+          <!-- === Price Filter === -->
+          <div class="listsearch-input-item clact mb-0">
+            <h4 class="filter-title-inline">Τιμή</h4>
+
+            <div class="range-year-group">
+              <!-- Από -->
+              <div class="custom-number-input">
+                <input
+                  type="number"
+                  name="price_min"
+                  min="0"
+                  max="9999999"
+                  placeholder="Από"
+                />
+                <div class="number-controls">
+                  <button type="button" class="arrow up">
+                    <i class="fal fa-chevron-up"></i>
+                  </button>
+                  <button type="button" class="arrow down">
+                    <i class="fal fa-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Έως -->
+              <div class="custom-number-input">
+                <input
+                  type="number"
+                  name="price_max"
+                  min="0"
+                  max="9999999"
+                  placeholder="Έως"
+                />
+                <div class="number-controls">
+                  <button type="button" class="arrow up">
+                    <i class="fal fa-chevron-up"></i>
+                  </button>
+                  <button type="button" class="arrow down">
+                    <i class="fal fa-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- === Year of Manufacture Filter === -->
+          <div class="listsearch-input-item clact">
+            <h4 class="filter-title-inline">Έτος Κατασκευής</h4>
+
+            <div class="date-range-pair">
+              <div class="date-container">
+                <span class="iconn-dec"><i class="fal fa-calendar"></i></span>
+                <input
+                  type="text"
+                  name="datepicker-from-canvas"
+                  placeholder="Από"
+                />
+                <span class="clear-singleinput"
+                  ><i class="fal fa-times"></i
+                ></span>
+              </div>
+
+              <span class="date-separator"></span>
+
+              <div class="date-container">
+                <span class="iconn-dec"><i class="fal fa-calendar"></i></span>
+                <input
+                  type="text"
+                  name="datepicker-to-canvas"
+                  placeholder="Έως"
+                />
+                <span class="clear-singleinput"
+                  ><i class="fal fa-times"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- === Fuel Type Filter === -->
+          <div class="listsearch-input-item clact">
+            <h4 class="filter-title-inline">Τύπος Καυσίμου</h4>
+            <div class="fl-wrap filter-tags">
+              <ul class="no-list-style">
+                <li>
+                  <input
+                    id="check-aa"
+                    type="checkbox"
+                    name="fuel_type[]"
+                    value="nitro"
+                  />
+                  <label for="check-aa">Nitro</label>
+                </li>
+                <li>
+                  <input
+                    id="check-b"
+                    type="checkbox"
+                    name="fuel_type[]"
+                    value="lpg"
+                  />
+                  <label for="check-b">Υγραερίου</label>
+                </li>
+                <li>
+                  <input
+                    id="check-c"
+                    type="checkbox"
+                    name="fuel_type[]"
+                    value="petrol"
+                    checked
+                  />
+                  <label for="check-c">Βενζίνης</label>
+                </li>
+                <li>
+                  <input
+                    id="check-d"
+                    type="checkbox"
+                    name="fuel_type[]"
+                    value="electric"
+                  />
+                  <label for="check-d">Μπαταρίας</label>
+                </li>
+                <li>
+                  <input
+                    id="check-d2"
+                    type="checkbox"
+                    name="fuel_type[]"
+                    value="diesel"
+                    checked
+                  />
+                  <label for="check-d2">Πετρελαίου</label>
+                </li>
+                <li>
+                  <input
+                    id="check-d3"
+                    type="checkbox"
+                    name="fuel_type[]"
+                    value="hybrid"
+                    checked
+                  />
+                  <label for="check-d3">Υβριδικό</label>
+                </li>
+                <li>
+                  <input
+                    id="check-d4"
+                    type="checkbox"
+                    name="fuel_type[]"
+                    value="no-fuel"
+                  />
+                  <label for="check-d4">Χωρίς Καύσιμο</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="offcanvasOverlay" class="offcanvas-overlay"></div>
+      <!-- MOBILE OFFCANVAS -->
+      <div id="mobileFiltersPanel" class="offcanvas-panel mobile-only">
+        <div class="offcanvas-header">
+          <h3>Φίλτρα</h3>
+          <button id="closeMobileFilters" class="close-btn">
+            <i class="fal fa-times"></i>
+          </button>
+        </div>
+        <div class="offcanvas-content" id="mobileFiltersContent">
+          <!-- Εδώ θα μπει ΔΥΝΑΜΙΚΑ ΟΛΟ το περιεχόμενο -->
+        </div>
+      </div>
+
       <a class="to-top"><i class="fas fa-caret-up"></i></a>
     </div>
     <!-- Main end -->
