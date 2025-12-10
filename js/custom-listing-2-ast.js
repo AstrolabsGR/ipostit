@@ -526,22 +526,47 @@ document.querySelectorAll('.listing-item').forEach((item) => {
 });
 
 // Close modal
-const modal = document.getElementById('listingModal');
-const closeBtn = modal.querySelector('.listing-modal-close');
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('listingModal');
+    if (!modal) return;
 
-closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none';
-    modalSwiper?.destroy?.(true, true);
-    modalSwiper = null;
-});
+    const closeBtn = modal.querySelector('.listing-modal-close');
 
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
+    function stopAllModalMedia() {
+        // Pause & reset any HTML5 <video> in the modal
+        modal.querySelectorAll('video').forEach((v) => {
+            try {
+                v.pause();
+                v.currentTime = 0;
+            } catch (e) {}
+        });
+
+        // Stop any <iframe> (e.g. YouTube) by resetting its src
+        modal.querySelectorAll('iframe').forEach((frame) => {
+            const src = frame.getAttribute('src');
+            if (src) {
+                frame.setAttribute('src', src);
+            }
+        });
+    }
+
+    closeBtn?.addEventListener('click', () => {
+        stopAllModalMedia();
         modal.style.display = 'none';
         modalSwiper?.destroy?.(true, true);
         modalSwiper = null;
-    }
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            stopAllModalMedia();
+            modal.style.display = 'none';
+            modalSwiper?.destroy?.(true, true);
+            modalSwiper = null;
+        }
+    });
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
     // Desktop
