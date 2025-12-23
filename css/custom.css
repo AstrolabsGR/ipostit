@@ -6108,3 +6108,16 @@ body.page-extra-filters .custom-form-ast .ef-box .row > [class*="col-"] > label 
     line-height: 1 !important;
   }
 }
+
+body.page-extra-filters .custom-form-ast .custom-multiselect .dropdown-options > label{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0 4px 10px;
+  font-size: 12px;
+  color: #7d93b2;
+  min-height: 40px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-weight: 400;
+}
