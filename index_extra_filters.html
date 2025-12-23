@@ -1,0 +1,2382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=============== basic  ===============-->
+    <meta charset="UTF-8" />
+    <title>Ipostit.gr - Extra Filters</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!--=============== css  ===============-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">-->
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="css/plugins.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/color.css" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" />
+    <!--=============== favicons ===============-->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="page-extra-filters">
+    <!--loader-->
+    <div class="loader-wrap">
+      <div class="loader-inner">
+        <div class="loader-inner-cirle"></div>
+      </div>
+    </div>
+    <!--loader end-->
+    <!-- main start  -->
+    <div id="main">
+      <!-- header -->
+      <header class="main-header">
+        <!-- logo-->
+        <a href="#" class="logo-holder"
+          ><img src="images/ipostit_logo.png" alt=""
+        /></a>
+        <!-- logo end-->
+        <!-- header opt -->
+        <a href="dashboard-add-listing.html" class="add-list color-bg-red"
+          >Καταχώρισε μια αγγελία</a
+        >
+        <a href="dashboard-add-listing.html" class="add-list color-bg m-0">
+          <img
+            src="/images/button-ico-header.png"
+            alt="Icon"
+            class="btn-icon"
+          />
+          Αγορά Εφημερίδας
+        </a>
+        <div
+          class="cart-btn show-header-modal"
+          data-microtip-position="bottom"
+          role="tooltip"
+          aria-label="Your Wishlist"
+        >
+          <i class="fal fa-heart"></i><span class="cart-counter red-bg"></span>
+        </div>
+        <div
+          class="show-reg-form modal-open avatar-img"
+          data-srcav="images/avatar/3.jpg"
+        >
+          <span class="lang-icon"
+            ><img
+              src="/images/user-ico.png"
+              alt=""
+              style="margin-bottom: 2px" /></span
+          >Sign In
+        </div>
+        <!-- header opt end-->
+        <!-- lang-wrap-->
+        <div class="lang-wrap">
+          <div class="show-lang">
+            <span
+              ><img
+                src="images/lang-ico.png"
+                alt=""
+                style="margin-bottom: 1px"
+              /><strong>Gr</strong></span
+            ><i class="fa fa-caret-down arrlan"></i>
+          </div>
+          <ul class="lang-tooltip lang-action no-list-style">
+            <li><a href="#" class="current-lan" data-lantext="Gr">Greek</a></li>
+            <li><a href="#" data-lantext="En">English</a></li>
+            <!--<li><a href="#" data-lantext="Fr">Franais</a></li>-->
+            <!--<li><a href="#" data-lantext="Es">Espaol</a></li>-->
+            <!--<li><a href="#" data-lantext="De">Deutsch</a></li>-->
+          </ul>
+        </div>
+        <!-- lang-wrap end-->
+        <!-- nav-button-wrap-->
+        <div class="nav-button-wrap color-bg">
+          <div class="nav-button"><span></span><span></span><span></span></div>
+        </div>
+        <!-- nav-button-wrap end-->
+        <!--  navigation -->
+        <div class="nav-holder main-menu">
+          <nav>
+            <ul class="no-list-style">
+              <li>
+                <a href="#" class="act-link"
+                  >Έντυπά Μέσα <i class="fa fa-caret-down"></i
+                ></a>
+                <!--second level -->
+                <ul>
+                  <li><a href="index.html">Parallax Image</a></li>
+                  <li><a href="index2.html">Slider</a></li>
+                  <li><a href="index3.html">Slideshow</a></li>
+                  <li><a href="index4.html">Video</a></li>
+                  <li><a href="index5.html">Map</a></li>
+                  <li>
+                    <a href="rtl/index.html" target="_blank">RTL Version</a>
+                  </li>
+                </ul>
+                <!--second level end-->
+              </li>
+              <li>
+                <a href="#">Menu 1 <i class="fa fa-caret-down"></i></a>
+                <!--second level -->
+                <ul>
+                  <li><a href="listing.html">Column map</a></li>
+                  <li><a href="listing2.html">Column map 2</a></li>
+                  <li><a href="listing3.html">Fullwidth Map</a></li>
+                  <li><a href="listing4.html">Fullwidth Map 2</a></li>
+                  <li><a href="listing5.html">Without Map</a></li>
+                  <li><a href="listing6.html">Without Map 2</a></li>
+                  <li>
+                    <a href="#">Single <i class="fa fa-caret-down"></i></a>
+                    <!--third  level  -->
+                    <ul>
+                      <li><a href="listing-single.html">Style 1</a></li>
+                      <li><a href="listing-single2.html">Style 2</a></li>
+                      <li><a href="listing-single3.html">Style 3</a></li>
+                      <li><a href="listing-single4.html">Style 4</a></li>
+                    </ul>
+                    <!--third  level end-->
+                  </li>
+                </ul>
+                <!--second level end-->
+              </li>
+              <li>
+                <a href="blog.html">Menu 2</a>
+              </li>
+              <li>
+                <a href="#">Menu 3 <i class="fa fa-caret-down"></i></a>
+                <!--second level -->
+                <ul>
+                  <li>
+                    <a href="#">Shop<i class="fa fa-caret-down"></i></a>
+                    <!--third  level  -->
+                    <ul>
+                      <li><a href="shop.html">Products</a></li>
+                      <li><a href="product-single.html">Product single</a></li>
+                      <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                    <!--third  level end-->
+                  </li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                  <li><a href="author-single.html">User single</a></li>
+                  <li><a href="help.html">How it Works</a></li>
+                  <li><a href="booking.html">Booking</a></li>
+                  <li><a href="pricing-tables.html">Pricing</a></li>
+                  <li><a href="dashboard.html">User Dasboard</a></li>
+                  <li><a href="blog-single.html">Blog Single</a></li>
+                  <li><a href="dashboard-add-listing.html">Add Listing</a></li>
+                  <li><a href="invoice.html">Invoice</a></li>
+                  <li><a href="login-sign.html">login Sign</a></li>
+                  <li><a href="404.html">404</a></li>
+                </ul>
+                <!--second level end-->
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- navigation  end -->
+        <!-- header-search_container -->
+        <div class="header-search_container header-search vis-search">
+          <div class="container small-container">
+            <div class="header-search-input-wrap fl-wrap">
+              <!-- header-search-input -->
+              <div class="header-search-input">
+                <label><i class="fal fa-keyboard"></i></label>
+                <input
+                  type="text"
+                  placeholder="What are you looking for ?"
+                  value=""
+                />
+              </div>
+              <!-- header-search-input end -->
+              <!-- header-search-input -->
+              <div class="header-search-input location autocomplete-container">
+                <label><i class="fal fa-map-marker"></i></label>
+                <input
+                  type="text"
+                  placeholder="Location..."
+                  class="autocomplete-input"
+                  id="autocompleteid2"
+                  value=""
+                />
+                <a href="#"><i class="fal fa-dot-circle"></i></a>
+              </div>
+              <!-- header-search-input end -->
+              <!-- header-search-input -->
+              <div class="header-search-input header-search_selectinpt">
+                <select
+                  data-placeholder="Category"
+                  class="chosen-select no-radius"
+                >
+                  <option>All Categories</option>
+                  <option>All Categories</option>
+                  <option>Shops</option>
+                  <option>Hotels</option>
+                  <option>Restaurants</option>
+                  <option>Fitness</option>
+                  <option>Events</option>
+                </select>
+              </div>
+              <!-- header-search-input end -->
+              <button
+                class="header-search-button red-bg"
+                onclick="window.location.href='listing.html'"
+              >
+                <i class="far fa-search"></i> Search
+              </button>
+            </div>
+            <div class="header-search_close color-bg">
+              <i class="fal fa-long-arrow-up"></i>
+            </div>
+          </div>
+        </div>
+        <!-- header-search_container  end -->
+        <!-- wishlist-wrap-->
+        <div class="header-modal novis_wishlist">
+          <!-- header-modal-container-->
+          <div
+            class="header-modal-container scrollbar-inner fl-wrap"
+            data-simplebar=""
+          >
+            <!--widget-posts-->
+            <div class="widget-posts fl-wrap">
+              <ul class="no-list-style">
+                <li>
+                  <div class="widget-posts-img">
+                    <a href="listing-single.html"
+                      ><img src="images/gallery/thumbnail/1.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="widget-posts-descr">
+                    <h4><a href="listing-single.html">Iconic Cafe</a></h4>
+                    <div class="geodir-category-location fl-wrap">
+                      <a href="#"
+                        ><i class="fas fa-map-marker-alt"></i> 40 Journal Square
+                        Plaza, NJ, USA</a
+                      >
+                    </div>
+                    <div class="widget-posts-descr-link">
+                      <a href="listing.html">Restaurants </a>
+                      <a href="listing.html">Cafe</a>
+                    </div>
+                    <div class="widget-posts-descr-score">4.1</div>
+                    <div class="clear-wishlist">
+                      <i class="fal fa-times-circle"></i>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="widget-posts-img">
+                    <a href="listing-single.html"
+                      ><img src="images/gallery/thumbnail/2.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="widget-posts-descr">
+                    <h4><a href="listing-single.html">MontePlaza Hotel</a></h4>
+                    <div class="geodir-category-location fl-wrap">
+                      <a href="#"
+                        ><i class="fas fa-map-marker-alt"></i> 70 Bright St New
+                        York, USA
+                      </a>
+                    </div>
+                    <div class="widget-posts-descr-link">
+                      <a href="listing.html">Hotels </a>
+                    </div>
+                    <div class="widget-posts-descr-score">5.0</div>
+                    <div class="clear-wishlist">
+                      <i class="fal fa-times-circle"></i>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="widget-posts-img">
+                    <a href="listing-single.html"
+                      ><img src="images/gallery/thumbnail/3.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="widget-posts-descr">
+                    <h4>
+                      <a href="listing-single.html"
+                        >Rocko Band in Marquee Club</a
+                      >
+                    </h4>
+                    <div class="geodir-category-location fl-wrap">
+                      <a href="#"
+                        ><i class="fas fa-map-marker-alt"></i>75 Prince St, NY,
+                        USA</a
+                      >
+                    </div>
+                    <div class="widget-posts-descr-link">
+                      <a href="listing.html">Events</a>
+                    </div>
+                    <div class="widget-posts-descr-score">4.2</div>
+                    <div class="clear-wishlist">
+                      <i class="fal fa-times-circle"></i>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="widget-posts-img">
+                    <a href="listing-single.html"
+                      ><img src="images/gallery/thumbnail/4.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="widget-posts-descr">
+                    <h4>
+                      <a href="listing-single.html">Premium Fitness Gym</a>
+                    </h4>
+                    <div class="geodir-category-location fl-wrap">
+                      <a href="#"
+                        ><i class="fas fa-map-marker-alt"></i> W 85th St, New
+                        York, USA</a
+                      >
+                    </div>
+                    <div class="widget-posts-descr-link">
+                      <a href="listing.html">Fitness</a>
+                      <a href="listing.html">Gym</a>
+                    </div>
+                    <div class="widget-posts-descr-score">5.0</div>
+                    <div class="clear-wishlist">
+                      <i class="fal fa-times-circle"></i>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- widget-posts end-->
+          </div>
+          <!-- header-modal-container end-->
+          <div class="header-modal-top fl-wrap">
+            <h4>
+              Your Wishlist : <span><strong></strong> Locations</span>
+            </h4>
+            <div class="close-header-modal"><i class="far fa-times"></i></div>
+          </div>
+        </div>
+        <!--wishlist-wrap end -->
+      </header>
+      <!-- header end-->
+      <!-- wrapper-->
+      <div id="wrapper">
+        <!-- content-->
+        <div class="content">
+          <!--section  -->
+          <section
+            class="hero-section extra-filters-hero"
+            data-scrollax-parent="true"
+          >
+            <div class="bg-tabs-wrap">
+              <div
+                class="bg-parallax-wrap"
+                data-scrollax="properties: { translateY: '200px' }"
+              >
+                <div
+                  class="bg bg_tabs bg_tabs-blue"
+                  data-bg="images/ipost_hero.png"
+                ></div>
+                <div class="overlay op7"></div>
+              </div>
+            </div>
+          </section>
+          <!--section end-->
+
+          <!--section  -->
+          <section class="gray-bg small-padding">
+            <div class="container">
+              <div class="extra-filters-wrap">
+                <div class="ef-section-head">
+                  <h2>Αναζήτηση αυτοκινήτων</h2>
+                </div>
+
+                <form
+                  class="custom-form-ast no-icons"
+                  action="listing-2.html"
+                  method="get"
+                >
+                  <!-- Κατηγορία οχήματος -->
+                  <div class="block_box fl-wrap ef-box">
+                    <label>Κατηγορία οχήματος</label>
+                    <select
+                      name="vehicle_category"
+                      class="chosen-select no-search-select"
+                      data-placeholder="Επιλέξτε κατηγορία"
+                    >
+                      <option value="">Επιλέξτε κατηγορία</option>
+                      <option value="car">Αυτοκίνητο</option>
+                      <option value="suv">SUV / 4x4</option>
+                      <option value="van">Van</option>
+                      <option value="pickup">Pickup</option>
+                    </select>
+                  </div>
+
+                  <!-- Βασικά χαρακτηριστικά -->
+                  <div class="ef-section-head">
+                    <h2>Βασικά χαρακτηριστικά</h2>
+                  </div>
+                  <div class="block_box fl-wrap ef-box">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label>Τύπος αγγελίας</label>
+                        <div class="listsearch-input-item custom-multiselect">
+                          <div class="select-box">
+                            <span
+                              class="selected-text"
+                              data-placeholder="Πρόθεση"
+                              >Πρόθεση</span
+                            >
+                          </div>
+                          <div class="dropdown-options">
+                            <label
+                              ><input type="checkbox" value="Popularity" />
+                              Popularity</label
+                            >
+                            <label
+                              ><input type="checkbox" value="Rating" />
+                              Rating</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: Low to High"
+                              />
+                              Price: Low to High</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: High to Low"
+                              />
+                              Price: High to Low</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check1" />
+                              check1</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check2" />
+                              check2</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check3" />
+                              check3</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check4" />
+                              check4</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check5" />
+                              check5</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check6" />
+                              check6</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check7" />
+                              check7</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check8" />
+                              check8</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check9" />
+                              check9</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check10" />
+                              check10</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check11" />
+                              check11</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check12" />
+                              check12</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check13" />
+                              check13</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label style="opacity: 0">Μεταχειρισμένο</label>
+                        <div class="ef-switch-field">
+                          <span class="ef-switch-label">Yes/No Filter</span>
+                          <div class="onoffswitch onoffswitch--textfit">
+                            <input
+                              type="checkbox"
+                              class="onoffswitch-checkbox"
+                              id="ef-used"
+                              name="is_used"
+                            />
+                            <label class="onoffswitch-label mb-0" for="ef-used">
+                              <span class="onoffswitch-inner"></span>
+                              <span class="onoffswitch-switch"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 14px">
+                      <div class="col-md-4">
+                        <label>Μάρκα</label>
+                        <select
+                          name="make"
+                          class="chosen-select no-search-select"
+                        >
+                          <option value="">Επιλέξτε</option>
+                          <option value="toyota">Toyota</option>
+                          <option value="vw">Volkswagen</option>
+                          <option value="bmw">BMW</option>
+                          <option value="mercedes">Mercedes</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Μοντέλο</label>
+                        <select
+                          name="model"
+                          class="chosen-select no-search-select"
+                        >
+                          <option value="">Επιλέξτε</option>
+                          <option value="model1">Model 1</option>
+                          <option value="model2">Model 2</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Τιμή / έκδοση</label>
+                        <input
+                          type="text"
+                          name="price_trim"
+                          placeholder="Type here"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 14px">
+                      <div class="col-md-4">
+                        <label>Χρονολογία</label>
+                        <div class="row" style="margin: 0 -7px">
+                          <div
+                            class="col-xs-6"
+                            style="padding: 0 7px; position: relative"
+                          >
+                            <input
+                              type="text"
+                              name="year_from"
+                              placeholder="Από"
+                              autocomplete="off"
+                              inputmode="numeric"
+                              maxlength="4"
+                            />
+                            <span class="clear-singleinput"
+                              ><i class="fal fa-times"></i
+                            ></span>
+                          </div>
+
+                          <div
+                            class="col-xs-6"
+                            style="padding: 0 7px; position: relative"
+                          >
+                            <input
+                              type="text"
+                              name="year_to"
+                              placeholder="Έως"
+                              autocomplete="off"
+                              inputmode="numeric"
+                              maxlength="4"
+                            />
+                            <span class="clear-singleinput"
+                              ><i class="fal fa-times"></i
+                            ></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Χιλιόμετρα</label>
+                        <input
+                          type="text"
+                          name="mileage"
+                          placeholder="Type here"
+                        />
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Ιστορικό</label>
+                        <div class="listsearch-input-item">
+                          <button
+                            type="button"
+                            class="toggle-filter-btn tsb_act mt-0"
+                          >
+                            <i class="fal fa-clock display-n"></i>
+                            <span>Εγγύηση</span>
+                          </button>
+                          <input type="hidden" name="warranty" value="false" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Χαρακτηριστικά κινητήρα -->
+                  <div class="ef-section-head">
+                    <h2>Χαρακτηριστικά κινητήρα</h2>
+                  </div>
+                  <div class="block_box fl-wrap ef-box">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label>Καύσιμο</label>
+                        <select
+                          name="fuel"
+                          class="chosen-select no-search-select"
+                        >
+                          <option value="">Επιλέξτε</option>
+                          <option value="petrol">Βενζίνη</option>
+                          <option value="diesel">Πετρέλαιο</option>
+                          <option value="hybrid">Hybrid</option>
+                          <option value="electric">Ηλεκτρικό</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Κυβικά</label>
+                        <input type="text" name="cc" placeholder="Type here" />
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Ιπποδύναμη</label>
+                        <input type="text" name="hp" placeholder="Type here" />
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 14px">
+                      <div class="col-md-4">
+                        <label>Ταχύτητα</label>
+                        <div class="listsearch-input-item custom-multiselect">
+                          <div class="select-box">
+                            <span
+                              class="selected-text"
+                              data-placeholder="Πρόθεση"
+                              >Πρόθεση</span
+                            >
+                          </div>
+                          <div class="dropdown-options">
+                            <label
+                              ><input type="checkbox" value="Popularity" />
+                              Popularity</label
+                            >
+                            <label
+                              ><input type="checkbox" value="Rating" />
+                              Rating</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: Low to High"
+                              />
+                              Price: Low to High</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: High to Low"
+                              />
+                              Price: High to Low</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check1" />
+                              check1</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check2" />
+                              check2</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check3" />
+                              check3</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check4" />
+                              check4</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check5" />
+                              check5</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check6" />
+                              check6</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check7" />
+                              check7</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check8" />
+                              check8</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check9" />
+                              check9</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check10" />
+                              check10</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check11" />
+                              check11</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check12" />
+                              check12</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check13" />
+                              check13</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Κίνηση τροχών</label>
+                        <div class="listsearch-input-item custom-multiselect">
+                          <div class="select-box">
+                            <span
+                              class="selected-text"
+                              data-placeholder="Πρόθεση"
+                              >Πρόθεση</span
+                            >
+                          </div>
+                          <div class="dropdown-options">
+                            <label
+                              ><input type="checkbox" value="Popularity" />
+                              Popularity</label
+                            >
+                            <label
+                              ><input type="checkbox" value="Rating" />
+                              Rating</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: Low to High"
+                              />
+                              Price: Low to High</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: High to Low"
+                              />
+                              Price: High to Low</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check1" />
+                              check1</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check2" />
+                              check2</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check3" />
+                              check3</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check4" />
+                              check4</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check5" />
+                              check5</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check6" />
+                              check6</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check7" />
+                              check7</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check8" />
+                              check8</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check9" />
+                              check9</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check10" />
+                              check10</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check11" />
+                              check11</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check12" />
+                              check12</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check13" />
+                              check13</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Κλάση ρύπων</label>
+                        <div class="listsearch-input-item custom-multiselect">
+                          <div class="select-box">
+                            <span
+                              class="selected-text"
+                              data-placeholder="Πρόθεση"
+                              >Πρόθεση</span
+                            >
+                          </div>
+                          <div class="dropdown-options">
+                            <label
+                              ><input type="checkbox" value="Popularity" />
+                              Popularity</label
+                            >
+                            <label
+                              ><input type="checkbox" value="Rating" />
+                              Rating</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: Low to High"
+                              />
+                              Price: Low to High</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: High to Low"
+                              />
+                              Price: High to Low</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check1" />
+                              check1</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check2" />
+                              check2</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check3" />
+                              check3</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check4" />
+                              check4</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check5" />
+                              check5</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check6" />
+                              check6</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check7" />
+                              check7</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check8" />
+                              check8</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check9" />
+                              check9</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check10" />
+                              check10</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check11" />
+                              check11</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check12" />
+                              check12</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check13" />
+                              check13</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Εξωτερικά χαρακτηριστικά -->
+                  <div class="ef-section-head">
+                    <h2>Εξωτερικά χαρακτηριστικά</h2>
+                  </div>
+                  <div class="block_box fl-wrap ef-box">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label>Χρώμα</label>
+                        <select
+                          name="color"
+                          class="chosen-select no-search-select"
+                        >
+                          <option value="">Επιλέξτε</option>
+                          <option value="black">Μαύρο</option>
+                          <option value="white">Λευκό</option>
+                          <option value="silver">Ασημί</option>
+                          <option value="blue">Μπλε</option>
+                        </select>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Πόρτες</label>
+                        <div class="listsearch-input-item custom-multiselect">
+                          <div class="select-box">
+                            <span
+                              class="selected-text"
+                              data-placeholder="Πρόθεση"
+                              >Πρόθεση</span
+                            >
+                          </div>
+                          <div class="dropdown-options">
+                            <label
+                              ><input type="checkbox" value="Popularity" />
+                              Popularity</label
+                            >
+                            <label
+                              ><input type="checkbox" value="Rating" />
+                              Rating</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: Low to High"
+                              />
+                              Price: Low to High</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: High to Low"
+                              />
+                              Price: High to Low</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check1" />
+                              check1</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check2" />
+                              check2</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check3" />
+                              check3</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check4" />
+                              check4</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check5" />
+                              check5</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check6" />
+                              check6</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check7" />
+                              check7</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check8" />
+                              check8</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check9" />
+                              check9</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check10" />
+                              check10</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check11" />
+                              check11</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check12" />
+                              check12</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check13" />
+                              check13</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Μέγεθος ζάντας</label>
+                        <input
+                          type="text"
+                          name="rim_size"
+                          placeholder="Type here"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Εσωτερικά χαρακτηριστικά -->
+                  <div class="ef-section-head">
+                    <h2>Εσωτερικά χαρακτηριστικά</h2>
+                  </div>
+                  <div class="block_box fl-wrap ef-box">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label>Επένδυση σαλονιού</label>
+                        <div class="listsearch-input-item custom-multiselect">
+                          <div class="select-box">
+                            <span
+                              class="selected-text"
+                              data-placeholder="Πρόθεση"
+                              >Πρόθεση</span
+                            >
+                          </div>
+                          <div class="dropdown-options">
+                            <label
+                              ><input type="checkbox" value="Popularity" />
+                              Popularity</label
+                            >
+                            <label
+                              ><input type="checkbox" value="Rating" />
+                              Rating</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: Low to High"
+                              />
+                              Price: Low to High</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: High to Low"
+                              />
+                              Price: High to Low</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check1" />
+                              check1</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check2" />
+                              check2</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check3" />
+                              check3</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check4" />
+                              check4</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check5" />
+                              check5</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check6" />
+                              check6</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check7" />
+                              check7</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check8" />
+                              check8</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check9" />
+                              check9</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check10" />
+                              check10</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check11" />
+                              check11</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check12" />
+                              check12</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check13" />
+                              check13</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Θέσεις επιβατών</label>
+                        <div class="listsearch-input-item custom-multiselect">
+                          <div class="select-box">
+                            <span
+                              class="selected-text"
+                              data-placeholder="Πρόθεση"
+                              >Πρόθεση</span
+                            >
+                          </div>
+                          <div class="dropdown-options">
+                            <label
+                              ><input type="checkbox" value="Popularity" />
+                              Popularity</label
+                            >
+                            <label
+                              ><input type="checkbox" value="Rating" />
+                              Rating</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: Low to High"
+                              />
+                              Price: Low to High</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: High to Low"
+                              />
+                              Price: High to Low</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check1" />
+                              check1</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check2" />
+                              check2</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check3" />
+                              check3</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check4" />
+                              check4</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check5" />
+                              check5</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check6" />
+                              check6</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check7" />
+                              check7</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check8" />
+                              check8</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check9" />
+                              check9</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check10" />
+                              check10</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check11" />
+                              check11</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check12" />
+                              check12</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check13" />
+                              check13</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Αερόσακοι</label>
+                        <div class="listsearch-input-item custom-multiselect">
+                          <div class="select-box">
+                            <span
+                              class="selected-text"
+                              data-placeholder="Πρόθεση"
+                              >Πρόθεση</span
+                            >
+                          </div>
+                          <div class="dropdown-options">
+                            <label
+                              ><input type="checkbox" value="Popularity" />
+                              Popularity</label
+                            >
+                            <label
+                              ><input type="checkbox" value="Rating" />
+                              Rating</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: Low to High"
+                              />
+                              Price: Low to High</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: High to Low"
+                              />
+                              Price: High to Low</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check1" />
+                              check1</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check2" />
+                              check2</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check3" />
+                              check3</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check4" />
+                              check4</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check5" />
+                              check5</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check6" />
+                              check6</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check7" />
+                              check7</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check8" />
+                              check8</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check9" />
+                              check9</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check10" />
+                              check10</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check11" />
+                              check11</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check12" />
+                              check12</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check13" />
+                              check13</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Γενικές πληροφορίες -->
+                  <div class="ef-section-head">
+                    <h2>Γενικές πληροφορίες</h2>
+                  </div>
+                  <div class="block_box fl-wrap ef-box">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <label>Σύνολο κατόχων</label>
+                        <input
+                          type="text"
+                          name="owners"
+                          placeholder="Type here"
+                        />
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>ΚΤΕΟ μέχρι</label>
+                        <div class="row" style="margin: 0 -7px">
+                          <div
+                            class="col-xs-6"
+                            style="padding: 0 7px; position: relative"
+                          >
+                            <input
+                              type="text"
+                              name="kteo_year"
+                              placeholder="Έτος"
+                              inputmode="numeric"
+                              maxlength="4"
+                            />
+                            <span class="clear-singleinput"
+                              ><i class="fal fa-times"></i
+                            ></span>
+                          </div>
+                          <div
+                            class="col-xs-6"
+                            style="padding: 0 7px; position: relative"
+                          >
+                            <input
+                              type="text"
+                              name="kteo_month"
+                              placeholder="Μήνας (01–12)"
+                              inputmode="numeric"
+                              pattern="^(0[1-9]|1[0-2])$"
+                              maxlength="2"
+                              title="Δώσε μήνα από 01 έως 12"
+                            />
+
+                            <span class="clear-singleinput"
+                              ><i class="fal fa-times"></i
+                            ></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <label>Πινακίδα</label>
+                        <div class="listsearch-input-item custom-multiselect">
+                          <div class="select-box">
+                            <span
+                              class="selected-text"
+                              data-placeholder="Πρόθεση"
+                              >Πρόθεση</span
+                            >
+                          </div>
+                          <div class="dropdown-options">
+                            <label
+                              ><input type="checkbox" value="Popularity" />
+                              Popularity</label
+                            >
+                            <label
+                              ><input type="checkbox" value="Rating" />
+                              Rating</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: Low to High"
+                              />
+                              Price: Low to High</label
+                            >
+                            <label
+                              ><input
+                                type="checkbox"
+                                value="Price: High to Low"
+                              />
+                              Price: High to Low</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check1" />
+                              check1</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check2" />
+                              check2</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check3" />
+                              check3</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check4" />
+                              check4</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check5" />
+                              check5</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check6" />
+                              check6</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check7" />
+                              check7</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check8" />
+                              check8</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check9" />
+                              check9</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check10" />
+                              check10</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check11" />
+                              check11</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check12" />
+                              check12</label
+                            >
+                            <label
+                              ><input type="checkbox" value="check13" />
+                              check13</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 14px">
+                      <div class="col-md-4">
+                        <label>Αριθμός πλαισίου</label>
+                        <input type="text" name="vin" placeholder="Type here" />
+                      </div>
+
+                      <div class="col-md-4 ef-upload">
+                        <label>Έγγραφα / Φωτογραφίες</label>
+                        <input
+                          type="file"
+                          id="ef-files"
+                          name="files"
+                          style="display: none"
+                          multiple
+                        />
+
+                        <a
+                          href="#"
+                          class="btn color-bg ef-file-btn"
+                          id="ef-files-btn"
+                        >
+                          <i class="far fa-upload"></i> Κάνε click εδώ ή σύρε
+                          και άφησε τις φωτογραφίες σου
+                        </a>
+
+                        <div class="ef-file-hint" id="ef-files-hint">
+                          Δεν έχουν επιλεγεί αρχεία
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Ιδιαιτερότητες -->
+                  <div class="ef-section-head"><h2>Ιδιαιτερότητες</h2></div>
+                  <div class="block_box fl-wrap ef-box">
+                    <div class="extra-features-grid">
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-1"
+                          type="checkbox"
+                          name="features[]"
+                          value="1"
+                        /><label for="ef-opt-1">Επιλογή 1</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-2"
+                          type="checkbox"
+                          name="features[]"
+                          value="2"
+                        /><label for="ef-opt-2">Επιλογή 2</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-3"
+                          type="checkbox"
+                          name="features[]"
+                          value="3"
+                        /><label for="ef-opt-3">Επιλογή 3</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-4"
+                          type="checkbox"
+                          name="features[]"
+                          value="4"
+                        /><label for="ef-opt-4">Επιλογή 4</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-5"
+                          type="checkbox"
+                          name="features[]"
+                          value="5"
+                        /><label for="ef-opt-5">Επιλογή 5</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-6"
+                          type="checkbox"
+                          name="features[]"
+                          value="6"
+                        /><label for="ef-opt-6">Επιλογή 6</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-7"
+                          type="checkbox"
+                          name="features[]"
+                          value="7"
+                        /><label for="ef-opt-7">Επιλογή 7</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-8"
+                          type="checkbox"
+                          name="features[]"
+                          value="8"
+                        /><label for="ef-opt-8">Επιλογή 8</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-9"
+                          type="checkbox"
+                          name="features[]"
+                          value="9"
+                        /><label for="ef-opt-9">Επιλογή 9</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-10"
+                          type="checkbox"
+                          name="features[]"
+                          value="10"
+                        /><label for="ef-opt-10">Επιλογή 10</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-11"
+                          type="checkbox"
+                          name="features[]"
+                          value="11"
+                        /><label for="ef-opt-11">Επιλογή 11</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-12"
+                          type="checkbox"
+                          name="features[]"
+                          value="12"
+                        /><label for="ef-opt-12">Επιλογή 12</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-13"
+                          type="checkbox"
+                          name="features[]"
+                          value="13"
+                        /><label for="ef-opt-13">Επιλογή 13</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-14"
+                          type="checkbox"
+                          name="features[]"
+                          value="14"
+                        /><label for="ef-opt-14">Επιλογή 14</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-15"
+                          type="checkbox"
+                          name="features[]"
+                          value="15"
+                        /><label for="ef-opt-15">Επιλογή 15</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-16"
+                          type="checkbox"
+                          name="features[]"
+                          value="16"
+                        /><label for="ef-opt-16">Επιλογή 16</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-17"
+                          type="checkbox"
+                          name="features[]"
+                          value="17"
+                        /><label for="ef-opt-17">Επιλογή 17</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-18"
+                          type="checkbox"
+                          name="features[]"
+                          value="18"
+                        /><label for="ef-opt-18">Επιλογή 18</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-19"
+                          type="checkbox"
+                          name="features[]"
+                          value="19"
+                        /><label for="ef-opt-19">Επιλογή 19</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-20"
+                          type="checkbox"
+                          name="features[]"
+                          value="20"
+                        /><label for="ef-opt-20">Επιλογή 20</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-21"
+                          type="checkbox"
+                          name="features[]"
+                          value="21"
+                        /><label for="ef-opt-21">Επιλογή 21</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-22"
+                          type="checkbox"
+                          name="features[]"
+                          value="22"
+                        /><label for="ef-opt-22">Επιλογή 22</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-23"
+                          type="checkbox"
+                          name="features[]"
+                          value="23"
+                        /><label for="ef-opt-23">Επιλογή 23</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-24"
+                          type="checkbox"
+                          name="features[]"
+                          value="24"
+                        /><label for="ef-opt-24">Επιλογή 24</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-25"
+                          type="checkbox"
+                          name="features[]"
+                          value="25"
+                        /><label for="ef-opt-25">Επιλογή 25</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-26"
+                          type="checkbox"
+                          name="features[]"
+                          value="26"
+                        /><label for="ef-opt-26">Επιλογή 26</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-27"
+                          type="checkbox"
+                          name="features[]"
+                          value="27"
+                        /><label for="ef-opt-27">Επιλογή 27</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-28"
+                          type="checkbox"
+                          name="features[]"
+                          value="28"
+                        /><label for="ef-opt-28">Επιλογή 28</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-29"
+                          type="checkbox"
+                          name="features[]"
+                          value="29"
+                        /><label for="ef-opt-29">Επιλογή 29</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-30"
+                          type="checkbox"
+                          name="features[]"
+                          value="30"
+                        /><label for="ef-opt-30">Επιλογή 30</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-31"
+                          type="checkbox"
+                          name="features[]"
+                          value="31"
+                        /><label for="ef-opt-31">Επιλογή 31</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-32"
+                          type="checkbox"
+                          name="features[]"
+                          value="32"
+                        /><label for="ef-opt-32">Επιλογή 32</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-33"
+                          type="checkbox"
+                          name="features[]"
+                          value="33"
+                        /><label for="ef-opt-33">Επιλογή 33</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-34"
+                          type="checkbox"
+                          name="features[]"
+                          value="34"
+                        /><label for="ef-opt-34">Επιλογή 34</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-35"
+                          type="checkbox"
+                          name="features[]"
+                          value="35"
+                        /><label for="ef-opt-35">Επιλογή 35</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-36"
+                          type="checkbox"
+                          name="features[]"
+                          value="36"
+                        /><label for="ef-opt-36">Επιλογή 36</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-37"
+                          type="checkbox"
+                          name="features[]"
+                          value="37"
+                        /><label for="ef-opt-37">Επιλογή 37</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-38"
+                          type="checkbox"
+                          name="features[]"
+                          value="38"
+                        /><label for="ef-opt-38">Επιλογή 38</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-39"
+                          type="checkbox"
+                          name="features[]"
+                          value="39"
+                        /><label for="ef-opt-39">Επιλογή 39</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-40"
+                          type="checkbox"
+                          name="features[]"
+                          value="40"
+                        /><label for="ef-opt-40">Επιλογή 40</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-41"
+                          type="checkbox"
+                          name="features[]"
+                          value="41"
+                        /><label for="ef-opt-41">Επιλογή 41</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-42"
+                          type="checkbox"
+                          name="features[]"
+                          value="42"
+                        /><label for="ef-opt-42">Επιλογή 42</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-43"
+                          type="checkbox"
+                          name="features[]"
+                          value="43"
+                        /><label for="ef-opt-43">Επιλογή 43</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-44"
+                          type="checkbox"
+                          name="features[]"
+                          value="44"
+                        /><label for="ef-opt-44">Επιλογή 44</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-45"
+                          type="checkbox"
+                          name="features[]"
+                          value="45"
+                        /><label for="ef-opt-45">Επιλογή 45</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-46"
+                          type="checkbox"
+                          name="features[]"
+                          value="46"
+                        /><label for="ef-opt-46">Επιλογή 46</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-47"
+                          type="checkbox"
+                          name="features[]"
+                          value="47"
+                        /><label for="ef-opt-47">Επιλογή 47</label>
+                      </div>
+                      <div class="filter-tags">
+                        <input
+                          id="ef-opt-48"
+                          type="checkbox"
+                          name="features[]"
+                          value="48"
+                        /><label for="ef-opt-48">Επιλογή 48</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ef-actions">
+                    <button type="submit" class="btn color-bg-red">
+                      Αναζήτηση
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+          <!--section end-->
+
+          <section class="gray-bg pt-0">
+            <div class="container">
+              <div class="clients-carousel-wrap fl-wrap">
+                <div class="cc-btn cc-prev">
+                  <i class="fal fa-angle-left"></i>
+                </div>
+                <div class="cc-btn cc-next">
+                  <i class="fal fa-angle-right"></i>
+                </div>
+                <div class="clients-carousel">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <!--client-item-->
+                      <div class="swiper-slide">
+                        <a href="#" class="client-item"
+                          ><img src="images/clients/1.png" alt=""
+                        /></a>
+                      </div>
+                      <!--client-item end-->
+                      <!--client-item-->
+                      <div class="swiper-slide">
+                        <a href="#" class="client-item"
+                          ><img src="images/clients/2.png" alt=""
+                        /></a>
+                      </div>
+                      <!--client-item end-->
+                      <!--client-item-->
+                      <div class="swiper-slide">
+                        <a href="#" class="client-item"
+                          ><img src="images/clients/3.png" alt=""
+                        /></a>
+                      </div>
+                      <!--client-item end-->
+                      <!--client-item-->
+                      <div class="swiper-slide">
+                        <a href="#" class="client-item"
+                          ><img src="images/clients/1.png" alt=""
+                        /></a>
+                      </div>
+                      <!--client-item end-->
+                      <!--client-item-->
+                      <div class="swiper-slide">
+                        <a href="#" class="client-item"
+                          ><img src="images/clients/2.png" alt=""
+                        /></a>
+                      </div>
+                      <!--client-item end-->
+                      <!--client-item-->
+                      <div class="swiper-slide">
+                        <a href="#" class="client-item"
+                          ><img src="images/clients/3.png" alt=""
+                        /></a>
+                      </div>
+                      <!--client-item end-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--content end-->
+        </div>
+      </div>
+      <!-- wrapper end-->
+      <!--footer -->
+      <footer class="main-footer fl-wrap">
+        <!-- footer-header-->
+        <div class="footer-header fl-wrap grad ient-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="subscribe-header">
+                  <h3>Εγγραφείτε στο <span>Newsletter</span> μας</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="subscribe-widget">
+                  <div class="subcribe-form">
+                    <form id="subscribe">
+                      <input
+                        class="enteremail fl-wrap"
+                        name="email"
+                        id="subscribe-email"
+                        placeholder="your@email.com"
+                        spellcheck="false"
+                        type="text"
+                      />
+                      <button
+                        type="submit"
+                        id="subscribe-button"
+                        class="subscribe-button"
+                      >
+                        <i class="far fa-envelope"></i>
+                      </button>
+                      <label
+                        for="subscribe-email"
+                        class="subscribe-message"
+                      ></label>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer-header end-->
+        <!--footer-inner-->
+        <div class="footer-inner fl-wrap">
+          <div class="container">
+            <div class="row">
+              <!-- footer-widget-->
+              <div class="col-md-4">
+                <div class="footer-widget fl-wrap">
+                  <div class="footer-logo">
+                    <a href="index.html"
+                      ><img src="images\ipostit_logo.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="footer-contacts-widget fl-wrap">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip. et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                      irure dolor in reprehenderit in voluptate velit esse
+                      cillum.
+                    </p>
+                    <ul class="footer-contacts fl-wrap no-list-style">
+                      <li>
+                        <span
+                          ><i class="fal fa-map-marker-alt"></i>
+                          Διεύθυνση: </span
+                        ><a
+                          href="https://maps.app.goo.gl/NUFiez4BxeJNAY1JA"
+                          target="_blank"
+                          >Ηπείρου 58, Λάρισα, Τ.Κ. 41 222</a
+                        >
+                      </li>
+                      <li>
+                        <span
+                          ><i class="fal fa-phone"></i> Τηλεφωνικό Κέντρο
+                          :</span
+                        ><a href="tel:2410611111">241 061 1111</a>
+                      </li>
+                      <li>
+                        <span><i class="fal fa-envelope"></i> email :</span
+                        ><a href="mailto:info@ipostit.gr" target="_blank"
+                          >info@ipostit.gr</a
+                        >
+                      </li>
+                    </ul>
+                    <div class="footer-social">
+                      <span>Follow Us: </span>
+                      <ul class="no-list-style socials">
+                        <li>
+                          <a href="#" target="_blank"
+                            ><i class="fab fa-facebook-f"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" target="_blank">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="11.38"
+                              height="13"
+                              fill="currentColor"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" target="_blank"
+                            ><i class="fab fa-instagram"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="#" target="_blank">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="11.38"
+                              height="13"
+                              fill="currentColor"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- footer-widget end-->
+              <!-- footer-widget-->
+              <div class="col-md-4">
+                <div class="footer-widget fl-wrap">
+                  <h3>Μενού πλοήγησης</h3>
+                  <ul class="footer-list fl-wrap">
+                    <li><a href="#">Αρχική</a></li>
+                    <li><a href="#">Σχετικά με μας</a></li>
+                    <li><a href="#">Αγορά εφημερίδας</a></li>
+                    <li><a href="#">Καταχώρηση αγγελιών</a></li>
+                    <li><a href="#">Κατηγορίες αγγελιών</a></li>
+                    <li><a href="#">Επικοινωνία</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- footer-widget end-->
+              <!-- footer-widget  -->
+              <div class="col-md-4">
+                <div class="footer-widget fl-wrap">
+                  <h3>Χρήσιμα Links</h3>
+                  <ul class="footer-list fl-wrap">
+                    <li><a href="#">Ο λογαριασμός μου</a></li>
+                    <li><a href="#">Η Βιβλιοθήκη μου</a></li>
+                    <li>
+                      <a href="https://ipostit.ast.gr/information.html#fq4"
+                        >Συχνές ερωτήσεις</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://ipostit.ast.gr/information.html#fq1"
+                        >Όροι χρήσης</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://ipostit.ast.gr/information.html#fq2"
+                        >Πολιτική απορρήτου</a
+                      >
+                    </li>
+                    <li><a href="#">Τρόποι πληρωμής</a></li>
+                  </ul>
+                  <a href="#" class="down-btn color3-bg fl-wrap"
+                    ><i class="fab fa-apple"></i> Apple Store
+                  </a>
+                  <a href="#" class="down-btn color3-bg fl-wrap"
+                    ><i class="fab fa-android"></i> Google Play
+                  </a>
+                </div>
+              </div>
+              <!-- footer-widget end-->
+            </div>
+          </div>
+          <!-- footer bg-->
+          <!-- <div class="footer-bg" data-ran="4"></div> -->
+          <div class="footer-wave">
+            <svg viewbox="0 0 100 25">
+              <path fill="#fff" d="M0 30 V12 Q30 17 55 12 T100 11 V30z"></path>
+            </svg>
+          </div>
+          <!-- footer bg  end-->
+        </div>
+        <!--footer-inner end -->
+        <!--sub-footer-->
+        <div class="sub-footer fl-wrap">
+          <div class="container">
+            <div class="copyright">
+              Copyright &#169; 2025, <a href="">ipostit.gr</a>
+            </div>
+            <div class="subfooter-nav">
+              <span>Developed by</span>
+              <a
+                href="https://www.astrolabs.gr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="images/Astrolabs Logo-02.png"
+                  width="200px"
+                  alt="Astrolabs Logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--sub-footer end -->
+      </footer>
+      <!--footer end -->
+      <!--map-modal -->
+      <div class="map-modal-wrap">
+        <div class="map-modal-wrap-overlay"></div>
+        <div class="map-modal-item">
+          <div class="map-modal-container fl-wrap">
+            <div class="map-modal fl-wrap">
+              <div
+                id="singleMap"
+                data-latitude="40.7"
+                data-longitude="-73.1"
+              ></div>
+            </div>
+            <h3><span>Location for : </span><a href="#">Listing Title</a></h3>
+            <div class="map-modal-close"><i class="fal fa-times"></i></div>
+          </div>
+        </div>
+      </div>
+      <!--map-modal end -->
+      <!--register form -->
+      <div class="main-register-wrap modal">
+        <div class="reg-overlay"></div>
+        <div class="main-register-holder tabs-act">
+          <div class="main-register fl-wrap modal_main">
+            <div class="main-register_title">
+              <img
+                src="images/ipostit_logo.png"
+                alt="TownHub"
+                class="main-register-logo"
+              />
+            </div>
+            <div class="close-reg"><i class="fal fa-times"></i></div>
+            <ul class="tabs-menu fl-wrap no-list-style">
+              <li class="current">
+                <a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Σύνδεση</a>
+              </li>
+              <li>
+                <a href="#tab-2"><i class="fal fa-user-plus"></i> Εγγραφή</a>
+              </li>
+            </ul>
+            <!--tabs -->
+            <div class="tabs-container">
+              <div class="tab">
+                <!--tab -->
+                <div id="tab-1" class="tab-content first-tab">
+                  <div class="custom-form-ast">
+                    <form
+                      method="post"
+                      action="/auth/login"
+                      id="login-form"
+                      name="loginform"
+                    >
+                      <label>E-mail<span>*</span> </label>
+                      <input
+                        name="email"
+                        type="email"
+                        placeholder="Type here"
+                        onclick="this.select()"
+                        value=""
+                      />
+                      <label>Κωδικός<span>*</span> </label>
+                      <input
+                        name="password"
+                        type="password"
+                        placeholder="Type here"
+                        onclick="this.select()"
+                        value=""
+                      />
+                      <button type="submit" class="btn float-btn color-bg-red">
+                        Είσοδος
+                      </button>
+                      <div class="clearfix"></div>
+                      <div class="filter-tags">
+                        <input type="hidden" name="remember" value="0" />
+                        <input
+                          id="check-a3"
+                          type="checkbox"
+                          name="remember"
+                          value="1"
+                        />
+                        <label for="check-a3">Να με θυμάσαι</label>
+                      </div>
+                    </form>
+                    <div class="lost_password">
+                      <a href="#">Ξέχασες τον κωδικό σου;</a>
+                    </div>
+                  </div>
+                </div>
+                <!--tab end -->
+                <!--tab -->
+                <div class="tab">
+                  <div id="tab-2" class="tab-content">
+                    <div class="custom-form-ast">
+                      <form
+                        method="post"
+                        action="/auth/register"
+                        class="main-register-form"
+                        id="register-form"
+                        name="registerform"
+                      >
+                        <label>E-mail <span>*</span> </label>
+                        <input
+                          name="email"
+                          type="email"
+                          placeholder="Type here"
+                          onclick="this.select()"
+                          value=""
+                        />
+                        <label>Τηλέφωνο <span>*</span></label>
+                        <input
+                          name="tel"
+                          type="tel"
+                          placeholder="Type here"
+                          onclick="this.select()"
+                          value=""
+                        />
+                        <label>Κωδικός <span>*</span></label>
+                        <input
+                          name="password"
+                          type="password"
+                          placeholder="Type here"
+                          onclick="this.select()"
+                          value=""
+                        />
+                        <div class="filter-tags ft-list">
+                          <input type="hidden" name="accept_terms" value="0" />
+                          <input
+                            id="check-a2"
+                            type="checkbox"
+                            name="accept_terms"
+                            value="1"
+                            required
+                          />
+                          <label for="check-a2"
+                            >Αποδέχομαι τους
+                            <a href="#">όρους χρήσης & προϋποθέσεις</a></label
+                          >
+                        </div>
+                        <div class="clearfix"></div>
+                        <button
+                          type="submit"
+                          class="btn float-btn color-bg-red"
+                        >
+                          Εγγραφή
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!--tab end -->
+              </div>
+              <!--tabs end -->
+              <div class="log-separator fl-wrap"><span>ή</span></div>
+              <div class="soc-log fl-wrap">
+                <a href="#" class="facebook-log bg-white text-grey bd-grey">
+                  Σύνδεση με λογαριασμό google</a
+                >
+                <a href="#" class="facebook-log">
+                  Σύνδεση με λογαριασμό Facebook</a
+                >
+                <a href="#" class="facebook-log bg-black">
+                  Σύνδεση με λογαριασμό Apple</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--register form end -->
+      <a class="to-top"><i class="fas fa-caret-up"></i></a>
+    </div>
+    <!-- Main end -->
+    <!--=============== scripts  ===============-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo&amp;libraries=places&amp;callback=initAutocomplete"></script>
+    <script src="js/map-single.js"></script>
+    <script src="js/custom.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>-->
+    <script src="js/custom-index.js"></script>
+    <script src="js/custom-extra-filters-ast.js"></script>
+  </body>
+</html>

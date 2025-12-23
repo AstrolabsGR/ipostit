@@ -1,0 +1,847 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title>Townhub - Directory Listing Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============-->
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/dashboard-style.css">
+        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <link type="text/css" rel="stylesheet" href="css/custom.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+    </head>
+    <body class="page-dashboard-profile">
+        <!--loader-->
+        <div class="loader-wrap">
+            <div class="loader-inner">
+                <div class="loader-inner-cirle"></div>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- main start  -->
+        <div id="main">
+            <!-- header -->
+            <header class="main-header">
+            <!-- logo-->
+            <a href="#" class="logo-holder"><img src="images/ipostit_logo.png" alt=""></a>
+            <!-- logo end-->
+            <!-- header opt -->
+            <a href="dashboard-add-listing.html" class="add-list color-bg-red">Καταχώρισε μια αγγελία</a>
+            <a href="dashboard-add-listing.html" class="add-list color-bg m-0">
+                <img src="/images/button-ico-header.png" alt="Icon" class="btn-icon"> Αγορά Εφημερίδας
+            </a>
+            <div class="cart-btn   show-header-modal" data-microtip-position="bottom" role="tooltip" aria-label="Your Wishlist"><i class="fal fa-heart"></i><span class="cart-counter red-bg"></span> </div>
+            <div class="show-reg-form modal-open avatar-img" data-srcav="images/avatar/3.jpg"><span class="lang-icon"><img src="/images/user-ico.png" alt="" style="margin-bottom: 2px;"></span>Sign In</div>
+            <!-- header opt end-->
+            <!-- lang-wrap-->
+            <div class="lang-wrap">
+                <div class="show-lang"><span><img src="images/lang-ico.png" alt="" style="margin-bottom: 1px;"><strong>Gr</strong></span><i class="fa fa-caret-down arrlan"></i></div>
+                <ul class="lang-tooltip lang-action no-list-style">
+                    <li><a href="#" class="current-lan" data-lantext="Gr">Greek</a></li>
+                    <li><a href="#" data-lantext="En">English</a></li>
+                    <!--<li><a href="#" data-lantext="Fr">Franais</a></li>-->
+                    <!--<li><a href="#" data-lantext="Es">Espaol</a></li>-->
+                    <!--<li><a href="#" data-lantext="De">Deutsch</a></li>-->
+                </ul>
+            </div>
+            <!-- lang-wrap end-->
+            <!-- nav-button-wrap-->
+            <div class="nav-button-wrap color-bg">
+                <div class="nav-button">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <!-- nav-button-wrap end-->
+            <!--  navigation -->
+            <div class="nav-holder main-menu">
+                <nav>
+                    <ul class="no-list-style">
+                        <li>
+                            <a href="#" class="act-link">Έντυπά Μέσα <i class="fa fa-caret-down"></i></a>
+                            <!--second level -->
+                            <ul>
+                                <li><a href="index.html">Parallax Image</a></li>
+                                <li><a href="index2.html">Slider</a></li>
+                                <li><a href="index3.html">Slideshow</a></li>
+                                <li><a href="index4.html">Video</a></li>
+                                <li><a href="index5.html">Map</a></li>
+                                <li><a href="rtl/index.html" target="_blank">RTL Version</a></li>
+                            </ul>
+                            <!--second level end-->
+                        </li>
+                        <li>
+                            <a href="#">Menu 1 <i class="fa fa-caret-down"></i></a>
+                            <!--second level -->
+                            <ul>
+                                <li><a href="listing.html">Column map</a></li>
+                                <li><a href="listing2.html">Column map 2</a></li>
+                                <li><a href="listing3.html">Fullwidth Map</a></li>
+                                <li><a href="listing4.html">Fullwidth Map 2</a></li>
+                                <li><a href="listing5.html">Without Map</a></li>
+                                <li><a href="listing6.html">Without Map 2</a></li>
+                                <li>
+                                    <a href="#">Single <i class="fa fa-caret-down"></i></a>
+                                    <!--third  level  -->
+                                    <ul>
+                                        <li><a href="listing-single.html">Style 1</a></li>
+                                        <li><a href="listing-single2.html">Style 2</a></li>
+                                        <li><a href="listing-single3.html">Style 3</a></li>
+                                        <li><a href="listing-single4.html">Style 4</a></li>
+                                    </ul>
+                                    <!--third  level end-->
+                                </li>
+                            </ul>
+                            <!--second level end-->
+                        </li>
+                        <li>
+                            <a href="blog.html">Menu 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu 3 <i class="fa fa-caret-down"></i></a>
+                            <!--second level -->
+                            <ul>
+                                <li>
+                                    <a href="#">Shop<i class="fa fa-caret-down"></i></a>
+                                    <!--third  level  -->
+                                    <ul>
+                                        <li><a href="shop.html">Products</a></li>
+                                        <li><a href="product-single.html">Product single</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                    </ul>
+                                    <!--third  level end-->
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                                <li><a href="author-single.html">User single</a></li>
+                                <li><a href="help.html">How it Works</a></li>
+                                <li><a href="booking.html">Booking</a></li>
+                                <li><a href="pricing-tables.html">Pricing</a></li>
+                                <li><a href="dashboar-1.html">User Dasboard</a></li>
+                                <li><a href="blog-single.html">Blog Single</a></li>
+                                <li><a href="dashboard-add-listing.html">Add Listing</a></li>
+                                <li><a href="invoice.html">Invoice</a></li>
+                                <li><a href="login-sign.html">login Sign</a></li>
+                                <li><a href="404.html">404</a></li>
+                            </ul>
+                            <!--second level end-->
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- navigation  end -->
+            <!-- header-search_container -->
+            <div class="header-search_container header-search vis-search">
+                <div class="container small-container">
+                    <div class="header-search-input-wrap fl-wrap">
+                        <!-- header-search-input -->
+                        <div class="header-search-input">
+                            <label><i class="fal fa-keyboard"></i></label>
+                            <input type="text" placeholder="What are you looking for ?" value="">
+                        </div>
+                        <!-- header-search-input end -->
+                        <!-- header-search-input -->
+                        <div class="header-search-input location autocomplete-container">
+                            <label><i class="fal fa-map-marker"></i></label>
+                            <input type="text" placeholder="Location..." class="autocomplete-input" id="autocompleteid2" value="">
+                            <a href="#"><i class="fal fa-dot-circle"></i></a>
+                        </div>
+                        <!-- header-search-input end -->
+                        <!-- header-search-input -->
+                        <div class="header-search-input header-search_selectinpt ">
+                            <select data-placeholder="Category" class="chosen-select no-radius">
+                                    <option>All Categories</option>
+                                    <option>All Categories</option>
+                                    <option>Shops</option>
+                                    <option>Hotels</option>
+                                    <option>Restaurants</option>
+                                    <option>Fitness</option>
+                                    <option>Events</option>
+                                </select>
+                        </div>
+                        <!-- header-search-input end -->
+                        <button class="header-search-button red-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i> Search </button>
+                    </div>
+                    <div class="header-search_close color-bg"><i class="fal fa-long-arrow-up"></i></div>
+                </div>
+            </div>
+            <!-- header-search_container  end -->
+            <!-- wishlist-wrap-->
+            <div class="header-modal novis_wishlist">
+                <!-- header-modal-container-->
+                <div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar="">
+                    <!--widget-posts-->
+                    <div class="widget-posts  fl-wrap">
+                        <ul class="no-list-style">
+                            <li>
+                                <div class="widget-posts-img">
+                                    <a href="listing-single.html"><img src="images/gallery/thumbnail/1.png" alt=""></a>
+                                </div>
+                                <div class="widget-posts-descr">
+                                    <h4><a href="listing-single.html">Iconic Cafe</a></h4>
+                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 40 Journal Square Plaza, NJ, USA</a></div>
+                                    <div class="widget-posts-descr-link"><a href="listing.html">Restaurants </a> <a href="listing.html">Cafe</a></div>
+                                    <div class="widget-posts-descr-score">4.1</div>
+                                    <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget-posts-img">
+                                    <a href="listing-single.html"><img src="images/gallery/thumbnail/2.png" alt=""></a>
+                                </div>
+                                <div class="widget-posts-descr">
+                                    <h4><a href="listing-single.html">MontePlaza Hotel</a></h4>
+                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 70 Bright St New York, USA </a></div>
+                                    <div class="widget-posts-descr-link"><a href="listing.html">Hotels </a> </div>
+                                    <div class="widget-posts-descr-score">5.0</div>
+                                    <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget-posts-img">
+                                    <a href="listing-single.html"><img src="images/gallery/thumbnail/3.png" alt=""></a>
+                                </div>
+                                <div class="widget-posts-descr">
+                                    <h4><a href="listing-single.html">Rocko Band in Marquee Club</a></h4>
+                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>75 Prince St, NY, USA</a></div>
+                                    <div class="widget-posts-descr-link"><a href="listing.html">Events</a> </div>
+                                    <div class="widget-posts-descr-score">4.2</div>
+                                    <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget-posts-img">
+                                    <a href="listing-single.html"><img src="images/gallery/thumbnail/4.png" alt=""></a>
+                                </div>
+                                <div class="widget-posts-descr">
+                                    <h4><a href="listing-single.html">Premium Fitness Gym</a></h4>
+                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> W 85th St, New York, USA</a></div>
+                                    <div class="widget-posts-descr-link"><a href="listing.html">Fitness</a> <a href="listing.html">Gym</a> </div>
+                                    <div class="widget-posts-descr-score">5.0</div>
+                                    <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- widget-posts end-->
+                </div>
+                <!-- header-modal-container end-->
+                <div class="header-modal-top fl-wrap">
+                    <h4>Your Wishlist : <span><strong></strong> Locations</span></h4>
+                    <div class="close-header-modal"><i class="far fa-times"></i></div>
+                </div>
+            </div>
+            <!--wishlist-wrap end -->
+        </header>
+            <!-- header end-->
+            <!-- wrapper-->
+            <div id="wrapper">
+                <!-- content-->
+                <div class="content">
+                    <!--  section  -->
+                    <section class="parallax-section dashboard-header-sec gradient-bg" data-scrollax-parent="true">
+                        <div class="container">
+                            <!--Tariff Plan menu-->
+                            <div class="tfp-det">
+                                <p>You Are on <a href="#">Extended</a> . Use link bellow to view details or upgrade. </p>
+                                <a href="#" class="tfp-det-btn color2-bg">Details</a>
+                            </div>
+                            <!--Tariff Plan menu end-->
+                            <div class="dashboard-header_conatiner fl-wrap dashboard-header_title">
+                                <h1>Καλωσόρισες,   <span>Alisa Noory</span></h1>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="dashboard-header fl-wrap">
+                            <div class="container">
+                                <div class="dashboard-header_conatiner fl-wrap">
+                                    <div class="dashboard-header-avatar">
+                                        <img src="images/avatar/4.jpg" alt="">
+                                        <a href="dashboard-myprofile.html" class="color-bg edit-prof_btn"><i class="fal fa-edit"></i></a>
+                                    </div>
+                                    <div class="dashboard-header-stats-wrap">
+                                        <div class="dashboard-header-stats">
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <!--  dashboard-header-stats-item -->
+                                                    <div class="swiper-slide">
+                                                        <div class="dashboard-header-stats-item">
+                                                            <i class="fal fa-map-marked"></i>
+                                                            Ενεργές αγγελίες
+                                                            <span>12</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--  dashboard-header-stats-item end -->
+                                                    <!--  dashboard-header-stats-item -->
+                                                    <div class="swiper-slide">
+                                                        <div class="dashboard-header-stats-item">
+                                                            <i class="fal fa-chart-bar"></i>
+                                                            Προβολές αγγελιών
+                                                            <span>1415</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--  dashboard-header-stats-item end -->
+                                                    <!--  dashboard-header-stats-item -->
+                                                    <div class="swiper-slide">
+                                                        <div class="dashboard-header-stats-item">
+                                                            <i class="fal fa-comments-alt"></i>
+                                                            Αξιολογήσεις
+                                                            <span>30</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--  dashboard-header-stats-item end -->
+                                                    <!--  dashboard-header-stats-item -->
+                                                    <div class="swiper-slide">
+                                                        <div class="dashboard-header-stats-item">
+                                                            <i class="fal fa-heart"></i>
+                                                            Times Bookmarked
+                                                            <span>654</span>
+                                                        </div>
+                                                    </div>
+                                                    <!--  dashboard-header-stats-item end -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  dashboard-header-stats  end -->
+                                        <div class="dhs-controls">
+                                            <div class="dhs dhs-prev"><i class="fal fa-angle-left"></i></div>
+                                            <div class="dhs dhs-next"><i class="fal fa-angle-right"></i></div>
+                                        </div>
+                                    </div>
+                                    <!--  dashboard-header-stats-wrap end -->
+                                    <a class="add_new-dashboard">Νέα αγγελία <i class="fal fa-layer-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gradient-bg-figure" style="right:-30px;top:10px;"></div>
+                        <div class="gradient-bg-figure" style="left:-20px;bottom:30px;"></div>
+                        <div class="circle-wrap" style="left:120px;bottom:120px;" data-scrollax="properties: { translateY: '-200px' }">
+                            <div class="circle_bg-bal circle_bg-bal_small"></div>
+                        </div>
+                        <div class="circle-wrap" style="right:420px;bottom:-70px;" data-scrollax="properties: { translateY: '150px' }">
+                            <div class="circle_bg-bal circle_bg-bal_big"></div>
+                        </div>
+                        <div class="circle-wrap" style="left:420px;top:-70px;" data-scrollax="properties: { translateY: '100px' }">
+                            <div class="circle_bg-bal circle_bg-bal_big"></div>
+                        </div>
+                        <div class="circle-wrap" style="left:40%;bottom:-70px;"  >
+                            <div class="circle_bg-bal circle_bg-bal_middle"></div>
+                        </div>
+                        <div class="circle-wrap" style="right:40%;top:-10px;"  >
+                            <div class="circle_bg-bal circle_bg-bal_versmall" data-scrollax="properties: { translateY: '-350px' }"></div>
+                        </div>
+                        <div class="circle-wrap" style="right:55%;top:90px;"  >
+                            <div class="circle_bg-bal circle_bg-bal_versmall" data-scrollax="properties: { translateY: '-350px' }"></div>
+                        </div>
+                    </section>
+                    <!--  section  end-->
+                    <!--  section  -->
+                    <section class="gray-bg main-dashboard-sec" id="sec1">
+                        <div class="container">
+                            <!--  dashboard-menu-->
+                            <div class="col-md-3">
+                                <div class="mob-nav-content-btn color-bg-red init-dsmen fl-wrap mb-20"><i class="fal fa-bars color-white"></i> Dashboard menu</div>
+                                <div class="clearfix"></div>
+                                <div class="fixed-bar fl-wrap" id="dash_menu">
+                                    <div class="user-profile-menu-wrap fl-wrap block_box">
+                                        <!-- user-profile-menu-->
+                                        <div class="user-profile-menu">
+                                            <h3>Λογαριασμός</h3>
+                                            <ul class="no-list-style">
+                                                <li><a href="dashboard-profile.html" class="user-profile-act"><i class="fal fa-chart-line"></i>Προφίλ & στοιχεία</a></li>
+                                                <li><a href="dashboard-profile-12.html"><i class="fal fa-rss"></i>Μηνύματα <span>7</span></a></li>
+                                                <li><a href="dashboard-feed.html"><i class="fal fa-user-edit"></i>Ειδοποιήσεις</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- user-profile-menu end-->
+                                        <!-- user-profile-menu-->
+                                        <div class="user-profile-menu">
+                                            <h3>Αγγελίες</h3>
+                                            <ul  class="no-list-style">
+                                                <li><a href="dashboard.html"> <i class="fal fa-calendar-check"></i> Καταχώρηση αγγελίας </a></li>
+                                                <li><a href="dashboard-listing-table.html"><i class="fal fa-th-list"></i> Οι αγγελίες μου  </a></li>
+                                                <li><a href="dashboard-review.html"><i class="fal fa-comments-alt"></i> Προσχέδια <span>2</span></a></li>
+                                                <li><a href="dashboard-add-listing.html"><i class="fal fa-file-plus"></i> Αγαπημένες αγγελίες</a></li>
+                                                <li><a href="dashboard-add-listing.html"><i class="fal fa-file-plus"></i> Λίστα σύγκρισης</a></li>
+                                                <li><a href="dashboard-add-listing.html"><i class="fal fa-file-plus"></i> Αναβαθμίσεις & πακέτα</a></li>
+                                                <li><a href="dashboard-add-listing.html"><i class="fal fa-file-plus"></i> Πορτοφόλι / Συναλλαγές</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="user-profile-menu">
+                                            <h3>Εργαλεία χρήστη</h3>
+                                            <ul  class="no-list-style">
+                                                <li><a href="dashboard-bookings.html"> <i class="fal fa-calendar-check"></i> Αποθηκευμένες αναζητήσεις </a></li>
+                                                <li><a href="dashboard-listing-table.html"><i class="fal fa-th-list"></i> Ιστορικό αναζητήσεων  </a></li>
+                                                <li><a href="dashboard-review.html"><i class="fal fa-comments-alt"></i> Στατιστικά </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="user-profile-menu">
+                                            <h3>Επιχείρηση</h3>
+                                            <ul  class="no-list-style">
+                                                <li><a href="dashboard-bookings.html"> <i class="fal fa-calendar-check"></i> Η επιχείρηση μου </a></li>
+                                                <li><a href="dashboard-listing-table.html"><i class="fal fa-th-list"></i> Αξιολογήσεις  </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="user-profile-menu">
+                                            <h3>Υποστήριξη</h3>
+                                            <ul  class="no-list-style">
+                                                <li><a href="dashboard-bookings.html"> <i class="fal fa-calendar-check"></i> Βοήθεια </a></li>
+                                                <li><a href="dashboard-listing-table.html"><i class="fal fa-th-list"></i> Υποστήριξη </a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- user-profile-menu end-->
+                                        <button class="logout_btn color-bg-red">Αποσύνδεση </button>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- dashboard-menu  end-->
+                            <!-- dashboard content-->
+                            <div class="col-md-9">
+                                <form method="post" action="/account/profile/update" class="custom-form-ast" novalidate>
+                                <div class="dashboard-title fl-wrap">
+                                  <h3>Επεξεργασία προφίλ</h3>
+                                </div>
+                                
+                                <!-- profile-edit-container-->
+                                <div class="profile-edit-container fl-wrap block_box">
+                                  <div class="custom-form-ast">
+                                
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <label class="bold-label">Όνομα</label>
+                                        <input type="text" name="first_name" placeholder="Type here" value="">
+                                      </div>
+                                
+                                      <div class="col-sm-6">
+                                        <label class="bold-label">Επώνυμο</label>
+                                        <input type="text" name="last_name" placeholder="Type here" value="">
+                                      </div>
+                                    </div>
+                                
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <label class="bold-label">Ψευδώνυμο</label>
+                                        <input type="text" name="username" placeholder="Type here" value="">
+                                      </div>
+                                
+                                      <div class="col-sm-6">
+                                        <label class="bold-label">Email</label>
+                                        <input type="email" name="email" placeholder="Type here" value="">
+                                      </div>
+                                    </div>
+                                
+                                    <div class="row">
+                                      <div class="col-sm-6">
+                                        <label class="bold-label">Τηλέφωνο</label>
+                                        <input type="tel" name="phone" placeholder="Type here" value="">
+                                      </div>
+                                
+                                      <div class="col-sm-6">
+                                        <label class="bold-label">Περιοχή</label>
+                                        <input type="text" name="location" placeholder="Type here" value="">
+                                      </div>
+                                    </div>
+                                
+                                  </div>
+                                </div>
+
+
+                                <!-- profile-edit-container end-->
+                                <div class="dashboard-title fl-wrap">
+                                  <h3>Αλλαγή κωδικού πρόσβασης</h3>
+                                </div>
+                                
+                                <div class="profile-edit-container fl-wrap block_box">
+                                  <div class="custom-form-ast">
+                                    <div class="pass-input-wrap fl-wrap">
+                                      <label>Παλιός κωδικός</label>
+                                      <input type="password" class="pass-input" name="old_password" placeholder="Type here" value="">
+                                      <!-- <span class="eye"><i class="far fa-eye" aria-hidden="true"></i></span> -->
+                                    </div>
+                                
+                                    <div class="pass-input-wrap fl-wrap">
+                                      <label>Νέος κωδικός</label>
+                                      <input type="password" class="pass-input" name="new_password" placeholder="Type here" value="">
+                                      <!-- <span class="eye"><i class="far fa-eye" aria-hidden="true"></i></span> -->
+                                    </div>
+                                
+                                    <div class="pass-input-wrap fl-wrap">
+                                      <label>Επιβεβαίωση νέου κωδικού</label>
+                                      <input type="password" class="pass-input" name="new_password_confirm" placeholder="Type here" value="">
+                                      <!-- <span class="eye"><i class="far fa-eye" aria-hidden="true"></i></span> -->
+                                    </div>
+                                
+                                  </div>
+                                </div>
+                                <!-- profile-edit-container end--> 								
+                                <div class="dashboard-title  dt-inbox fl-wrap">
+                                    <h3>Προτιμήσεις προφίλ</h3>
+                                </div>
+                                <!-- profile-edit-container-->
+                                <div class="profile-edit-container fl-wrap block_box sidebar-widgets-box">
+                                  <div class="custom-form">
+                                
+                                    <!-- 1 -->
+                                    <div class="act-widget fl-wrap">
+                                      <div class="act-widget-header">
+                                        <div class="onoffswitch">
+                                          <input type="hidden" name="pref_booking_form" value="0">
+                                            <input type="checkbox" class="onoffswitch-checkbox" id="sw1" name="pref_booking_form" value="1" checked>
+                                          <label class="onoffswitch-label" for="sw1">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                          </label>
+                                        </div>
+                                
+                                        <p class="switch-text">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- 2 -->
+                                    <div class="act-widget fl-wrap">
+                                      <div class="act-widget-header">
+                                        <div class="onoffswitch">
+                                          <input type="hidden" name="pref_price_range" value="0">
+                                          <input type="checkbox" class="onoffswitch-checkbox" id="sw2" name="pref_price_range" value="1">
+                                          <label class="onoffswitch-label" for="sw2">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                          </label>
+                                        </div>
+                                
+                                        <p class="switch-text">
+                                          <strong>Ut enim ad minim veniam:</strong>
+                                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- 3 -->
+                                    <div class="act-widget fl-wrap">
+                                      <div class="act-widget-header">
+                                        <div class="onoffswitch">
+                                          <input type="hidden" name="pref_instagram" value="0">
+                                            <input type="checkbox" class="onoffswitch-checkbox" id="sw3" name="pref_instagram" value="1" checked>
+                                          <label class="onoffswitch-label" for="sw3">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                          </label>
+                                        </div>
+                                
+                                        <p class="switch-text">
+                                          <strong>Duis aute irure dolor in reprehenderit:</strong>
+                                          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        </p>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- 4 -->
+                                    <div class="act-widget fl-wrap">
+                                      <div class="act-widget-header">
+                                        <div class="onoffswitch">
+                                          <input type="hidden" name="pref_marketing" value="0">
+                                            <input type="checkbox" class="onoffswitch-checkbox" id="sw4" name="pref_marketing" value="1" checked>
+                                          <label class="onoffswitch-label" for="sw4">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                          </label>
+                                        </div>
+                                
+                                        <p class="switch-text">
+                                          <strong>Excepteur sint occaecat cupidatat:</strong>
+                                          non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </p>
+                                      </div>
+                                    </div>
+                                
+                                  </div>
+                                </div>
+                                <!-- profile-edit-container end-->
+                                <div class="profile-pref-actions fl-wrap">
+                                  <button type="submit" class="btn pref-btn-save" name="action" value="save">Αποθήκευση</button>
+                                  <button type="submit"
+                                        class="btn pref-btn-delete"
+                                        name="action"
+                                        value="delete"
+                                        formaction="/account/delete"
+                                        formmethod="post">
+                                  Διαγραφή λογαριασμού
+                                </button>
+                                </div>
+                                </form>
+                            </div>
+                            <!-- dashboard content end-->
+                        </div>
+                    </section>
+                    <!--  section  end-->
+                    <div class="limit-box fl-wrap"></div>
+                    <section class="gray-bg mt-0 pt-0">
+                    <div class="container">
+                        <div class="clients-carousel-wrap fl-wrap">
+                            <div class="cc-btn   cc-prev"><i class="fal fa-angle-left"></i></div>
+                            <div class="cc-btn cc-next"><i class="fal fa-angle-right"></i></div>
+                            <div class="clients-carousel">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <!--client-item-->
+                                        <div class="swiper-slide">
+                                            <a href="#" class="client-item"><img src="images/clients/1.png" alt=""></a>
+                                        </div>
+                                        <!--client-item end-->
+                                        <!--client-item-->
+                                        <div class="swiper-slide">
+                                            <a href="#" class="client-item"><img src="images/clients/2.png" alt=""></a>
+                                        </div>
+                                        <!--client-item end-->
+                                        <!--client-item-->
+                                        <div class="swiper-slide">
+                                            <a href="#" class="client-item"><img src="images/clients/3.png" alt=""></a>
+                                        </div>
+                                        <!--client-item end-->
+                                        <!--client-item-->
+                                        <div class="swiper-slide">
+                                            <a href="#" class="client-item"><img src="images/clients/1.png" alt=""></a>
+                                        </div>
+                                        <!--client-item end-->
+                                        <!--client-item-->
+                                        <div class="swiper-slide">
+                                            <a href="#" class="client-item"><img src="images/clients/2.png" alt=""></a>
+                                        </div>
+                                        <!--client-item end-->
+                                        <!--client-item-->
+                                        <div class="swiper-slide">
+                                            <a href="#" class="client-item"><img src="images/clients/3.png" alt=""></a>
+                                        </div>
+                                        <!--client-item end-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
+                <!--content end-->
+            </div>
+            <!-- wrapper end-->
+            <!--footer -->
+            <footer class="main-footer fl-wrap">
+            <!-- footer-header-->
+            <div class="footer-header fl-wrap grad ient-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="subscribe-header">
+                                <h3>Εγγραφείτε στο <span>Newsletter</span> μας</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="subscribe-widget">
+                                <div class="subcribe-form">
+                                    <form id="subscribe">
+                                        <input class="enteremail fl-wrap" name="email" id="subscribe-email" placeholder="your@email.com" spellcheck="false" type="email">
+                                        <button type="submit" id="subscribe-button" class="subscribe-button"><i class="far fa-envelope"></i></button>
+                                        <label for="subscribe-email" class="subscribe-message"></label>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-header end-->
+            <!--footer-inner-->
+            <div class="footer-inner   fl-wrap">
+                <div class="container">
+                    <div class="row">
+                        <!-- footer-widget-->
+                        <div class="col-md-4">
+                            <div class="footer-widget fl-wrap">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="images\ipostit_logo.png" alt=""></a>
+                                </div>
+                                <div class="footer-contacts-widget fl-wrap">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                                    <ul class="footer-contacts fl-wrap no-list-style">
+                                        <li> <span><i class="fal fa-map-marker-alt"></i> Διεύθυνση: </span><a href="https://maps.app.goo.gl/NUFiez4BxeJNAY1JA" target="_blank">Ηπείρου 58, Λάρισα, Τ.Κ. 41 222</a></li>
+                                        <li><span><i class="fal fa-phone"></i> Τηλεφωνικό Κέντρο :</span><a href="tel:2410611111">241 061 1111</a></li>
+                                        <li><span><i class="fal fa-envelope"></i> email :</span><a href="mailto:info@ipostit.gr" target="_blank">info@ipostit.gr</a></li>
+                                    </ul>
+                                    <div class="footer-social">
+                                        <span>Follow Us: </span>
+                                        <ul class="no-list-style socials">
+                                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.38" height="13" fill="currentColor" viewBox="0 0 16 16">
+                                                                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                                                </svg>
+                                                </a>
+                                            </li>
+                                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                            <li>
+                                                <a href="#" target="_blank">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.38" height="13" fill="currentColor" viewBox="0 0 16 16">
+                                                                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                                                </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- footer-widget end-->
+                        <!-- footer-widget-->
+                        <div class="col-md-4">
+                            <div class="footer-widget fl-wrap ">
+                                <h3>Μενού πλοήγησης</h3>
+                                <ul class="footer-list fl-wrap">
+                                    <li><a href="#">Αρχική</a></li>
+                                    <li><a href="#">Σχετικά με μας</a></li>
+                                    <li><a href="#">Αγορά εφημερίδας</a></li>
+                                    <li><a href="#">Καταχώρηση αγγελιών</a></li>
+                                    <li><a href="#">Κατηγορίες αγγελιών</a></li>
+                                    <li><a href="#">Επικοινωνία</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- footer-widget end-->
+                        <!-- footer-widget  -->
+                        <div class="col-md-4">
+                            <div class="footer-widget fl-wrap ">
+                                <h3>Χρήσιμα Links</h3>
+                                <ul class="footer-list fl-wrap">
+                                    <li><a href="#">Ο λογαριασμός μου</a></li>
+                                    <li><a href="#">Η Βιβλιοθήκη μου</a></li>
+                                    <li><a href="https://ipostit.ast.gr/information.html#fq4">Συχνές ερωτήσεις</a></li>
+                                    <li><a href="https://ipostit.ast.gr/information.html#fq1">Όροι χρήσης</a></li>
+                                    <li><a href="https://ipostit.ast.gr/information.html#fq2">Πολιτική απορρήτου</a></li>
+                                    <li><a href="#">Τρόποι πληρωμής</a></li>
+                                </ul>
+                                <a href="#" class=" down-btn color3-bg fl-wrap"><i class="fab fa-apple"></i>  Apple Store </a>
+                                <a href="#" class=" down-btn color3-bg fl-wrap"><i class="fab fa-android"></i>  Google Play </a>
+                            </div>
+                        </div>
+                        <!-- footer-widget end-->
+                    </div>
+                </div>
+                <!-- footer bg-->
+                <!-- <div class="footer-bg" data-ran="4"></div> -->
+                <div class="footer-wave">
+                    <svg viewbox="0 0 100 25">
+                            <path fill="#fff" d="M0 30 V12 Q30 17 55 12 T100 11 V30z"></path>
+                        </svg>
+                </div>
+                <!-- footer bg  end-->
+            </div>
+            <!--footer-inner end -->
+            <!--sub-footer-->
+            <div class="sub-footer  fl-wrap">
+                <div class="container">
+                    <div class="copyright">Copyright &#169; 2025, <a href="">ipostit.gr</a></div>
+                    <div class="subfooter-nav">
+                        <span>Developed by</span>
+                        <a href="https://www.astrolabs.gr" target="_blank" rel="noopener noreferrer">
+                            <img src="images/Astrolabs Logo-02.png" width="200px" alt="Astrolabs Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--sub-footer end -->
+        </footer>
+            <!--footer end -->
+            <!--register form -->
+            <div class="main-register-wrap modal">
+            <div class="reg-overlay"></div>
+            <div class="main-register-holder tabs-act">
+                <div class="main-register fl-wrap  modal_main">
+                    <div class="main-register_title">
+                        <img src="images/ipostit_logo.png" alt="TownHub" class="main-register-logo">
+                    </div>
+                    <div class="close-reg"><i class="fal fa-times"></i></div>
+                    <ul class="tabs-menu fl-wrap no-list-style">
+                        <li class="current"><a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Σύνδεση</a></li>
+                        <li><a href="#tab-2"><i class="fal fa-user-plus"></i> Εγγραφή</a></li>
+                    </ul>
+                    <!--tabs -->
+                    <div class="tabs-container">
+                        <div class="tab">
+                            <!--tab -->
+                            <div id="tab-1" class="tab-content first-tab">
+                                <div class="custom-form-ast">
+                                    <form method="post" action="/auth/login" id="login-form" name="loginform">
+                                        <label>E-mail<span>*</span> </label>
+                                        <input name="email" type="email" placeholder="Type here" onclick="this.select()" value="">
+                                        <label>Κωδικός<span>*</span> </label>
+                                        <input name="password" type="password" placeholder="Type here" onclick="this.select()" value="">
+                                        <button type="submit" class="btn float-btn color-bg-red"> Είσοδος </button>
+                                        <div class="clearfix"></div>
+                                        <div class="filter-tags">
+                                            <input type="hidden" name="remember" value="0">
+                                            <input id="check-a3" type="checkbox" name="remember" value="1">
+                                            <label for="check-a3">Να με θυμάσαι</label>
+                                        </div>
+                                    </form>
+                                    <div class="lost_password">
+                                        <a href="#">Ξέχασες τον κωδικό σου;</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--tab end -->
+                            <!--tab -->
+                            <div class="tab">
+                                <div id="tab-2" class="tab-content">
+                                    <div class="custom-form-ast">
+                                        <form method="post" action="/auth/register" class="main-register-form" id="register-form" name="registerform">
+                                            <label>E-mail <span>*</span> </label>
+                                            <input name="email" type="email" placeholder="Type here" onclick="this.select()" value="">
+                                            <label>Τηλέφωνο <span>*</span></label>
+                                            <input name="tel" type="tel" placeholder="Type here" onclick="this.select()" value="">
+                                            <label>Κωδικός <span>*</span></label>
+                                            <input name="password" type="password" placeholder="Type here" onclick="this.select()" value="">
+                                            <div class="filter-tags ft-list">
+                                                <input type="hidden" name="accept_terms" value="0">
+                                                <input id="check-a2" type="checkbox" name="accept_terms" value="1" required>
+                                                <label for="check-a2">Αποδέχομαι τους <a href="#">όρους χρήσης & προϋποθέσεις</a></label>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <button type="submit" class="btn float-btn color-bg-red"> Εγγραφή  </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--tab end -->
+                        </div>
+                        <!--tabs end -->
+                        <div class="log-separator fl-wrap"><span>ή</span></div>
+                        <div class="soc-log fl-wrap">
+                            <a href="#" class="facebook-log bg-white text-grey bd-grey"> Σύνδεση με λογαριασμό google</a>
+                            <a href="#" class="facebook-log"> Σύνδεση με λογαριασμό Facebook</a>
+                            <a href="#" class="facebook-log bg-black"> Σύνδεση με λογαριασμό Apple</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--register form end -->
+            <a class="to-top"><i class="fas fa-caret-up"></i></a>
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
