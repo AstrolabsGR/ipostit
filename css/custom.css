@@ -5536,6 +5536,8 @@ body.page-extra-filters .custom-form-ast label{
   margin-bottom:8px;
 }
 
+
+
 body.page-extra-filters .custom-form-ast input[type="text"],
 body.page-extra-filters .custom-form-ast input[type="number"],
 body.page-extra-filters .custom-form-ast input[type="email"],
@@ -6120,4 +6122,462 @@ body.page-extra-filters .custom-form-ast .custom-multiselect .dropdown-options >
   cursor: pointer;
   transition: background 0.2s ease;
   font-weight: 400;
+}
+
+:root{
+  --ip-accent: #5ECFB1;
+  --ip-text: #566985;
+  --ip-muted: #878C9F;
+  --ip-border: #e5e7f2;
+  --ip-field: #f9f9f9;
+}
+
+html.ip-modal-open, body.ip-modal-open { overflow: hidden; }
+
+.ip-report{
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: none;
+}
+
+.ip-report.is-open{ display:block; }
+
+.ip-report__overlay{
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.55);
+}
+
+.ip-report__dialog{
+  position: relative;
+  width: min(720px, calc(100% - 40px));
+  margin: 60px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.25);
+  padding: 22px 26px 26px;
+  max-height: calc(100vh - 120px);
+}
+
+.ip-report__close{
+  position:absolute;
+  top: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background: transparent;
+  color: #111;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: .65;
+  transition: opacity .2s ease;
+}
+.ip-report__close:hover{ opacity: 1; }
+
+.ip-report__title{
+  margin: 0 44px 18px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.ip-report__form{ margin-top: 6px; }
+
+.ip-report__label{
+  display:block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.ip-report__input,
+.ip-report__textarea{
+  width: 100%;
+  border: 1px solid var(--ip-border);
+  background: var(--ip-field);
+  border-radius: 4px;
+  padding: 14px 14px;
+  font-size: 13px;
+  color: var(--ip-text);
+  outline: none;
+}
+.ip-report__input:focus,
+.ip-report__textarea:focus{
+  background:#fff;
+  box-shadow: 0px 10px 14px 0px rgba(12, 0, 46, 0.06);
+}
+
+.ip-report__divider{
+  height: 1px;
+  background: rgba(0,0,0,.08);
+  margin: 18px 0 16px;
+}
+
+.ip-report__section-title{
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+  margin: 14px 0 10px;
+}
+
+.ip-report__options{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.ip-report__option{
+  display:flex;
+  align-items: center;
+  gap: 10px;
+  cursor:pointer;
+  user-select:none;
+}
+
+.ip-report__option input{
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
+
+.ip-report__box{
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  background:#fff;
+  flex: 0 0 18px;
+  position: relative;
+}
+
+.ip-report__text{
+  font-size: 13px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.35;
+}
+
+.ip-report__option input:checked + .ip-report__box{
+  border-color: var(--ip-accent);
+}
+.ip-report__option input:checked + .ip-report__box:after{
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  position:absolute;
+  top: 1px;
+  left: 2px;
+  font-size: 12px;
+  color: var(--ip-accent);
+}
+
+.ip-report__textarea{
+  height: 160px;
+  resize: none;
+  margin-top: 6px;
+}
+
+.ip-report__terms{
+  margin: 14px 0 14px;
+  font-size: 12px;
+  color: var(--ip-muted);
+  line-height: 1.45;
+}
+.ip-report__terms a{
+  color: var(--ip-text);
+  text-decoration: underline;
+}
+
+.ip-report__submit{
+  width: 100%;
+  border: 0;
+  border-radius: 6px;
+  padding: 14px 16px;
+  font-size: 14px;
+  font-weight: 800;
+  background: var(--ip-accent);
+  color: #fff;
+  cursor: pointer;
+  transition: transform .06s ease, filter .2s ease;
+}
+.ip-report__submit:hover{ filter: brightness(0.98); }
+.ip-report__submit:active{ transform: translateY(1px); }
+
+.ip-report__toast{
+  display:none;
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--ip-accent);
+}
+.ip-report__toast.is-show{ display:block; }
+
+@media (max-width: 600px){
+  .ip-report__dialog{
+    width: calc(100% - 22px);
+    margin: 18px auto;
+    padding: 18px 16px 18px;
+    max-height: calc(100vh - 36px);
+  }
+  .ip-report__title{ font-size: 17px; }
+  .ip-report__text{ font-size: 13px; }
+  .ip-report__textarea{ height: 140px; }
+}
+
+
+
+:root{
+  --ip-accent: #4db7fe;
+  --ip-accent-text: #ffffff;
+}
+
+#ipReportModal .ip-report__dialog,
+#ipReportModal .ip-report__form,
+#ipReportModal .ip-report__title,
+#ipReportModal .ip-report__label,
+#ipReportModal .ip-report__section-title,
+#ipReportModal .ip-report__terms,
+#ipReportModal .ip-report__options,
+#ipReportModal .ip-report__option,
+#ipReportModal .ip-report__text{
+  text-align: left !important;
+}
+
+#ipReportModal .ip-report__title{
+  width: 100%;
+  margin: 0 44px 18px 0;
+  line-height: 1.2;
+}
+
+#ipReportModal .ip-report__input,
+#ipReportModal .ip-report__textarea{
+  box-sizing: border-box;
+}
+
+#ipReportModal .ip-report__option{
+  justify-content: flex-start;
+}
+
+#ipReportModal h1,
+#ipReportModal h2,
+#ipReportModal h3,
+#ipReportModal label,
+#ipReportModal p{
+  text-align: left !important;
+}
+
+#ipReportModal .ip-report__submit{
+  background: #d92129 !important;
+  color: var(--ip-accent-text) !important;
+}
+
+#ipReportModal .ip-report__submit:hover{
+  background: #b71b22 !important;
+  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+}
+
+#ipReportModal .ip-report__option input:checked + .ip-report__box{
+  border-color: var(--ip-accent) !important;
+}
+#ipReportModal .ip-report__option input:checked + .ip-report__box:after{
+  color: var(--ip-accent) !important;
+}
+
+#ipReportModal .ip-report__terms a{
+  color: #4e65a3;
+}
+
+@media (max-width: 600px){
+  #ipReportModal .ip-report__dialog{
+    margin: 18px auto;
+  }
+  #ipReportModal .ip-report__title{
+    margin-right: 40px;
+  }
+}
+
+.scroll-nav-wrapper-opt .share-container .ip-share-btn{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 12px;
+  border-radius:10px;
+  text-decoration:none;
+  font-size:13px;
+  color:#333;
+  background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+  margin-top:8px;
+}
+
+.scroll-nav-wrapper-opt .share-container .ip-share-btn i{
+  width:18px;
+  text-align:center;
+}
+
+.scroll-nav-wrapper-opt .share-container .ip-share-btn:hover{
+  background: rgba(22,148,210,.10);
+}
+
+.share-holder.hid-share .share-container {
+    padding: 8px;
+}
+
+#ipReportModal .ip-report__dialog{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: min(620px, calc(100vw - 30px));
+
+  max-height: calc(100vh - 40px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  display: block;
+
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#ipReportModal .ip-report__dialog::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+
+#ipReportModal .ip-report__form{
+  overflow: visible !important;
+}
+
+html.ip-modal-open, body.ip-modal-open { overflow: hidden; }
+
+#ipReportModal.ip-report{
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  padding: 20px 15px;
+}
+
+#ipReportModal.ip-report.is-open{
+  display: flex !important;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#ipReportModal .ip-report__overlay{
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 1;
+}
+
+#ipReportModal .ip-report__dialog{
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  width: min(620px, calc(100vw - 30px)) !important;
+  margin: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+  z-index: 2;
+}
+
+#ipReportModal.ip-report{
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: auto !important;
+  -ms-overflow-style: auto !important;
+}
+
+#ipReportModal .ip-report__dialog{
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+#ipReportModal.ip-report::-webkit-scrollbar{
+  width: .4375rem !important;
+}
+#ipReportModal.ip-report::-webkit-scrollbar-thumb{
+  background-color: rgba(0,0,0,.5) !important;
+  border-radius: .25rem !important;
+  box-shadow: 0 0 .0625rem hsla(0,0%,100%,.5) !important;
+}
+
+#listingModal .ip-modal-views{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-top:6px;
+  font-size:12px;
+  color:#7d93b2;
+}
+#listingModal .ip-modal-views i{
+  color:#4db7fe;
+  font-size:12px;
+}
+#listingModal .ip-modal-views__count{
+  font-weight:700;
+  color:#221f1f;
+}
+
+.ip-share-popover{
+  position: fixed;
+  z-index: 999999;
+  min-width: 220px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.10);
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+  padding: 8px;
+}
+
+.ip-share-popover .ip-share-btn{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 12px;
+  border-radius:10px;
+  text-decoration:none;
+  font-size:13px;
+  color:#333;
+  background:#fff;
+  border:1px solid rgba(0,0,0,.06);
+  margin:8px 0;
+}
+
+.ip-share-popover .ip-share-btn i{
+  width:18px;
+  text-align:center;
+}
+
+.ip-share-popover .ip-share-btn:hover{
+  background: rgba(22,148,210,.10);
+}
+
+.ip-share-popover .ip-share-btn span{
+  flex: 1;
+}
+
+.ip-share-popover .ip-share-btn.ip-share-copy span.copied{
+  font-weight: 700;
+}
+
+.clear-filter-btn {
+    padding: 0;
 }
