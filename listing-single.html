@@ -51,7 +51,11 @@
           >Καταχώρισε μια αγγελία</a
         >
         <a href="dashboard-add-listing.html" class="add-list color-bg m-0">
-          <img src="images/button-ico-header.png" alt="Icon" class="btn-icon" />
+          <img
+            src="/images/button-ico-header.png"
+            alt="Icon"
+            class="btn-icon"
+          />
           Αγορά Εφημερίδας
         </a>
         <div
@@ -68,7 +72,7 @@
         >
           <span class="lang-icon"
             ><img
-              src="images/user-ico.png"
+              src="/images/user-ico.png"
               alt=""
               style="margin-bottom: 2px" /></span
           >Sign In
@@ -606,7 +610,10 @@
                   <i class="fas fa-heart lw-p"></i> Αγαπημένα
                 </a>
                 <a href="#" class="scroll-nav-wrapper-opt-btn showshare">
-                  <i class="fas fa-share lw-p"></i> Κοινοποίηση
+                  <div style="width: 20px">
+                    <i class="fas fa-share lw-p"></i>
+                  </div>
+                  Κοινοποίηση
                 </a>
                 <div class="share-holder hid-share">
                   <div class="share-container isShare"></div>
@@ -618,7 +625,9 @@
                   <a href="#">
                     <i class="fas fa-comment-alt"></i> Write a review</a
                   >
-                  <a href="#"> <i class="fas fa-flag-alt"></i> Report </a>
+                  <a href="#" data-ip-open-report
+                    ><i class="fal fa-flag"></i> Αναφορά</a
+                  >
                 </div>
               </div>
             </div>
@@ -1403,7 +1412,6 @@
                               <div
                                 class="listsearch-input-item clact date-container2"
                               >
-                                <label><i class="fal fa-calendar"></i></label>
                                 <input
                                   type="text"
                                   placeholder="Κλείσε ραντεβού"
@@ -2017,7 +2025,126 @@
           <button type="submit"><i class="fal fa-paper-plane"></i></button>
         </div>
       </div>
-      <!--chat-widget end -->
+      <!-- Ipostit: Report Modal -->
+      <div id="ipReportModal" class="ip-report" aria-hidden="true">
+        <div class="ip-report__overlay" data-ip-report-close></div>
+
+        <div
+          class="ip-report__dialog"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="ipReportTitle"
+        >
+          <button
+            class="ip-report__close"
+            type="button"
+            aria-label="Κλείσιμο"
+            data-ip-report-close
+          >
+            <i class="fal fa-times"></i>
+          </button>
+
+          <h3 id="ipReportTitle" class="ip-report__title">Αναφορά αγγελίας</h3>
+
+          <form id="ipReportForm" class="ip-report__form">
+            <label class="ip-report__label" for="ipReportEmail"
+              >Email επικοινωνίας</label
+            >
+            <input
+              id="ipReportEmail"
+              class="ip-report__input"
+              type="email"
+              name="report_email"
+              placeholder="name@example.com"
+            />
+
+            <div class="ip-report__divider"></div>
+
+            <div class="ip-report__section-title">
+              Τι θα ήθελες να αναφέρεις σχετικά με την αγγελία;
+            </div>
+
+            <div
+              class="ip-report__options"
+              role="group"
+              aria-label="Λόγοι αναφοράς"
+            >
+              <label class="ip-report__option">
+                <input
+                  type="checkbox"
+                  name="report_reason"
+                  value="unavailable"
+                />
+                <span class="ip-report__box" aria-hidden="true"></span>
+                <span class="ip-report__text">Δεν είναι πλέον διαθέσιμη</span>
+              </label>
+
+              <label class="ip-report__option">
+                <input
+                  type="checkbox"
+                  name="report_reason"
+                  value="price-wrong"
+                />
+                <span class="ip-report__box" aria-hidden="true"></span>
+                <span class="ip-report__text">Η τιμή είναι ανακριβής</span>
+              </label>
+
+              <label class="ip-report__option">
+                <input
+                  type="checkbox"
+                  name="report_reason"
+                  value="wrong-info"
+                />
+                <span class="ip-report__box" aria-hidden="true"></span>
+                <span class="ip-report__text"
+                  >Περιέχει ανακριβείς πληροφορίες</span
+                >
+              </label>
+
+              <label class="ip-report__option">
+                <input
+                  type="checkbox"
+                  name="report_reason"
+                  value="pro-as-private"
+                />
+                <span class="ip-report__box" aria-hidden="true"></span>
+                <span class="ip-report__text"
+                  >Είναι επαγγελματίας και εμφανίζεται ως ιδιώτης</span
+                >
+              </label>
+
+              <label class="ip-report__option">
+                <input type="checkbox" name="report_reason" value="other" />
+                <span class="ip-report__box" aria-hidden="true"></span>
+                <span class="ip-report__text">Άλλο</span>
+              </label>
+            </div>
+
+            <div class="ip-report__section-title">
+              Δώσε μας περισσότερες λεπτομέρειες
+            </div>
+            <textarea
+              class="ip-report__textarea"
+              name="report_comment"
+              placeholder=""
+            ></textarea>
+
+            <p class="ip-report__terms">
+              Επιλέγοντας "Υποβολή" αποδέχεσαι τους
+              <a href="#">Όρους Χρήσης</a> και την
+              <a href="#">Πολιτική δεδομένων</a>.
+            </p>
+
+            <button class="ip-report__submit color-bg-red" type="submit">
+              Υποβολή
+            </button>
+
+            <div class="ip-report__toast" aria-live="polite">
+              Η αναφορά καταχωρήθηκε!
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <!-- Main end -->
     <!--=============== scripts  ===============-->
