@@ -1086,3 +1086,171 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+(function ($) {
+  "use strict";
+
+  function getShareUrlFromBtn($btn) {
+    // 1) explicit data attribute (best)
+    var u = $btn.attr("data-share-url");
+    if (u) return u;
+
+    // 2) try card main link
+    var $card = $btn.closest("article, .geodir-category-listing, .listing-item");
+    var href = $card.find('a.geodir-category-content, a[href*="listing"], a').first().attr("href");
+
+    if (href && href !== "#" && href !== "#1") {
+      // make absolute if relative
+      try { return new URL(href, window.location.origin).href; } catch (e) { return href; }
+    }
+
+    // 3) fallback
+    return $('link[rel="canonical"]').attr("href") || window.location.href;
+  }
+
+  function getShareTitleFromBtn($btn) {
+    var t = $btn.attr("data-share-title");
+    if (t) return t;
+
+    var $card = $btn.closest("article, .geodir-category-listing, .listing-item");
+    var title = $card.find("h3, .geodir-category-content h3, .listing-item-title").first().text();
+    return (title || document.title || "").trim();
+  }
+
+  function copyToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      ta.style.top = "0";
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      try {
+        document.execCommand("copy");
+        resolve();
+      } catch (e) {
+        reject(e);
+      }
+      document.body.removeChild(ta);
+    });
+  }
+
+  var $pop = null;
+  var current = { url: "", title: "" };
+
+  function ensurePopover() {
+    if ($pop) return;
+
+    $pop = $(
+      '<div class="ip-share-popover" role="dialog" aria-label="Share options" style="display:none;">' +
+        '<a href="#" class="ip-share-btn ip-share-whatsapp"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>' +
+        '<a href="#" class="ip-share-btn ip-share-viber"><i class="fab fa-viber"></i><span>Viber</span></a>' +
+        '<a href="#" class="ip-share-btn ip-share-email"><i class="far fa-envelope"></i><span>Email</span></a>' +
+        '<a href="#" class="ip-share-btn ip-share-copy"><i class="far fa-link"></i><span class="copyText">Copy link</span></a>' +
+      "</div>"
+    );
+
+    $("body").append($pop);
+  }
+
+  function openPopoverNear(el) {
+    ensurePopover();
+
+    var r = el.getBoundingClientRect();
+    var padding = 10;
+
+    // default: below-left
+    var left = r.left;
+    var top = r.bottom + 8;
+
+    $pop.css({ display: "block", left: left, top: top });
+
+    // keep inside viewport
+    var pr = $pop[0].getBoundingClientRect();
+    if (pr.right > window.innerWidth - padding) {
+      left = Math.max(padding, window.innerWidth - pr.width - padding);
+    }
+    if (pr.bottom > window.innerHeight - padding) {
+      top = Math.max(padding, r.top - pr.height - 8);
+    }
+
+    $pop.css({ left: left, top: top });
+  }
+
+  function closePopover() {
+    if ($pop) $pop.hide();
+  }
+
+  // Open from card share icon
+  $(document).on("click", ".ip-card-share", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    var $btn = $(this);
+    current.url = getShareUrlFromBtn($btn);
+    current.title = getShareTitleFromBtn($btn);
+
+    openPopoverNear(this);
+  });
+
+  // Click outside closes
+  $(document).on("click", function () {
+    closePopover();
+  });
+
+  // Escape closes
+  $(document).on("keydown", function (e) {
+    if (e.key === "Escape") closePopover();
+  });
+
+  // Reposition/close on scroll/resize (simple: close)
+  $(window).on("scroll resize", function () {
+    closePopover();
+  });
+
+  // Actions
+  $(document).on("click", ".ip-share-popover .ip-share-whatsapp", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var text = encodeURIComponent((current.title ? current.title + " " : "") + current.url);
+    window.open("https://wa.me/?text=" + text, "_blank");
+    closePopover();
+  });
+
+  $(document).on("click", ".ip-share-popover .ip-share-viber", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var text = encodeURIComponent((current.title ? current.title + " " : "") + current.url);
+    window.location.href = "viber://forward?text=" + text;
+    closePopover();
+  });
+
+  $(document).on("click", ".ip-share-popover .ip-share-email", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var subject = encodeURIComponent(current.title || "");
+    var body = encodeURIComponent(current.url || "");
+    window.location.href = "mailto:?subject=" + subject + "&body=" + body;
+    closePopover();
+  });
+
+  $(document).on("click", ".ip-share-popover .ip-share-copy", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    var $txt = $pop.find(".copyText");
+    var old = $txt.text();
+
+    copyToClipboard(current.url).then(function () {
+      $txt.text("Copied!").addClass("copied");
+      setTimeout(function () {
+        $txt.text(old).removeClass("copied");
+      }, 900);
+    });
+  });
+
+})(jQuery);
