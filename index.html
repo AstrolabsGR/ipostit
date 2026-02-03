@@ -54,7 +54,7 @@
         >
         <a href="dashboard-add-listing.html" class="add-list color-bg m-0">
           <img
-            src="images/button-ico-header.png"
+            src="/images/button-ico-header.png"
             alt="Icon"
             class="btn-icon"
           />
@@ -74,7 +74,7 @@
         >
           <span class="lang-icon"
             ><img
-              src="images/user-ico.png"
+              src="/images/user-ico.png"
               alt=""
               style="margin-bottom: 2px" /></span
           >Sign In
@@ -231,7 +231,7 @@
               <!-- header-search-input end -->
               <button
                 class="header-search-button red-bg"
-                onclick="window.location.href='listing.html'"
+                onclick="window.location.href = 'listing.html'"
               >
                 <i class="far fa-search"></i> Search
               </button>
@@ -581,41 +581,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -868,41 +901,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -1155,41 +1221,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -1442,41 +1541,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -1729,41 +1861,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -2060,41 +2225,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -2347,41 +2545,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -2634,41 +2865,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -2921,41 +3185,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -3208,41 +3505,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -3543,41 +3873,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -3830,41 +4193,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -4117,41 +4513,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -4404,41 +4833,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -4691,41 +5153,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -5023,41 +5518,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -5310,41 +5838,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -5597,41 +6158,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -5884,41 +6478,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -6171,41 +6798,74 @@
                                 </div>
 
                                 <!-- Τιμή Range -->
-                                <div class="listsearch-input-item">
+                                <div
+                                  class="listsearch-input-item ef-price-range ef-price-range-stable"
+                                >
                                   <div
                                     class="range-year-group"
                                     style="margin-bottom: 0"
                                   >
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή από"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_from"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή από"
+                                        ></option>
+                                        <option value="0">0</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
 
-                                    <div class="custom-number-input">
-                                      <input
-                                        type="number"
-                                        min="0"
-                                        placeholder="Τιμή έως"
-                                      />
-                                      <div class="number-controls">
-                                        <button class="arrow up">
-                                          <i class="fal fa-chevron-up"></i>
-                                        </button>
-                                        <button class="arrow down">
-                                          <i class="fal fa-chevron-down"></i>
-                                        </button>
-                                      </div>
+                                    <div class="ef-price-col">
+                                      <select
+                                        name="price_to"
+                                        class="chosen-select no-search-select"
+                                      >
+                                        <option
+                                          value=""
+                                          data-display="Τιμή έως"
+                                        ></option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="150">150</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="500">500</option>
+                                        <option value="750">750</option>
+                                        <option value="1000">1.000</option>
+                                        <option value="1500">1.500</option>
+                                        <option value="2000">2.000</option>
+                                        <option value="3000">3.000</option>
+                                        <option value="5000">5.000</option>
+                                        <option value="7500">7.500</option>
+                                        <option value="10000">10.000</option>
+                                        <option value="15000">15.000</option>
+                                        <option value="20000">20.000</option>
+                                        <option value="30000">30.000</option>
+                                        <option value="50000">50.000</option>
+                                      </select>
                                     </div>
                                   </div>
                                 </div>
@@ -6541,7 +7201,7 @@
                                   <div class="geodir-category-location">
                                     <a href="#"
                                       ><img
-                                        src="images/location-ico.png"
+                                        src="/images/location-ico.png"
                                         alt="Location Icon"
                                         class="location-icon"
                                       />
@@ -6564,7 +7224,7 @@
                                       class="listing-item-category color-bg-red mg-right"
                                     >
                                       <img
-                                        src="images/aggelies-ico.png"
+                                        src="/images/aggelies-ico.png"
                                         alt="Save Icon"
                                         class="save-icon"
                                       />
@@ -6697,7 +7357,7 @@
                                   <div class="geodir-category-location">
                                     <a href="#"
                                       ><img
-                                        src="images/location-ico.png"
+                                        src="/images/location-ico.png"
                                         alt="Location Icon"
                                         class="location-icon"
                                       />
@@ -6720,7 +7380,7 @@
                                       class="listing-item-category color-bg-red mg-right"
                                     >
                                       <img
-                                        src="images/aggelies-ico.png"
+                                        src="/images/aggelies-ico.png"
                                         alt="Save Icon"
                                         class="save-icon"
                                       />
@@ -6848,7 +7508,7 @@
                                   <div class="geodir-category-location">
                                     <a href="#"
                                       ><img
-                                        src="images/location-ico.png"
+                                        src="/images/location-ico.png"
                                         alt="Location Icon"
                                         class="location-icon"
                                       />
@@ -6871,7 +7531,7 @@
                                       class="listing-item-category color-bg-red mg-right"
                                     >
                                       <img
-                                        src="images/aggelies-ico.png"
+                                        src="/images/aggelies-ico.png"
                                         alt="Save Icon"
                                         class="save-icon"
                                       />
@@ -6999,7 +7659,7 @@
                                   <div class="geodir-category-location">
                                     <a href="#"
                                       ><img
-                                        src="images/location-ico.png"
+                                        src="/images/location-ico.png"
                                         alt="Location Icon"
                                         class="location-icon"
                                       />
@@ -7022,7 +7682,7 @@
                                       class="listing-item-category color-bg-red mg-right"
                                     >
                                       <img
-                                        src="images/aggelies-ico.png"
+                                        src="/images/aggelies-ico.png"
                                         alt="Save Icon"
                                         class="save-icon"
                                       />
@@ -8397,7 +9057,7 @@
                               class="listing-item-category color-bg-red mg-right"
                             >
                               <img
-                                src="images/aggelies-ico.png"
+                                src="/images/aggelies-ico.png"
                                 alt="Save Icon"
                                 class="save-icon"
                               />
@@ -9769,4 +10429,3 @@
     <script src="js/custom-index.js"></script>
   </body>
 </html>
-
