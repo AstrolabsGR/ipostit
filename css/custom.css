@@ -3294,7 +3294,6 @@ body.modal-active .z-index-low {
   display: inline-flex;
   align-items: center;
   width: 100%;
-  max-width: 220px;
 }
 
 .custom-number-input input[type="number"] {
@@ -3364,7 +3363,7 @@ body.modal-active .z-index-low {
 .date-range-pair {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
 
 .date-range-pair .date-container {
@@ -3392,10 +3391,11 @@ body.modal-active .z-index-low {
     background: #f6f6f6;
     padding: 10px 20px;
     border: 1px solid #e5e7f2;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 48px;
 }
 
 .act-widget.fl-wrap .act-widget-header h4 {
@@ -3556,8 +3556,8 @@ body.modal-active .z-index-low {
 .filter-section-title {
   font-size: 16px;
   font-weight: 700;
-  margin: 25px 0 10px 0;
-  padding-bottom: 8px;
+  margin: 20px 0 10px 0;
+  padding-bottom: 10px;
   color: #000;
   text-align: left;
 }
@@ -5466,7 +5466,7 @@ body.page-extra-filters .ef-file-btn i{
             background:#f7f7f9;
             border:1px solid #e5e7f2;
             border-radius:4px;
-            height:50px;
+            height:48px;
             padding:0 14px;
             display:flex;
             align-items:center;
@@ -5510,7 +5510,7 @@ body.page-extra-filters .ef-file-btn i{
         }
         body.page-extra-filters .ef-file-btn{
             width:100%;
-            height:50px;
+            height:48px;
             line-height:50px;
             text-align:left;
             padding:0 16px;
@@ -5553,7 +5553,7 @@ body.page-extra-filters .ef-switch-field{
   background:#f7f7f9;
   border:1px solid #e5e7f2;
   border-radius:4px;
-  height:50px;
+  height:48px;
   padding:0 14px;
   display:flex;
   align-items:center;
@@ -5578,7 +5578,7 @@ body.page-extra-filters .ef-switch-field .onoffswitch-label{
 
 body.page-extra-filters .ef-file-btn{
   width:100%;
-  height:50px;
+  height:48px;
   border-radius:4px;
   font-weight:700;
   display:flex;
@@ -5594,7 +5594,7 @@ body.page-extra-filters .ef-radio-select{ position:relative; }
 
 body.page-extra-filters .ef-radio-trigger{
   width:100%;
-  height:50px;
+  height:48px;
   background:#f7f7f9;
   border:1px solid #e5e7f2;
   border-radius:4px;
@@ -5761,6 +5761,7 @@ body.page-extra-filters .custom-form-ast .ef-box .row > [class*="col-"] > label 
 
 .custom-form-ast textarea, .custom-form-ast input[type="text"], .custom-form-ast input[type=email], .custom-form-ast input[type=password], .custom-form-ast input[type=button], .listsearch-input-item input[type="text"] {
     font-size: 14px;
+    height: 48px;
     padding: 14px 15px;
 }
 
@@ -6580,4 +6581,75 @@ html.ip-modal-open, body.ip-modal-open { overflow: hidden; }
 
 .clear-filter-btn {
     padding: 0;
+}
+
+.sub-tab-content .filter-row{
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.sub-tab-content .filter-row > *,
+.sub-tab-content .listsearch-input-item{
+  min-width: 0 !important;
+}
+
+.ef-price-range-stable .range-year-group{
+  display: flex;
+  gap: 14px;
+  width: 100%;
+  min-width: 0;
+}
+
+.ef-price-range-stable .ef-price-col{
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.ef-price-range-stable select{
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+.ef-price-range-stable .chosen-container{
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+}
+
+.ef-price-range-stable .chosen-container .chosen-single{
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.ef-price-range-stable .chosen-container .chosen-single span{
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ef-price-range-stable .nice-select{
+  width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  box-sizing: border-box;
+}
+
+.ef-price-range-stable .nice-select .current{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ef-price-range-stable .nice-select:before{
+  content: none !important;
+  display: none !important;
+}
+
+.ef-price-range-stable .nice-select {
+    padding-left: 15px;
+}
+
+.filter-tags input:checked:after, .custom-form-ast .filter-tags input:checked:after {
+    z-index: 1;
 }
