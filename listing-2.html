@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!--=============== basic  ===============-->
@@ -227,7 +227,7 @@
               <!-- header-search-input end -->
               <button
                 class="header-search-button red-bg"
-                onclick="window.location.href='listing.html'"
+                onclick="window.location.href = 'listing.html'"
               >
                 <i class="far fa-search"></i> Search
               </button>
@@ -1321,46 +1321,79 @@
                               <h3 class="filter-section-title">Ενότητα 3</h3>
 
                               <!-- === Price Filter === -->
-                              <div class="listsearch-input-item clact mb-0">
+                              <!-- === Price Filter (dropdown like the others) === -->
+                              <div
+                                class="listsearch-input-item clact mb-0 ef-price-range ef-price-range-stable"
+                              >
                                 <h4 class="filter-title-inline">Τιμή</h4>
 
-                                <div class="range-year-group">
+                                <div
+                                  class="range-year-group"
+                                  style="margin-bottom: 8px"
+                                >
                                   <!-- Από -->
-                                  <div class="custom-number-input">
-                                    <input
-                                      type="number"
+                                  <div class="ef-price-col">
+                                    <select
                                       name="price_min"
-                                      min="0"
-                                      max="9999999"
-                                      placeholder="Από"
-                                    />
-                                    <div class="number-controls">
-                                      <button type="button" class="arrow up">
-                                        <i class="fal fa-chevron-up"></i>
-                                      </button>
-                                      <button type="button" class="arrow down">
-                                        <i class="fal fa-chevron-down"></i>
-                                      </button>
-                                    </div>
+                                      class="chosen-select no-search-select"
+                                    >
+                                      <option
+                                        value=""
+                                        data-display="Από"
+                                      ></option>
+                                      <option value="0">0</option>
+                                      <option value="20">20</option>
+                                      <option value="50">50</option>
+                                      <option value="100">100</option>
+                                      <option value="150">150</option>
+                                      <option value="200">200</option>
+                                      <option value="300">300</option>
+                                      <option value="500">500</option>
+                                      <option value="750">750</option>
+                                      <option value="1000">1.000</option>
+                                      <option value="1500">1.500</option>
+                                      <option value="2000">2.000</option>
+                                      <option value="3000">3.000</option>
+                                      <option value="5000">5.000</option>
+                                      <option value="7500">7.500</option>
+                                      <option value="10000">10.000</option>
+                                      <option value="15000">15.000</option>
+                                      <option value="20000">20.000</option>
+                                      <option value="30000">30.000</option>
+                                      <option value="50000">50.000</option>
+                                    </select>
                                   </div>
 
                                   <!-- Έως -->
-                                  <div class="custom-number-input">
-                                    <input
-                                      type="number"
+                                  <div class="ef-price-col">
+                                    <select
                                       name="price_max"
-                                      min="0"
-                                      max="9999999"
-                                      placeholder="Έως"
-                                    />
-                                    <div class="number-controls">
-                                      <button type="button" class="arrow up">
-                                        <i class="fal fa-chevron-up"></i>
-                                      </button>
-                                      <button type="button" class="arrow down">
-                                        <i class="fal fa-chevron-down"></i>
-                                      </button>
-                                    </div>
+                                      class="chosen-select no-search-select"
+                                    >
+                                      <option
+                                        value=""
+                                        data-display="Έως"
+                                      ></option>
+                                      <option value="20">20</option>
+                                      <option value="50">50</option>
+                                      <option value="100">100</option>
+                                      <option value="150">150</option>
+                                      <option value="200">200</option>
+                                      <option value="300">300</option>
+                                      <option value="500">500</option>
+                                      <option value="750">750</option>
+                                      <option value="1000">1.000</option>
+                                      <option value="1500">1.500</option>
+                                      <option value="2000">2.000</option>
+                                      <option value="3000">3.000</option>
+                                      <option value="5000">5.000</option>
+                                      <option value="7500">7.500</option>
+                                      <option value="10000">10.000</option>
+                                      <option value="15000">15.000</option>
+                                      <option value="20000">20.000</option>
+                                      <option value="30000">30.000</option>
+                                      <option value="50000">50.000</option>
+                                    </select>
                                   </div>
                                 </div>
                               </div>
@@ -5158,46 +5191,64 @@
           <h3 class="filter-section-title">Ενότητα 3</h3>
 
           <!-- === Price Filter === -->
-          <div class="listsearch-input-item clact mb-0">
+          <!-- === Price Filter (dropdown like the others) === -->
+          <div
+            class="listsearch-input-item clact mb-0 ef-price-range ef-price-range-stable"
+          >
             <h4 class="filter-title-inline">Τιμή</h4>
 
-            <div class="range-year-group">
+            <div class="range-year-group" style="margin-bottom: 8px">
               <!-- Από -->
-              <div class="custom-number-input">
-                <input
-                  type="number"
-                  name="price_min"
-                  min="0"
-                  max="9999999"
-                  placeholder="Από"
-                />
-                <div class="number-controls">
-                  <button type="button" class="arrow up">
-                    <i class="fal fa-chevron-up"></i>
-                  </button>
-                  <button type="button" class="arrow down">
-                    <i class="fal fa-chevron-down"></i>
-                  </button>
-                </div>
+              <div class="ef-price-col">
+                <select name="price_min" class="chosen-select no-search-select">
+                  <option value="" data-display="Από"></option>
+                  <option value="0">0</option>
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="150">150</option>
+                  <option value="200">200</option>
+                  <option value="300">300</option>
+                  <option value="500">500</option>
+                  <option value="750">750</option>
+                  <option value="1000">1.000</option>
+                  <option value="1500">1.500</option>
+                  <option value="2000">2.000</option>
+                  <option value="3000">3.000</option>
+                  <option value="5000">5.000</option>
+                  <option value="7500">7.500</option>
+                  <option value="10000">10.000</option>
+                  <option value="15000">15.000</option>
+                  <option value="20000">20.000</option>
+                  <option value="30000">30.000</option>
+                  <option value="50000">50.000</option>
+                </select>
               </div>
 
               <!-- Έως -->
-              <div class="custom-number-input">
-                <input
-                  type="number"
-                  name="price_max"
-                  min="0"
-                  max="9999999"
-                  placeholder="Έως"
-                />
-                <div class="number-controls">
-                  <button type="button" class="arrow up">
-                    <i class="fal fa-chevron-up"></i>
-                  </button>
-                  <button type="button" class="arrow down">
-                    <i class="fal fa-chevron-down"></i>
-                  </button>
-                </div>
+              <div class="ef-price-col">
+                <select name="price_max" class="chosen-select no-search-select">
+                  <option value="" data-display="Έως"></option>
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  <option value="150">150</option>
+                  <option value="200">200</option>
+                  <option value="300">300</option>
+                  <option value="500">500</option>
+                  <option value="750">750</option>
+                  <option value="1000">1.000</option>
+                  <option value="1500">1.500</option>
+                  <option value="2000">2.000</option>
+                  <option value="3000">3.000</option>
+                  <option value="5000">5.000</option>
+                  <option value="7500">7.500</option>
+                  <option value="10000">10.000</option>
+                  <option value="15000">15.000</option>
+                  <option value="20000">20.000</option>
+                  <option value="30000">30.000</option>
+                  <option value="50000">50.000</option>
+                </select>
               </div>
             </div>
           </div>
