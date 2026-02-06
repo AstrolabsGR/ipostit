@@ -6653,3 +6653,90 @@ html.ip-modal-open, body.ip-modal-open { overflow: hidden; }
 .filter-tags input:checked:after, .custom-form-ast .filter-tags input:checked:after {
     z-index: 1;
 }
+
+.card {
+    box-shadow: none !important;
+}
+
+.footer-social {
+    background: unset;
+    padding: unset;
+}
+
+body {
+    text-align: center !important;
+    font-family: 'Roboto' !important;
+    font-size: 13px!important;
+    line-height: normal!important;
+}
+
+.fal, .far {
+    font-family: Font Awesome\ 5 Pro!important;
+}
+
+.dx-datagrid-rowsview {
+    background: #f7f7f8;
+}
+
+.to-top {
+    color: #fff !important;
+}
+
+.back-tofilters {
+    color: #fff !important;
+}
+
+.dx-datagrid-nowrap, .dx-datagrid-nowrap .dx-header-row>td>.dx-datagrid-text-content {
+    white-space: normal;
+}
+
+#TopFiltersDiv {
+    align-items: baseline;
+}
+
+.geodir-category-content-title-item .title-sin_map{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  gap: 6px;
+}
+
+.geodir-category-content-title-item .title-sin_map > a{
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.geodir-category-content-title-item .title-sin_map .verified-badge{
+  flex: 0 0 auto;
+}
+
+.geodir-category-content-title-item .title-sin_map > a {
+    max-width: 85%;
+}
+
+.custom-footer-info a.listing-item-category-wrap {
+  cursor: default !important;
+}
+
+.icons-wrap a {
+    color: #fff !important;
+}
+
+.btn {
+    padding: 12px 55px 12px 25px !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    transition: all 200ms linear !important;
+}
+
+.color-bg-red:hover {
+    background-color: #b71b22 !important;
+}
