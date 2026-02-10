@@ -45,7 +45,7 @@ blockquote:before {
 	opacity:0.4
 }
 blockquote p {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: 'Roboto', "Times New Roman", Times, serif;
 	font-style:italic;
 	color:#494949;
 }
@@ -1315,7 +1315,7 @@ section.gray-section .section-separator {
 	letter-spacing:-2px;
 	text-transform:uppercase;
 	font-weight:900;
-  	font-family: 'Raleway', sans-serif;
+  	font-family: 'Roboto', sans-serif;
 }
 .parallax-section .section-subtitle{
 	color:#fff;
@@ -1418,7 +1418,7 @@ section.gray-section .section-separator {
     line-height: 70px;
 	font-weight:900;
 	color:#fff;
- 	font-family: 'Raleway', sans-serif;
+ 	font-family: 'Roboto', sans-serif;
 	position:relative;
 	z-index:2;
 }
@@ -2310,7 +2310,7 @@ section.gray-section .section-separator {
 }
 .onoffswitch-inner:before, .onoffswitch-inner:after {
     display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    font-size: 14px; color: white; font-family: 'Roboto', Arial, sans-serif; font-weight: bold;
     box-sizing: border-box;
 }
 .onoffswitch-inner:before {
@@ -4278,7 +4278,7 @@ section.gray-section .section-separator {
 	font-weight:600;
 	font-size:16px;
 	margin-bottom:10px;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .geodir-category-content h3 a{
 	color: #566985;
@@ -4759,7 +4759,7 @@ section.gray-section .section-separator {
     transition: all .3s ease-in-out 0s;
 }
 .listing-item-grid_title h3  {
- 	font-family: 'Raleway', sans-serif;
+ 	font-family: 'Roboto', sans-serif;
 	font-weight:700;
 	padding-bottom:5px;
 	margin-bottom:10px;
@@ -5449,7 +5449,7 @@ section.gray-section .section-separator {
     font-size: 15px;
     font-weight: 600;
     color: #566985;
- 	font-family: 'Nunito', sans-serif;
+ 	font-family: 'Roboto', sans-serif;
 }
 .list-single-main-item_subtitle h4 {
 	font-size:14px;
@@ -5546,7 +5546,7 @@ section.gray-section .section-separator {
 .single-facts_2 .inline-facts-wrap .num , .bold-facts .inline-facts-wrap .num  {
     color: #fff;
 	font-weight:600;
- 	font-family: 'Raleway', sans-serif;
+ 	font-family: 'Roboto', sans-serif;
 	font-size:44px;
 	float:none;
 	text-align:center;
@@ -5602,7 +5602,7 @@ section.gray-section .section-separator {
 .list-single-main-item_content .listing-features li a {
  	font-weight:600;
 	color: #878C9F;
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
 .list-single-main-item_content .listing-features li i {
@@ -6998,7 +6998,7 @@ section.gray-section .section-separator {
 	padding-bottom:20px;
 }
 .video-item p {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: 'Roboto', "Times New Roman", Times, serif;
 	font-style:italic;
 	color:#eee;
 	text-align:left;
@@ -7601,7 +7601,7 @@ section.gray-section .section-separator {
 .testimonilas-text p{
     color: #878C9F;
 	font-size: 14px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Roboto', "Times New Roman", Times, serif;
     font-style: italic;
 	line-height: 24px;
     padding-bottom: 10px;
@@ -7671,7 +7671,7 @@ section.gray-section .section-separator {
 	color:#fff;
 	font-weight:900;
 	padding-bottom:25px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .images-collage-title {
 	position:absolute;
@@ -8294,7 +8294,7 @@ section.absolute-wrap_section .section-separator {
 	font-size:32px;
 	font-weight:800;
 	color:#fff;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .ab_text {
 	padding-left:20px;
@@ -8304,7 +8304,7 @@ section.absolute-wrap_section .section-separator {
     font-weight: 800;
 	text-align:left;
 	font-size:22px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .ab_text-title h4{
 	font-size: 14px;
@@ -8510,7 +8510,7 @@ section.absolute-wrap_section .section-separator {
 	font-size:154px;
 	color:#fff;
 	font-weight:900;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	letter-spacing:10px;
 }
 .error-wrap p {
