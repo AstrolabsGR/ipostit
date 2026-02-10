@@ -1992,7 +1992,7 @@ section.gray-section .section-separator {
 	width:100%;
 	position:relative;
 }
-.custom-form-ast  textarea , .custom-form-ast input[type="text"] , .custom-form-ast  input[type=email] , .custom-form-ast  input[type=password] , .custom-form-ast  input[type=button] , .listsearch-input-item input[type="text"]{
+/* .custom-form-ast  textarea , .custom-form-ast input[type="text"] , .custom-form-ast  input[type=email] , .custom-form-ast  input[type=password] , .custom-form-ast  input[type=button] , .listsearch-input-item input[type="text"]{
     float: left;
     border: 1px solid #e5e7f2;
     background: #f9f9f9;
@@ -2005,7 +2005,7 @@ section.gray-section .section-separator {
 	outline:none;
 	overflow:hidden;
 	z-index:1;
-}
+} */
 .custom-form-ast.dark-form  textarea , .custom-form-ast.dark-form  input[type="text"]  , .custom-form-ast.dark-form  input[type=email]  , .custom-form-ast.dark-form input[type=password] , .custom-form-ast.dark-form input[type=button] {
 	border:none;
     background:rgba(255,255,255,0.08);
