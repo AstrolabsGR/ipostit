@@ -6759,6 +6759,7 @@ body {
 
 
 .listsearch-input-item input.astro-i[type="text"],
+.astro-i[type="text"],
 .astro-i[type="email"],
 .astro-i[type="password"]{
   float: left;
