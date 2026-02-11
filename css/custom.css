@@ -6810,6 +6810,9 @@ textarea.astro-i{
   width: 100% !important;
 }
 
-.color-bg-red-rev {
-  color: #d92129 !important;
+button.color-bg-red-rev:hover,
+.btn.color-bg-red-rev:hover{
+  color: #fff !important;
+  background: #d92129 !important;
+  border-color: #d92129 !important;
 }
