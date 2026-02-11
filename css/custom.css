@@ -6809,3 +6809,7 @@ body {
 textarea.astro-i{
   width: 100% !important;
 }
+
+.color-bg-red-rev {
+  color: #d92129 !important;
+}
