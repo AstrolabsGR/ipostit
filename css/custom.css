@@ -6798,3 +6798,7 @@ body {
 .main-header a.add-list:focus{
   color: #fff !important;
 }
+
+#Home_page .listsearch-input-item .range-year-group{
+  margin-bottom: 0 !important;
+}
