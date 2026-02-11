@@ -6805,3 +6805,7 @@ body {
 #Home_page .listsearch-input-item .range-year-group{
   margin-bottom: 0 !important;
 }
+
+textarea.astro-i{
+  width: 100% !important;
+}
