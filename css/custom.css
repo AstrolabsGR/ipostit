@@ -3438,7 +3438,7 @@ body.modal-active .z-index-low {
   display: inline-block;
   max-width: 90%;
   white-space: nowrap;
-  overflow: hidden;
+  overflow: visible;
   text-overflow: ellipsis;
   vertical-align: middle;
 }
@@ -6659,8 +6659,8 @@ html.ip-modal-open, body.ip-modal-open { overflow: hidden; }
 }
 
 .footer-social {
-    background: unset;
-    padding: unset;
+    background: unset!important;
+    padding: unset!important;
 }
 
 body {
@@ -6724,7 +6724,7 @@ body {
 }
 
 .btn {
-    padding: 12px 55px 12px 25px !important;
+    padding: 12px 55px 12px 55px !important;
     border-radius: 4px !important;
     color: #fff !important;
     font-weight: 600 !important;
@@ -6734,6 +6734,10 @@ body {
 
 .color-bg-red:hover {
     background-color: #b71b22 !important;
+}
+
+.color-bg-red {
+    background-color: #d92129 !important;
 }
 
 #contact_name,
@@ -6754,12 +6758,12 @@ body {
 }
 
 
-.listsearch-input-item input[type="text"]{
+.listsearch-input-item input.astro-i[type="text"]{
   float: left;
   border: 1px solid #e5e7f2;
   background: #f9f9f9;
   width: 100%;
-  padding: 14px 15px;
+  padding: 14px 35px;
   height: 48px;
   border-radius: 4px;
   color: #7d93b2;
@@ -6771,10 +6775,26 @@ body {
 }
 
 
-.listsearch-input-item .nice-select.open > ul.list{
-  max-height: 200px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior: contain;
-  touch-action: pan-y;
+.select-box:has(.selected-text i[class*="fa"])::before,
+.select-box .selected-text:has(i[class*="fa"])::before{
+  content: none !important;
+}
+
+.select-box:has(.selected-text i[class*="fa"]){
+  padding-left: 15px !important;
+}
+
+
+.select-box:has(.selected-text i[class*="fa"]) .selected-text{
+  padding-left: 0 !important;
+}
+
+
+.select-box:has(.selected-text i[class*="fa"]) .selected-text > i[class*="fa"]{
+  margin-right: 8px;
+}
+
+.main-header a.add-list:hover,
+.main-header a.add-list:focus{
+  color: #fff !important;
 }
