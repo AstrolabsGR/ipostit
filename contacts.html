@@ -322,11 +322,11 @@
                                                 <form  class="custom-form-ast" action="php/contact.php" name="contactform" id="contactform">
                                                     <fieldset>
                                                         <!--<label><i class="fal fa-user"></i></label>-->
-                                                        <input type="text" name="name" id="name" placeholder="Ονοματερώνυμο*" value=""/>
+                                                        <input type="text" name="name" id="contact_name" placeholder="Ονοματερώνυμο*" value=""/>
                                                         <div class="clearfix"></div>
                                                         <!--<label><i class="fal fa-envelope"></i>  </label>-->
-                                                        <input type="text"  name="email" id="email" placeholder="E-mail*" value=""/>
-                                                        <textarea name="comments"  id="comments" cols="40" rows="3" placeholder="Το μήνυμα σας"></textarea>
+                                                        <input type="text"  name="email" id="contact_email" placeholder="E-mail*" value=""/>
+                                                        <textarea name="comments"  id="contact_message" cols="40" rows="3" placeholder="Το μήνυμα σας"></textarea>
                                                     </fieldset>
                                                     <button class="btn float-btn color-bg-red" id="submit">Αποστολή</button>
                                                 </form>
@@ -495,9 +495,9 @@
                                     <div class="custom-form-ast">
                                         <form method="post"  name="registerform">
                                             <label>Username or Email Address <span>*</span> </label>
-                                            <input name="email" type="text"   onClick="this.select()" value="">
+                                            <input class="astro-i" name="email" type="text"   onClick="this.select()" value="">
                                             <label >Password <span>*</span> </label>
-                                            <input name="password" type="password"   onClick="this.select()" value="" >
+                                            <input class="astro-i" name="password" type="password"   onClick="this.select()" value="" >
                                             <button type="submit"  class="btn float-btn color2-bg"> Log In <i class="fas fa-caret-right"></i></button>
                                             <div class="clearfix"></div>
                                             <div class="filter-tags">
@@ -517,11 +517,11 @@
                                         <div class="custom-form-ast">
                                             <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
                                                 <label >Full Name <span>*</span> </label>
-                                                <input name="name" type="text"   onClick="this.select()" value="">
+                                                <input class="astro-i" name="name" type="text"   onClick="this.select()" value="">
                                                 <label>Email Address <span>*</span></label>
-                                                <input name="email" type="text"  onClick="this.select()" value="">
+                                                <input class="astro-i" name="email" type="text"  onClick="this.select()" value="">
                                                 <label >Password <span>*</span></label>
-                                                <input name="password" type="password"   onClick="this.select()" value="" >
+                                                <input class="astro-i" name="password" type="password"   onClick="this.select()" value="" >
                                                 <div class="filter-tags ft-list">
                                                     <input id="check-a2" type="checkbox" name="check">
                                                     <label for="check-a2">I agree to the <a href="#">Privacy Policy</a></label>
@@ -565,3 +565,4 @@
         <script src="js/map-single.js"></script>                     
     </body>
 </html>
+
