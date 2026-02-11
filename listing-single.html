@@ -1851,21 +1851,19 @@
         <div class="main-register-holder tabs-act">
           <div class="main-register fl-wrap modal_main">
             <div class="main-register_title">
-              <div class="main-register_title">
-                <img
-			                src="images/ipostit_logo.png"
-			                alt="TownHub"
-			                class="main-register-logo"
-			              />
-						</div>
+              <img
+                src="images/ipostit_logo.png"
+                alt="TownHub"
+                class="main-register-logo"
+              />
             </div>
             <div class="close-reg"><i class="fal fa-times"></i></div>
             <ul class="tabs-menu fl-wrap no-list-style">
               <li class="current">
-                <a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Login</a>
+                <a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Σύνδεση</a>
               </li>
               <li>
-                <a href="#tab-2"><i class="fal fa-user-plus"></i> Register</a>
+                <a href="#tab-2"><i class="fal fa-user-plus"></i> Εγγραφή</a>
               </li>
             </ul>
             <!--tabs -->
@@ -1874,32 +1872,45 @@
                 <!--tab -->
                 <div id="tab-1" class="tab-content first-tab">
                   <div class="custom-form-ast">
-                    <form method="post" name="registerform">
-                      <label>Username or Email Address <span>*</span> </label>
+                    <form
+                      method="post"
+                      action="/auth/login"
+                      id="login-form"
+                      name="loginform"
+                    >
+                      <label>E-mail<span>*</span> </label>
                       <input class="astro-i"
                         name="email"
-                        type="text"
-                        onClick="this.select()"
+                        type="email"
+                        placeholder="Type here"
+                        onclick="this.select()"
                         value=""
                       />
-                      <label>Password <span>*</span> </label>
+                      <label>Κωδικός<span>*</span> </label>
                       <input class="astro-i"
                         name="password"
                         type="password"
-                        onClick="this.select()"
+                        placeholder="Type here"
+                        onclick="this.select()"
                         value=""
                       />
                       <button type="submit" class="btn float-btn color-bg-red">
-                        Log In <i class="fas fa-caret-right"></i>
+                        Είσοδος
                       </button>
                       <div class="clearfix"></div>
                       <div class="filter-tags">
-                        <input id="check-a3" type="checkbox" name="check" />
-                        <label for="check-a3">Remember me</label>
+                        <input type="hidden" name="remember" value="0" />
+                        <input
+                          id="check-a3"
+                          type="checkbox"
+                          name="remember"
+                          value="1"
+                        />
+                        <label for="check-a3">Να με θυμάσαι</label>
                       </div>
                     </form>
                     <div class="lost_password">
-                      <a href="#">Lost Your Password?</a>
+                      <a href="#">Ξέχασες τον κωδικό σου;</a>
                     </div>
                   </div>
                 </div>
@@ -1910,44 +1921,47 @@
                     <div class="custom-form-ast">
                       <form
                         method="post"
-                        name="registerform"
+                        action="/auth/register"
                         class="main-register-form"
-                        id="main-register-form2"
+                        id="register-form"
+                        name="registerform"
                       >
-                        <label>Full Name <span>*</span> </label>
-                        <input class="astro-i"
-                          name="name"
-                          type="text"
-                          onClick="this.select()"
-                          value=""
-                        />
-                        <label>Email Address <span>*</span></label>
+                        <label>E-mail <span>*</span> </label>
                         <input class="astro-i"
                           name="email"
-                          type="text"
-                          onClick="this.select()"
+                          type="email"
+                          placeholder="Type here"
+                          onclick="this.select()"
                           value=""
                         />
-                        <label>Password <span>*</span></label>
+                        <label>Τηλέφωνο <span>*</span></label>
+                        <input 
+                          name="tel"
+                          type="tel"
+                          placeholder="Type here"
+                          onclick="this.select()"
+                          value=""
+                        />
+                        <label>Κωδικός <span>*</span></label>
                         <input class="astro-i"
                           name="password"
                           type="password"
-                          onClick="this.select()"
+                          placeholder="Type here"
+                          onclick="this.select()"
                           value=""
                         />
                         <div class="filter-tags ft-list">
-                          <input id="check-a2" type="checkbox" name="check" />
+                          <input type="hidden" name="accept_terms" value="0" />
+                          <input
+                            id="check-a2"
+                            type="checkbox"
+                            name="accept_terms"
+                            value="1"
+                            required
+                          />
                           <label for="check-a2"
-                            >I agree to the
-                            <a href="#">Privacy Policy</a></label
-                          >
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="filter-tags ft-list">
-                          <input id="check-a" type="checkbox" name="check" />
-                          <label for="check-a"
-                            >I agree to the
-                            <a href="#">Terms and Conditions</a></label
+                            >Αποδέχομαι τους
+                            <a href="#">όρους χρήσης & προϋποθέσεις</a></label
                           >
                         </div>
                         <div class="clearfix"></div>
@@ -1955,7 +1969,7 @@
                           type="submit"
                           class="btn float-btn color-bg-red"
                         >
-                          Register <i class="fas fa-caret-right"></i>
+                          Εγγραφή
                         </button>
                       </form>
                     </div>
@@ -1964,14 +1978,17 @@
                 <!--tab end -->
               </div>
               <!--tabs end -->
-              <div class="log-separator fl-wrap"><span>or</span></div>
+              <div class="log-separator fl-wrap"><span>ή</span></div>
               <div class="soc-log fl-wrap">
-                <p>For faster login or register use your social account.</p>
-                <a href="#" class="facebook-log"> Facebook</a>
-              </div>
-              <div class="wave-bg">
-                <div class="wave -one"></div>
-                <div class="wave -two"></div>
+                <a href="#" class="facebook-log bg-white text-grey bd-grey">
+                  Σύνδεση με λογαριασμό google</a
+                >
+                <a href="#" class="facebook-log">
+                  Σύνδεση με λογαριασμό Facebook</a
+                >
+                <a href="#" class="facebook-log bg-black">
+                  Σύνδεση με λογαριασμό Apple</a
+                >
               </div>
             </div>
           </div>
@@ -2162,4 +2179,5 @@
     <script src="js/custom-listing-single-ast.js"></script>
   </body>
 </html>
+
 
