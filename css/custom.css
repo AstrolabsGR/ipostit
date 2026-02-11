@@ -2180,11 +2180,11 @@ section.absolute-wrap_section-1 {
 }
 }
 
-.nice-select.open .list {
+/* .nice-select.open .list {
   max-height: 200px;
   overflow-y: auto;
   touch-action: auto;
-}
+} */
 
 .listsearch-input-wrap_contrl li {
     float: unset;
@@ -6768,4 +6768,13 @@ body {
   outline: none;
   overflow: hidden;
   z-index: 1;
+}
+
+
+.listsearch-input-item .nice-select.open > ul.list{
+  max-height: 200px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
 }
