@@ -418,24 +418,24 @@
                                     <div class="row">
                                       <div class="col-sm-6">
                                         <label class="bold-label">Όνομα</label>
-                                        <input type="text" name="first_name" placeholder="Type here" value="">
+                                        <input class="astro-i" type="text" name="first_name" placeholder="Type here" value="">
                                       </div>
                                 
                                       <div class="col-sm-6">
                                         <label class="bold-label">Επώνυμο</label>
-                                        <input type="text" name="last_name" placeholder="Type here" value="">
+                                        <input class="astro-i" type="text" name="last_name" placeholder="Type here" value="">
                                       </div>
                                     </div>
                                 
                                     <div class="row">
                                       <div class="col-sm-6">
                                         <label class="bold-label">Ψευδώνυμο</label>
-                                        <input type="text" name="username" placeholder="Type here" value="">
+                                        <input class="astro-i" type="text" name="username" placeholder="Type here" value="">
                                       </div>
                                 
                                       <div class="col-sm-6">
                                         <label class="bold-label">Email</label>
-                                        <input type="email" name="email" placeholder="Type here" value="">
+                                        <input class="astro-i" type="email" name="email" placeholder="Type here" value="">
                                       </div>
                                     </div>
                                 
@@ -447,7 +447,7 @@
                                 
                                       <div class="col-sm-6">
                                         <label class="bold-label">Περιοχή</label>
-                                        <input type="text" name="location" placeholder="Type here" value="">
+                                        <input class="astro-i" type="text" name="location" placeholder="Type here" value="">
                                       </div>
                                     </div>
                                 
@@ -464,19 +464,19 @@
                                   <div class="custom-form-ast">
                                     <div class="pass-input-wrap fl-wrap">
                                       <label>Παλιός κωδικός</label>
-                                      <input type="password" class="pass-input" name="old_password" placeholder="Type here" value="">
+                                      <input class="astro-i" type="password" class="pass-input" name="old_password" placeholder="Type here" value="">
                                       <!-- <span class="eye"><i class="far fa-eye" aria-hidden="true"></i></span> -->
                                     </div>
                                 
                                     <div class="pass-input-wrap fl-wrap">
                                       <label>Νέος κωδικός</label>
-                                      <input type="password" class="pass-input" name="new_password" placeholder="Type here" value="">
+                                      <input class="astro-i" type="password" class="pass-input" name="new_password" placeholder="Type here" value="">
                                       <!-- <span class="eye"><i class="far fa-eye" aria-hidden="true"></i></span> -->
                                     </div>
                                 
                                     <div class="pass-input-wrap fl-wrap">
                                       <label>Επιβεβαίωση νέου κωδικού</label>
-                                      <input type="password" class="pass-input" name="new_password_confirm" placeholder="Type here" value="">
+                                      <input class="astro-i" type="password" class="pass-input" name="new_password_confirm" placeholder="Type here" value="">
                                       <!-- <span class="eye"><i class="far fa-eye" aria-hidden="true"></i></span> -->
                                     </div>
                                 
@@ -783,9 +783,9 @@
                                 <div class="custom-form-ast">
                                     <form method="post" action="/auth/login" id="login-form" name="loginform">
                                         <label>E-mail<span>*</span> </label>
-                                        <input name="email" type="email" placeholder="Type here" onclick="this.select()" value="">
+                                        <input class="astro-i" name="email" type="email" placeholder="Type here" onclick="this.select()" value="">
                                         <label>Κωδικός<span>*</span> </label>
-                                        <input name="password" type="password" placeholder="Type here" onclick="this.select()" value="">
+                                        <input class="astro-i" name="password" type="password" placeholder="Type here" onclick="this.select()" value="">
                                         <button type="submit" class="btn float-btn color-bg-red"> Είσοδος </button>
                                         <div class="clearfix"></div>
                                         <div class="filter-tags">
@@ -806,11 +806,11 @@
                                     <div class="custom-form-ast">
                                         <form method="post" action="/auth/register" class="main-register-form" id="register-form" name="registerform">
                                             <label>E-mail <span>*</span> </label>
-                                            <input name="email" type="email" placeholder="Type here" onclick="this.select()" value="">
+                                            <input class="astro-i" name="email" type="email" placeholder="Type here" onclick="this.select()" value="">
                                             <label>Τηλέφωνο <span>*</span></label>
-                                            <input name="tel" type="tel" placeholder="Type here" onclick="this.select()" value="">
+                                            <input class="astro-i" name="tel" type="tel" placeholder="Type here" onclick="this.select()" value="">
                                             <label>Κωδικός <span>*</span></label>
-                                            <input name="password" type="password" placeholder="Type here" onclick="this.select()" value="">
+                                            <input class="astro-i" name="password" type="password" placeholder="Type here" onclick="this.select()" value="">
                                             <div class="filter-tags ft-list">
                                                 <input type="hidden" name="accept_terms" value="0">
                                                 <input id="check-a2" type="checkbox" name="accept_terms" value="1" required>
@@ -846,4 +846,5 @@
     </body>
 
 </html>
+
 
