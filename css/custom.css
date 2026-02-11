@@ -6829,3 +6829,7 @@ button.color-bg-red-rev:hover,
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
+
+.about-wrap .ab_text{
+  text-align: left !important;
+}
