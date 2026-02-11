@@ -6686,7 +6686,7 @@ body {
 }
 
 #TopFiltersDiv {
-    align-items: baseline;
+    align-items: flex-end;
 }
 
 .geodir-category-content-title-item .title-sin_map{
@@ -6819,4 +6819,8 @@ button.color-bg-red-rev:hover,
   color: #fff !important;
   background: #d92129 !important;
   border-color: #d92129 !important;
+}
+
+.sub-tab-content .filter-row {
+    align-items: flex-end;
 }
