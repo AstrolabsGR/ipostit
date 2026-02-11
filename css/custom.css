@@ -6824,3 +6824,8 @@ button.color-bg-red-rev:hover,
 .sub-tab-content .filter-row {
     align-items: flex-end;
 }
+
+.listsearch-input-item .date-range-pair .date-container input[type="text"]{
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
