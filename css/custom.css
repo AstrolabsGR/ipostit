@@ -6758,7 +6758,9 @@ body {
 }
 
 
-.listsearch-input-item input.astro-i[type="text"]{
+.listsearch-input-item input.astro-i[type="text"],
+.astro-i[type="email"],
+.astro-i[type="password"]{
   float: left;
   border: 1px solid #e5e7f2;
   background: #f9f9f9;
