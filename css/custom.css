@@ -9778,3 +9778,15 @@ body.wallet-modal-open{
   border-color: #1ea6df;
   color:#fff;
 }
+
+.listsearch-input-item input[type="text"] {
+    float: left;
+    background: #f9f9f9;
+    height: 48px;
+    border-radius: 4px;
+    color: #7d93b2;
+    font-size: 12px;
+    -webkit-appearance: none;
+    outline: none;
+    z-index: 1;
+}
