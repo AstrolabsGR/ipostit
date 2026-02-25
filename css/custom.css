@@ -7910,7 +7910,7 @@ body.page-wallet-notifications .notif-btn-save:hover{
 
 body.page-wallet-notifications .notif-btn-cancel{
   background:#fbe9ea;
-  color:#e02424;
+  color:#e02424!important;
   border:1px solid #f1f0ef !important;
 }
 
