@@ -21,3 +21,13 @@ Dashboard Messages Page: https://astrolabsgr.github.io/ipostit/dashboard-message
 Dashboard Profile Page: https://astrolabsgr.github.io/ipostit/dashboard-profile.html
 
 Dashboard Extra Filters Page: https://astrolabsgr.github.io/ipostit/index_extra_filters.html
+
+Dashboard Wallet Dashboard Page: https://astrolabsgr.github.io/ipostit/wallet-dashboard.html
+
+Dashboard Wallet Dashboard Billing Page: https://astrolabsgr.github.io/ipostit/wallet-dashboard-billing.html
+
+Dashboard Wallet Dashboard Credits Page: https://astrolabsgr.github.io/ipostit/wallet-dashboard-credits.html
+
+Dashboard Wallet Dashboard Notifications Page: https://astrolabsgr.github.io/ipostit/wallet-dashboard-notifications.html
+
+Dashboard Wallet Dashboard Publish Page: https://astrolabsgr.github.io/ipostit/wallet-dashboard-publish.html
