@@ -9794,3 +9794,7 @@ body.wallet-modal-open{
     color: #d92129 !important;
     border: 1px solid #f1f0ef !important;
 }
+
+.filter-row input {
+    width: 100%;
+}
