@@ -9789,3 +9789,8 @@ body.wallet-modal-open{
     outline: none;
     z-index: 1;
 }
+
+.wallet-publish-page .publish-btn-cancel {
+    color: #d92129 !important;
+    border: 1px solid #f1f0ef !important;
+}
