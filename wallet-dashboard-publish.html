@@ -1381,80 +1381,156 @@
               </div>
             </div>
             
-            <!--register form -->
-            <div class="main-register-wrap modal">
-            <div class="reg-overlay"></div>
-            <div class="main-register-holder tabs-act">
-                <div class="main-register fl-wrap  modal_main">
-                    <div class="main-register_title">
-                        <img src="images/ipostit_logo.png" alt="TownHub" class="main-register-logo">
-                    </div>
-                    <div class="close-reg"><i class="fal fa-times"></i></div>
-                    <ul class="tabs-menu fl-wrap no-list-style">
-                        <li class="current"><a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Σύνδεση</a></li>
-                        <li><a href="#tab-2"><i class="fal fa-user-plus"></i> Εγγραφή</a></li>
-                    </ul>
-                    <!--tabs -->
-                    <div class="tabs-container">
-                        <div class="tab">
-                            <!--tab -->
-                            <div id="tab-1" class="tab-content first-tab">
-                                <div class="custom-form-ast">
-                                    <form method="post" action="/auth/login" id="login-form" name="loginform">
-                                        <label>E-mail<span>*</span> </label>
-                                        <input name="email" type="email" placeholder="Type here" onclick="this.select()" value="">
-                                        <label>Κωδικός<span>*</span> </label>
-                                        <input name="password" type="password" placeholder="Type here" onclick="this.select()" value="">
-                                        <button type="submit" class="btn float-btn color-bg-red"> Είσοδος </button>
-                                        <div class="clearfix"></div>
-                                        <div class="filter-tags">
-                                            <input type="hidden" name="remember" value="0">
-                                            <input id="check-a3" type="checkbox" name="remember" value="1">
-                                            <label for="check-a3">Να με θυμάσαι</label>
-                                        </div>
-                                    </form>
-                                    <div class="lost_password">
-                                        <a href="#">Ξέχασες τον κωδικό σου;</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--tab end -->
-                            <!--tab -->
-                            <div class="tab">
-                                <div id="tab-2" class="tab-content">
-                                    <div class="custom-form-ast">
-                                        <form method="post" action="/auth/register" class="main-register-form" id="register-form" name="registerform">
-                                            <label>E-mail <span>*</span> </label>
-                                            <input name="email" type="email" placeholder="Type here" onclick="this.select()" value="">
-                                            <label>Τηλέφωνο <span>*</span></label>
-                                            <input name="tel" type="tel" placeholder="Type here" onclick="this.select()" value="">
-                                            <label>Κωδικός <span>*</span></label>
-                                            <input name="password" type="password" placeholder="Type here" onclick="this.select()" value="">
-                                            <div class="filter-tags ft-list">
-                                                <input type="hidden" name="accept_terms" value="0">
-                                                <input id="check-a2" type="checkbox" name="accept_terms" value="1" required>
-                                                <label for="check-a2">Αποδέχομαι τους <a href="#">όρους χρήσης & προϋποθέσεις</a></label>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                            <button type="submit" class="btn float-btn color-bg-red"> Εγγραφή  </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--tab end -->
-                        </div>
-                        <!--tabs end -->
-                        <div class="log-separator fl-wrap"><span>ή</span></div>
-                        <div class="soc-log fl-wrap">
-                            <a href="#" class="facebook-log bg-white text-grey bd-grey"> Σύνδεση με λογαριασμό google</a>
-                            <a href="#" class="facebook-log"> Σύνδεση με λογαριασμό Facebook</a>
-                            <a href="#" class="facebook-log bg-black"> Σύνδεση με λογαριασμό Apple</a>
-                        </div>
-                    </div>
-                </div>
+      <!--register form -->
+      <div class="main-register-wrap modal">
+        <div class="reg-overlay"></div>
+        <div class="main-register-holder tabs-act">
+          <div class="main-register fl-wrap modal_main">
+            <div class="main-register_title">
+              <img
+                src="images/ipostit_logo.png"
+                alt="TownHub"
+                class="main-register-logo"
+              />
             </div>
+            <div class="close-reg"><i class="fal fa-times"></i></div>
+            <ul class="tabs-menu fl-wrap no-list-style">
+              <li class="current">
+                <a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Σύνδεση</a>
+              </li>
+              <li>
+                <a href="#tab-2"><i class="fal fa-user-plus"></i> Εγγραφή</a>
+              </li>
+            </ul>
+            <!--tabs -->
+            <div class="tabs-container">
+              <div class="tab">
+                <!--tab -->
+                <div id="tab-1" class="tab-content first-tab">
+                  <div class="custom-form-ast">
+                    <form
+                      method="post"
+                      action="/auth/login"
+                      id="login-form"
+                      name="loginform"
+                    >
+                      <label>E-mail<span>*</span> </label>
+                      <input class="astro-i"
+                        name="email"
+                        type="email"
+                        placeholder="Type here"
+                        onclick="this.select()"
+                        value=""
+                      />
+                      <label>Κωδικός<span>*</span> </label>
+                      <input class="astro-i"
+                        name="password"
+                        type="password"
+                        placeholder="Type here"
+                        onclick="this.select()"
+                        value=""
+                      />
+                      <button type="submit" class="btn float-btn color-bg-red">
+                        Είσοδος
+                      </button>
+                      <div class="clearfix"></div>
+                      <div class="filter-tags">
+                        <input type="hidden" name="remember" value="0" />
+                        <input
+                          id="check-a3"
+                          type="checkbox"
+                          name="remember"
+                          value="1"
+                        />
+                        <label for="check-a3">Να με θυμάσαι</label>
+                      </div>
+                    </form>
+                    <div class="lost_password">
+                      <a href="#">Ξέχασες τον κωδικό σου;</a>
+                    </div>
+                  </div>
+                </div>
+                <!--tab end -->
+                <!--tab -->
+                <div class="tab">
+                  <div id="tab-2" class="tab-content">
+                    <div class="custom-form-ast">
+                      <form
+                        method="post"
+                        action="/auth/register"
+                        class="main-register-form"
+                        id="register-form"
+                        name="registerform"
+                      >
+                        <label>E-mail <span>*</span> </label>
+                        <input class="astro-i"
+                          name="email"
+                          type="email"
+                          placeholder="Type here"
+                          onclick="this.select()"
+                          value=""
+                        />
+                        <label>Τηλέφωνο <span>*</span></label>
+                        <input
+                          name="tel"
+                          type="tel"
+                          placeholder="Type here"
+                          onclick="this.select()"
+                          value=""
+                        />
+                        <label>Κωδικός <span>*</span></label>
+                        <input class="astro-i"
+                          name="password"
+                          type="password"
+                          placeholder="Type here"
+                          onclick="this.select()"
+                          value=""
+                        />
+                        <div class="filter-tags ft-list">
+                          <input type="hidden" name="accept_terms" value="0" />
+                          <input
+                            id="check-a2"
+                            type="checkbox"
+                            name="accept_terms"
+                            value="1"
+                            required
+                          />
+                          <label for="check-a2"
+                            >Αποδέχομαι τους
+                            <a href="#">όρους χρήσης & προϋποθέσεις</a></label
+                          >
+                        </div>
+                        <div class="clearfix"></div>
+                        <button
+                          type="submit"
+                          class="btn float-btn color-bg-red"
+                        >
+                          Εγγραφή
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!--tab end -->
+              </div>
+              <!--tabs end -->
+              <div class="log-separator fl-wrap"><span>ή</span></div>
+              <div class="soc-log fl-wrap">
+                <a href="#" class="facebook-log bg-white text-grey bd-grey">
+                  Σύνδεση με λογαριασμό google</a
+                >
+                <a href="#" class="facebook-log">
+                  Σύνδεση με λογαριασμό Facebook</a
+                >
+                <a href="#" class="facebook-log bg-black">
+                  Σύνδεση με λογαριασμό Apple</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-            <!--register form end -->
+      </div>
+      <!--register form end -->
             
             <!-- Support floating button -->
             <a
@@ -1476,4 +1552,5 @@
         <script src="js/scripts.js"></script>
         <script src="js/custom.js"></script>
     </body>
+
 </html>
