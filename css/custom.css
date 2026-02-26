@@ -4479,7 +4479,7 @@ body.page-dashboard-profile .profile-pref-actions .pref-btn-save{
 
 body.page-dashboard-profile .profile-pref-actions .pref-btn-delete{
   background:#fbe9ea;
-  color:#e02424;
+  color:#e02424!important;
   border: 1px solid #f1f0ef;
 }
 
