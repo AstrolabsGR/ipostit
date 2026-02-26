@@ -9811,3 +9811,15 @@ body.wallet-modal-open{
    display: flex;
    align-items: flex-end;
 }
+
+section.hero-section .main-search-input-tabs .tabs-container{
+  position: relative !important;
+}
+
+section.hero-section .hero-categories{
+  margin-top: 50px !important;
+}
+
+section.hero-section{
+  min-height: 100vh!important;
+}
